@@ -86,7 +86,7 @@ I am from Cape Town, South Africa. I am currently a third year student at the Ca
 ###  Rietfontein Website (Front-End)
 - Updated the front end of [rietfontein.co.za](https://rietfontein.co.za/)  
 - Modernized the website’s look and feel according to the owner’s vision  
-- Implemented responsive and clean design using **React, CSS, and JavaScript**
+- Implemented responsive and clean design using **WordPress** which makes use of **HTML, CSS,** and **JavaScript** for the front end and **PHP** for the backend
 
 ---
 
