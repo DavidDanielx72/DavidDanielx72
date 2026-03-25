@@ -27,14 +27,14 @@
 
 ### 💻 Languages & Technologies
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=java" title="Java" />
-  <img src="https://skillicons.dev/icons?i=js" title="JavaScript" />
-  <img src="https://skillicons.dev/icons?i=ts" title="TypeScript" />
-  <img src="https://skillicons.dev/icons?i=html" title="HTML" />
-  <img src="https://skillicons.dev/icons?i=css" title="CSS" />
-  <img src="https://skillicons.dev/icons?i=react" title="React" />
-  <img src="https://skillicons.dev/icons?i=mysql" title="SQL" />
-  <img src="https://skillicons.dev/icons?i=wordpress" title="WordPress" />
+  <img src="https://skillicons.dev/icons?i=java" title="Java" style="margin:0 10px;" />
+  <img src="https://skillicons.dev/icons?i=js" title="JavaScript" style="margin:0 10px;" />
+  <img src="https://skillicons.dev/icons?i=ts" title="TypeScript" style="margin:0 10px;" />
+  <img src="https://skillicons.dev/icons?i=html" title="HTML" style="margin:0 10px;" />
+  <img src="https://skillicons.dev/icons?i=css" title="CSS" style="margin:0 10px;" />
+  <img src="https://skillicons.dev/icons?i=react" title="React" style="margin:0 10px;" />
+  <img src="https://skillicons.dev/icons?i=mysql" title="SQL" style="margin:0 10px;" />
+  <img src="https://skillicons.dev/icons?i=wordpress" title="WordPress" style="margin:0 10px;" />
 </p>
 <p align="center">
   <span style="display:inline-block; width:60px;">Java</span>
@@ -49,12 +49,12 @@
 
 ### 🧰 Tools & IDEs
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=git" title="Git" />
-  <img src="https://skillicons.dev/icons?i=github" title="GitHub" />
-  <img src="https://skillicons.dev/icons?i=vscode" title="VS Code" />
-  <img src="https://skillicons.dev/icons?i=figma" title="Figma" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" height="48" title="IntelliJ IDEA" />
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" height="48" title="NetBeans" />
+  <img src="https://skillicons.dev/icons?i=git" title="Git" style="margin:0 10px;" />
+  <img src="https://skillicons.dev/icons?i=github" title="GitHub" style="margin:0 10px;" />
+  <img src="https://skillicons.dev/icons?i=vscode" title="VS Code" style="margin:0 10px;" />
+  <img src="https://skillicons.dev/icons?i=figma" title="Figma" style="margin:0 10px;" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" height="48" title="IntelliJ IDEA" style="margin:0 10px;" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" height="48" title="NetBeans" style="margin:0 10px;" />
 </p>
 <p align="center">
   <span style="display:inline-block; width:60px;">Git</span>
