@@ -1,7 +1,7 @@
 <h1 align="center"> <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="30"/> David Daniel Sepkitt <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="30"/> </h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=34&pause=1000&width=600&color=0033A0&lines=3rd+Year+ICT+Studentt;Front-End+Developer;" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=34&pause=1000&width=600&color=0033A0&lines=3rd+Year+ICT+Student;Front-End+Developer;" />
 </p>
 
 ---
