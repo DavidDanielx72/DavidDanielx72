@@ -11,12 +11,16 @@
 <p align="center">
 I am from Cape Town, South Africa. I am currently a third year student at the Cape Peninsula University of Technology, pursuing a Diploma in Information and Communication Technology in Applications Development. I am passionate about everything tech-related and enjoy learning new technologies to constantly improve my skils and broaden my knowledge.
 </p>
+
 <br>
+
 - 🌱 Currently learning: **Advanced Java, GUI Development, Git Collaboration, C & C++**  
 - 💻 Self-learned: **React, TypeScript, CSS, JavaScript, WordPress** for front-end development  
 - 🧠 Love learning new technologies and expanding my IT knowledge  
 - 🎯 Goal: continuously improve my development skills and grow into a well-rounded software developer
+
 <br>
+
 ---
 
 ## 🛠️ Tech Stack
