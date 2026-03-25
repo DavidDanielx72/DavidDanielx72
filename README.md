@@ -28,9 +28,13 @@
 
 ### 🧰 Tools & IDEs
 <p>
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,intellij,netbeans,figma" />
-</p>
+  
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,figma" />
 
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" height="48" />
+
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" height="48" />
+</p>
 ---
 
 ## 📊 GitHub Stats
