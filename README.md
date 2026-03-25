@@ -81,6 +81,15 @@
 
 ---
 
+## 🌐 Projects
+
+### 🌐 Rietfontein Website (Front-End)
+- Updated the front end of [rietfontein.co.za](https://rietfontein.co.za/)  
+- Modernized the website’s look and feel according to the owner’s vision  
+- Implemented responsive and clean design using **React, CSS, and JavaScript**
+
+---
+
 ## 🌐 Connect With Me
 
 <p align="center">
