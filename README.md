@@ -26,48 +26,68 @@
 ## 🛠️ Tech Stack
 
 ### 💻 Languages & Technologies
-<table align="center">
-  <tr>
-    <td><img src="https://skillicons.dev/icons?i=java" title="Java" /></td>
-    <td><img src="https://skillicons.dev/icons?i=js" title="JavaScript" /></td>
-    <td><img src="https://skillicons.dev/icons?i=ts" title="TypeScript" /></td>
-    <td><img src="https://skillicons.dev/icons?i=html" title="HTML" /></td>
-    <td><img src="https://skillicons.dev/icons?i=css" title="CSS" /></td>
-    <td><img src="https://skillicons.dev/icons?i=react" title="React" /></td>
-    <td><img src="https://skillicons.dev/icons?i=mysql" title="SQL" /></td>
-    <td><img src="https://skillicons.dev/icons?i=wordpress" title="WordPress" /></td>
-  </tr>
-  <tr>
-    <td align="center">Java</td>
-    <td align="center">JavaScript</td>
-    <td align="center">TypeScript</td>
-    <td align="center">HTML</td>
-    <td align="center">CSS</td>
-    <td align="center">React</td>
-    <td align="center">SQL</td>
-    <td align="center">WordPress</td>
-  </tr>
-</table>
+<p align="center">
+  <span style="display:inline-block; text-align:center; margin:10px;">
+    <img src="https://skillicons.dev/icons?i=java" title="Java" />
+    <br>Java
+  </span>
+  <span style="display:inline-block; text-align:center; margin:10px;">
+    <img src="https://skillicons.dev/icons?i=js" title="JavaScript" />
+    <br>JavaScript
+  </span>
+  <span style="display:inline-block; text-align:center; margin:10px;">
+    <img src="https://skillicons.dev/icons?i=ts" title="TypeScript" />
+    <br>TypeScript
+  </span>
+  <span style="display:inline-block; text-align:center; margin:10px;">
+    <img src="https://skillicons.dev/icons?i=html" title="HTML" />
+    <br>HTML
+  </span>
+  <span style="display:inline-block; text-align:center; margin:10px;">
+    <img src="https://skillicons.dev/icons?i=css" title="CSS" />
+    <br>CSS
+  </span>
+  <span style="display:inline-block; text-align:center; margin:10px;">
+    <img src="https://skillicons.dev/icons?i=react" title="React" />
+    <br>React
+  </span>
+  <span style="display:inline-block; text-align:center; margin:10px;">
+    <img src="https://skillicons.dev/icons?i=mysql" title="SQL" />
+    <br>SQL
+  </span>
+  <span style="display:inline-block; text-align:center; margin:10px;">
+    <img src="https://skillicons.dev/icons?i=wordpress" title="WordPress" />
+    <br>WordPress
+  </span>
+</p>
 
 ### 🧰 Tools & IDEs
-<table align="center">
-  <tr>
-    <td><img src="https://skillicons.dev/icons?i=git" title="Git" /></td>
-    <td><img src="https://skillicons.dev/icons?i=github" title="GitHub" /></td>
-    <td><img src="https://skillicons.dev/icons?i=vscode" title="VS Code" /></td>
-    <td><img src="https://skillicons.dev/icons?i=figma" title="Figma" /></td>
-    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" height="48" title="IntelliJ IDEA" /></td>
-    <td><img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" height="48" title="NetBeans" /></td>
-  </tr>
-  <tr>
-    <td align="center">Git</td>
-    <td align="center">GitHub</td>
-    <td align="center">VS Code</td>
-    <td align="center">Figma</td>
-    <td align="center">IntelliJ IDEA</td>
-    <td align="center">NetBeans</td>
-  </tr>
-</table>
+<p align="center">
+  <span style="display:inline-block; text-align:center; margin:10px;">
+    <img src="https://skillicons.dev/icons?i=git" title="Git" />
+    <br>Git
+  </span>
+  <span style="display:inline-block; text-align:center; margin:10px;">
+    <img src="https://skillicons.dev/icons?i=github" title="GitHub" />
+    <br>GitHub
+  </span>
+  <span style="display:inline-block; text-align:center; margin:10px;">
+    <img src="https://skillicons.dev/icons?i=vscode" title="VS Code" />
+    <br>VS Code
+  </span>
+  <span style="display:inline-block; text-align:center; margin:10px;">
+    <img src="https://skillicons.dev/icons?i=figma" title="Figma" />
+    <br>Figma
+  </span>
+  <span style="display:inline-block; text-align:center; margin:10px;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" height="48" title="IntelliJ IDEA" />
+    <br>IntelliJ IDEA
+  </span>
+  <span style="display:inline-block; text-align:center; margin:10px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" height="48" title="NetBeans" />
+    <br>NetBeans
+  </span>
+</p>
 
 ---
 
