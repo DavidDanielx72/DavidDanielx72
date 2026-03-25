@@ -1,4 +1,8 @@
-<h1 align= "center"> David Daniel Sepkitt </h1>
+<h1 align="center">
+  <img src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif" width="25"/> 
+  David Daniel Sepkitt 
+  <img src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif" width="25"/>
+</h1>
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=29&pause=1000&width=500&color=0033A0&lines=3rd+Year+Student;Front-End+Developer;3rd+Year+ICT+Student" />
