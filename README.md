@@ -1,5 +1,8 @@
 <h1 align="center">Hi 👋, I'm David Daniel Sepkitt</h1>
-<h3 align="center">Front-End Developer | ICT Student | Problem Solver</h3>
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&width=500&lines=3rd+Year+Student;Front-End+Developer;3rd+year+ICT+Student" />
+</p>
 
 <p align="center">
   🌍 From Cape Town, South Africa <br>
@@ -11,10 +14,11 @@
 
 ## 🚀 About Me
 
+- 👥 Vice Leader in collaborative university development projects  
 - 🌱 Currently learning: **Advanced Java, GUI Development, Git Collaboration, C & C++**  
-- 💻 Outside of university, I have self-learned how to use **React, TypeScript, CSS, JavaScript, and WordPress** for front-end web development  
-- 🧠 I enjoy constantly learning new technologies and expanding my knowledge in the IT field  
-- 🎯 My goal is to continuously improve my development skills and grow into a well-rounded software developer  
+- 💻 Self-learned: **React, TypeScript, CSS, JavaScript, WordPress** for front-end development  
+- 🧠 Love learning new technologies and expanding my IT knowledge  
+- 🎯 Goal: continuously improve my development skills and grow into a well-rounded software developer  
 - 💬 Ask me about: **Java, Swing, GitHub, UI Design, Front-End Development**  
 
 ---
@@ -22,24 +26,35 @@
 ## 🛠️ Tech Stack
 
 ### 💻 Languages & Technologies
-<p>
+<p align="center">
   <img src="https://skillicons.dev/icons?i=java,js,ts,html,css,react,mysql,wordpress" />
 </p>
 
 ### 🧰 Tools & IDEs
-<p>
-  
+<p align="center">
   <img src="https://skillicons.dev/icons?i=git,github,vscode,figma" />
-
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" height="48" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" height="48" />
+</p>
 
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" height="48" />
+---
+
+## 📊 GitHub Activity & Languages
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOURUSERNAME&layout=compact&theme=tokyonight&hide_border=true" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=YOURUSERNAME&theme=tokyo-night&hide_border=true" />
 </p>
 
 ---
 
 ## 🌐 Connect With Me
 
-<a href="https://www.linkedin.com/in/david-sepkitt-811837362/" target="_blank">
-  <img src="https://skillicons.dev/icons?i=linkedin" />
-</a>
+<p align="center">
+  <a href="https://www.linkedin.com/in/david-sepkitt-811837362/" target="_blank">
+    <img src="https://skillicons.dev/icons?i=linkedin" />
+  </a>
+</p>
