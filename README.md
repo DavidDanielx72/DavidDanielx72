@@ -1,7 +1,5 @@
 <h1 align="center">
-  <img src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif" width="25"/> 
-  David Daniel Sepkitt 
-  <img src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif" width="25"/>
+  ✦ David Daniel Sepkitt ✦
 </h1>
 
 <p align="center">
