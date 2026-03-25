@@ -1,7 +1,7 @@
 <h1 align= "center"> David Daniel Sepkitt </h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=29&pause=1000&width=500&color=0033A0&lines=3rd+Year+Student;Front-End+Developer;3rd+Year+ICT+Student" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=29&pause=1000&width=500&color=0033A0&lines=3rd+Year+Student;Front-End+Developer;3rd+Year+ICT+Student" />
 </p>
 
 ---
