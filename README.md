@@ -35,12 +35,11 @@
 
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" height="48" />
 </p>
+
 ---
 
 ## 🌐 Connect With Me
 
-<p align="center">
-  <a href="YOUR_LINKEDIN_LINK" target="_blank">
-    <img src="https://skillicons.dev/icons?i=linkedin" />
-  </a>
-</p>
+<a href="https://www.linkedin.com/in/david-sepkitt-811837362/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=linkedin" />
+</a>
