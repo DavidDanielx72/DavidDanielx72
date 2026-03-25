@@ -14,13 +14,12 @@
   💻 Passionate about everything tech related!
 </p>
 
-
-- 👥 Vice Leader in collaborative university development projects  
+<p>
 - 🌱 Currently learning: **Advanced Java, GUI Development, Git Collaboration, C & C++**  
 - 💻 Self-learned: **React, TypeScript, CSS, JavaScript, WordPress** for front-end development  
 - 🧠 Love learning new technologies and expanding my IT knowledge  
 - 🎯 Goal: continuously improve my development skills and grow into a well-rounded software developer
-
+  </p>
 ---
 
 ## 🛠️ Tech Stack
