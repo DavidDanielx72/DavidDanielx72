@@ -27,66 +27,42 @@
 
 ### 💻 Languages & Technologies
 <p align="center">
-  <span style="display:inline-block; text-align:center; margin:10px;">
-    <img src="https://skillicons.dev/icons?i=java" title="Java" />
-    <br>Java
-  </span>
-  <span style="display:inline-block; text-align:center; margin:10px;">
-    <img src="https://skillicons.dev/icons?i=js" title="JavaScript" />
-    <br>JavaScript
-  </span>
-  <span style="display:inline-block; text-align:center; margin:10px;">
-    <img src="https://skillicons.dev/icons?i=ts" title="TypeScript" />
-    <br>TypeScript
-  </span>
-  <span style="display:inline-block; text-align:center; margin:10px;">
-    <img src="https://skillicons.dev/icons?i=html" title="HTML" />
-    <br>HTML
-  </span>
-  <span style="display:inline-block; text-align:center; margin:10px;">
-    <img src="https://skillicons.dev/icons?i=css" title="CSS" />
-    <br>CSS
-  </span>
-  <span style="display:inline-block; text-align:center; margin:10px;">
-    <img src="https://skillicons.dev/icons?i=react" title="React" />
-    <br>React
-  </span>
-  <span style="display:inline-block; text-align:center; margin:10px;">
-    <img src="https://skillicons.dev/icons?i=mysql" title="SQL" />
-    <br>SQL
-  </span>
-  <span style="display:inline-block; text-align:center; margin:10px;">
-    <img src="https://skillicons.dev/icons?i=wordpress" title="WordPress" />
-    <br>WordPress
-  </span>
+  <img src="https://skillicons.dev/icons?i=java" title="Java" />
+  <img src="https://skillicons.dev/icons?i=js" title="JavaScript" />
+  <img src="https://skillicons.dev/icons?i=ts" title="TypeScript" />
+  <img src="https://skillicons.dev/icons?i=html" title="HTML" />
+  <img src="https://skillicons.dev/icons?i=css" title="CSS" />
+  <img src="https://skillicons.dev/icons?i=react" title="React" />
+  <img src="https://skillicons.dev/icons?i=mysql" title="SQL" />
+  <img src="https://skillicons.dev/icons?i=wordpress" title="WordPress" />
+</p>
+<p align="center">
+  <span style="display:inline-block; width:60px;">Java</span>
+  <span style="display:inline-block; width:60px;">JavaScript</span>
+  <span style="display:inline-block; width:60px;">TypeScript</span>
+  <span style="display:inline-block; width:60px;">HTML</span>
+  <span style="display:inline-block; width:60px;">CSS</span>
+  <span style="display:inline-block; width:60px;">React</span>
+  <span style="display:inline-block; width:60px;">SQL</span>
+  <span style="display:inline-block; width:60px;">WordPress</span>
 </p>
 
 ### 🧰 Tools & IDEs
 <p align="center">
-  <span style="display:inline-block; text-align:center; margin:10px;">
-    <img src="https://skillicons.dev/icons?i=git" title="Git" />
-    <br>Git
-  </span>
-  <span style="display:inline-block; text-align:center; margin:10px;">
-    <img src="https://skillicons.dev/icons?i=github" title="GitHub" />
-    <br>GitHub
-  </span>
-  <span style="display:inline-block; text-align:center; margin:10px;">
-    <img src="https://skillicons.dev/icons?i=vscode" title="VS Code" />
-    <br>VS Code
-  </span>
-  <span style="display:inline-block; text-align:center; margin:10px;">
-    <img src="https://skillicons.dev/icons?i=figma" title="Figma" />
-    <br>Figma
-  </span>
-  <span style="display:inline-block; text-align:center; margin:10px;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" height="48" title="IntelliJ IDEA" />
-    <br>IntelliJ IDEA
-  </span>
-  <span style="display:inline-block; text-align:center; margin:10px;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" height="48" title="NetBeans" />
-    <br>NetBeans
-  </span>
+  <img src="https://skillicons.dev/icons?i=git" title="Git" />
+  <img src="https://skillicons.dev/icons?i=github" title="GitHub" />
+  <img src="https://skillicons.dev/icons?i=vscode" title="VS Code" />
+  <img src="https://skillicons.dev/icons?i=figma" title="Figma" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" height="48" title="IntelliJ IDEA" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" height="48" title="NetBeans" />
+</p>
+<p align="center">
+  <span style="display:inline-block; width:60px;">Git</span>
+  <span style="display:inline-block; width:60px;">GitHub</span>
+  <span style="display:inline-block; width:60px;">VS Code</span>
+  <span style="display:inline-block; width:60px;">Figma</span>
+  <span style="display:inline-block; width:60px;">IntelliJ IDEA</span>
+  <span style="display:inline-block; width:60px;">NetBeans</span>
 </p>
 
 ---
