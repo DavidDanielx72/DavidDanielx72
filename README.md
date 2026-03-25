@@ -2,10 +2,6 @@
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=29&pause=1000&width=500&color=FF7F50&lines=3rd+Year+Student;Front-End+Developer;3rd+Year+ICT+Student" />
-</p>
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=29&pause=1000&width=500&lines=3rd+Year+Student;Front-End+Developer;3rd+Year+ICT+Student" />
-</p>
 
 <p align="center">
   🌍 From Cape Town, South Africa <br>
