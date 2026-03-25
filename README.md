@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm David Daniel Sepkitt</h1>
+<h1 align="center"> I'm David Daniel Sepkitt </h1>
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=29&pause=1000&width=500&lines=3rd+Year+Student;Front-End+Developer;3rd+Year+ICT+Student" />
@@ -83,7 +83,7 @@
 
 ## 🌐 Projects
 
-### 🌐 Rietfontein Website (Front-End)
+###  Rietfontein Website (Front-End)
 - Updated the front end of [rietfontein.co.za](https://rietfontein.co.za/)  
 - Modernized the website’s look and feel according to the owner’s vision  
 - Implemented responsive and clean design using **React, CSS, and JavaScript**
