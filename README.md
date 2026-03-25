@@ -14,7 +14,7 @@ I am from Cape Town, South Africa. I am currently a third year student at the Ca
 
 <br>
 
-- 🌱 Currently learning: **Advanced Java, React, Supabase, C & C++**  
+- 🌱 Currently learning: **Advanced Java, React, C & C++**  
 - 💻 Self-learned: **React, TypeScript, CSS, JavaScript, WordPress** for front-end development  
 - 🧠 Love learning new technologies and expanding my IT knowledge  
 - 🎯 Goal: continuously improve my development skills and grow into a well-rounded software developer
