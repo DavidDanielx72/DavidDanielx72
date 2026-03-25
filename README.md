@@ -1,13 +1,13 @@
 <h1 align="center">Hi 👋, I'm David Daniel Sepkitt</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&width=500&lines=3rd+Year+Student;Front-End+Developer;3rd+year+ICT+Student" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=15&pause=1000&width=500&lines=3rd+Year+Student;Front-End+Developer;3rd+Year+ICT+Student" />
 </p>
 
 <p align="center">
   🌍 From Cape Town, South Africa <br>
   🎓 Third Year Student at Cape Peninsula University of Technology studying Diploma in Information and Communication Technology in Applications Development <br>
-  💻 Passionate about everything tech related
+  💻 Passionate about everything tech related!
 </p>
 
 ---
@@ -35,18 +35,6 @@
   <img src="https://skillicons.dev/icons?i=git,github,vscode,figma" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" height="48" />
   <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" height="48" />
-</p>
-
----
-
-## 📊 GitHub Activity & Languages
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOURUSERNAME&layout=compact&theme=tokyonight&hide_border=true" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=YOURUSERNAME&theme=tokyo-night&hide_border=true" />
 </p>
 
 ---
