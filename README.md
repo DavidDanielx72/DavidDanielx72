@@ -88,6 +88,9 @@ I am from Cape Town, South Africa. I am currently a third year student at the Ca
 - Modernized the website’s look and feel according to the owner’s vision  
 - Implemented responsive and clean design using **WordPress** which makes use of **HTML, CSS,** and **JavaScript** for the front end and **PHP** for the backend
 
+### My Portfolio Website
+- View my full portfolio, CV, and mock interview video here: [David Daniel Portfolio](https://daviddanielx72.github.io/)
+
 ---
 
 ## 🌐 Connect With Me
