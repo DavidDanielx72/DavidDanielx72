@@ -1,4 +1,4 @@
-<div align="Left">
+<div align="left">
   <img src="https://raw.githubusercontent.com/daviddanielx72/daviddanielx72/main/assets/ios-messages.svg" alt="iOS Chat" width="450" />
 </div>
 
@@ -29,25 +29,25 @@ I am driven by the opportunity to use technology to create innovative solutions 
 ### 💻 Languages & Technologies
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=java" alt="Java" width="50" height="50"/>
-  <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" width="50" height="50"/>
-  <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" width="50" height="50"/>
-  <img src="https://skillicons.dev/icons?i=html" alt="HTML" width="50" height="50"/>
-  <img src="https://skillicons.dev/icons?i=css" alt="CSS" width="50" height="50"/>
-  <img src="https://skillicons.dev/icons?i=react" alt="React" width="50" height="50"/>
-  <img src="https://skillicons.dev/icons?i=mysql" alt="SQL" width="50" height="50"/>
-  <img src="https://skillicons.dev/icons?i=wordpress" alt="WordPress" width="50" height="50"/>
+  <img src="https://skillicons.dev/icons?i=java" alt="Java" width="50" height="50" style="margin: 0 8px;"/>
+  <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" width="50" height="50" style="margin: 0 8px;"/>
+  <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" width="50" height="50" style="margin: 0 8px;"/>
+  <img src="https://skillicons.dev/icons?i=html" alt="HTML" width="50" height="50" style="margin: 0 8px;"/>
+  <img src="https://skillicons.dev/icons?i=css" alt="CSS" width="50" height="50" style="margin: 0 8px;"/>
+  <img src="https://skillicons.dev/icons?i=react" alt="React" width="50" height="50" style="margin: 0 8px;"/>
+  <img src="https://skillicons.dev/icons?i=mysql" alt="SQL" width="50" height="50" style="margin: 0 8px;"/>
+  <img src="https://skillicons.dev/icons?i=wordpress" alt="WordPress" width="50" height="50" style="margin: 0 8px;"/>
 </p>
 
 ### 🧰 Tools & IDEs
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=git" alt="Git" width="50" height="50"/>
-  <img src="https://skillicons.dev/icons?i=github" alt="GitHub" width="50" height="50"/>
-  <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" width="50" height="50"/>
-  <img src="https://skillicons.dev/icons?i=figma" alt="Figma" width="50" height="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ" width="50" height="50"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="NetBeans" width="50" height="50"/>
+  <img src="https://skillicons.dev/icons?i=git" alt="Git" width="50" height="50" style="margin: 0 8px;"/>
+  <img src="https://skillicons.dev/icons?i=github" alt="GitHub" width="50" height="50" style="margin: 0 8px;"/>
+  <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" width="50" height="50" style="margin: 0 8px;"/>
+  <img src="https://skillicons.dev/icons?i=figma" alt="Figma" width="50" height="50" style="margin: 0 8px;"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ" width="50" height="50" style="margin: 0 8px;"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="NetBeans" width="50" height="50" style="margin: 0 8px;"/>
 </p>
 
 ---
@@ -58,12 +58,42 @@ I am driven by the opportunity to use technology to create innovative solutions 
 - **Front-End Development & Content Strategy**
 - Modernized the website's look and feel, updated business information, and improved page layouts to align with the client's brand vision
 - Implemented responsive design using **WordPress**, **HTML**, **CSS**, and **JavaScript** for the front end, with **PHP** for backend functionality
-- [rietfontein.co.za](https://rietfontein.co.za/)
+- 🔗 [rietfontein.co.za](https://rietfontein.co.za/)
 
-### 📁 Portfolio Website
-- **Personal Brand & Showcase**
-- View my full portfolio, CV, and mock interview video
-- [daviddanielx72.github.io](https://daviddanielx72.github.io/)
+### 🤖 CareerPilot AI
+- **AI-Powered CV Assistant**
+- An intelligent AI-powered career assistant designed to help users create stronger, more professional CVs with ease
+- Leverages modern artificial intelligence to analyze, improve, and generate CV content tailored to today's job market
+- Provides personalized suggestions to help students and professionals make their CVs stand out
+- 🔗 [CareerPilot AI Repository](https://github.com/DavidDanielx72/Careerpilot_AI)
+
+### 🔐 Beep IoT Alarm System
+- **Full-Stack IoT Security Solution**
+- A fully integrated security system combining hardware and software into a single connected solution
+- Features a web-based dashboard, backend server, ESP32 IoT device with RFID sensor, and automated alarm scheduling
+- Enables remote control, real-time monitoring, and multiple interaction methods (dashboard, RFID cards, automatic schedules)
+- 🔗 [Beep IoT Repository](https://github.com/DavidDanielx72/iot-elective-project-2026-beep)
+
+### 🗣️ Ubuntu Navigator AI Chatbot
+- **Multilingual AI Assistant**
+- An AI-powered conversational assistant designed to help users search for answers and access information related to SASSA, Home Affairs, and City of Cape Town services
+- Supports all 11 official languages of South Africa, providing responses in the user's chosen language
+- Uses location services to help users find nearby Home Affairs buildings
+- 🔗 [Ubuntu Navigator Repository](https://github.com/DavidDanielx72/Ubuntu-Navigator-AI-Chatbot-)
+
+---
+
+## 💼 Professional Experience
+
+### Country Road Waterfront (Woolworths Group) — *Seasonal Sales Consultant*
+*Dec 2025 – Jan 2026*
+- Delivered exceptional customer service in the menswear department during the high-volume holiday season
+- Maintained stock levels and visual merchandising standards on the sales floor
+
+### Cape Town DHL Stadium — *Casual Bar Attendant*
+*Dec 2023 – Feb 2024*
+- Provided efficient beverage service during high-profile events
+- Demonstrated composure and accuracy in fast-paced environments
 
 ---
 
@@ -76,6 +106,9 @@ I am driven by the opportunity to use technology to create innovative solutions 
   <a href="https://github.com/DavidDanielx72" target="_blank" style="margin-left: 20px;">
     <img src="https://skillicons.dev/icons?i=github" alt="GitHub" width="60" height="60"/>
   </a>
+  <a href="mailto:davidsepkitt@gmail.com" target="_blank" style="margin-left: 20px;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Email" width="60" height="60" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));"/>
+  </a>
 </p>
 
 <p align="center">
@@ -84,6 +117,9 @@ I am driven by the opportunity to use technology to create innovative solutions 
   </a>
   <a href="https://github.com/DavidDanielx72" style="text-decoration: none;">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+  <a href="mailto:davidsepkitt@gmail.com" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
 </p>
 
@@ -95,3 +131,6 @@ I am driven by the opportunity to use technology to create innovative solutions 
   <img src="https://img.shields.io/badge/Location-Cape%20Town-green" alt="Location" />
 </p>
 
+<p align="center">
+  <i>💬 iOS 26 style chat · David Daniel Sepkitt</i>
+</p>
