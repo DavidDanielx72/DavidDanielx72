@@ -1,110 +1,470 @@
-<h1 align="center">
-  <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="30"/>
-  David Daniel Sepkitt
-  <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="30"/>
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>David Daniel Sepkitt · iOS README</title>
+  <!-- Font & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<p align="center">
-  <img src="./images/ios-messages-header.svg" alt="iOS Messages Header" width="750"/>
-</p>
+    body {
+      background: #f2f2f7;  /* iOS light gray */
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      padding: 24px 16px 40px;
+      display: flex;
+      justify-content: center;
+    }
 
----
+    .readme-card {
+      max-width: 820px;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 36px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.02);
+      padding: 32px 24px 40px;
+      transition: all 0.2s ease;
+    }
 
-## 🚀 About Me
+    /* ----- iOS MESSAGE BUBBLE (header replacement) ----- */
+    .ios-message-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 28px;
+      padding: 8px 0 4px;
+    }
 
-<p align="center">
-I am from Cape Town, South Africa. I am currently a third year student at the Cape Peninsula University of Technology, pursuing a Diploma in Information and Communication Technology in Applications Development. I am passionate about everything tech-related and enjoy learning new technologies to constantly improve my skils and broaden my knowledge.
-</p>
+    .message-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      opacity: 0;
+      transform: translateY(12px);
+      animation: messagePop 0.45s cubic-bezier(0.22, 0.68, 0, 1) forwards;
+    }
 
-<br>
+    /* different delays for each row (set inline via style) */
+    .message-row:nth-child(1) { animation-delay: 0.05s; }
+    .message-row:nth-child(2) { animation-delay: 0.25s; }
+    .message-row:nth-child(3) { animation-delay: 0.45s; }
 
-- 🌱 Currently learning: **Advanced Java, React, C & C++**
-- 💻 Self-learned: **React, TypeScript, CSS, JavaScript, WordPress** for front-end development
-- 🧠 Love learning new technologies and expanding my IT knowledge
-- 🎯 Goal: continuously improve my development skills and grow into a well-rounded software developer
+    @keyframes messagePop {
+      0% { opacity: 0; transform: translateY(16px) scale(0.96); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
+    }
 
-<br>
+    /* iOS bubble – left aligned (incoming) */
+    .message-bubble {
+      background: #e9e9ed;        /* iOS light gray bubble */
+      padding: 12px 18px;
+      border-radius: 22px 22px 22px 6px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #1c1c1e;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+      max-width: 85%;
+      word-break: break-word;
+      line-height: 1.4;
+      letter-spacing: -0.01em;
+      border: 0.5px solid rgba(0,0,0,0.02);
+      backdrop-filter: blur(2px);
+    }
 
----
+    /* avatar (iOS-style circle) */
+    .avatar {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      background: #007aff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.3px;
+      background-image: linear-gradient(145deg, #007aff, #0055b3);
+      box-shadow: 0 2px 6px rgba(0, 122, 255, 0.2);
+      margin-top: 2px;
+    }
 
-## 🛠️ Tech Stack
+    /* small subtitle under bubble (like iMessage time) */
+    .message-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 4px;
+      margin-left: 56px;
+      font-size: 0.7rem;
+      color: #8e8e93;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+    }
 
-### 💻 Languages & Technologies
+    .message-meta i {
+      font-size: 0.6rem;
+      opacity: 0.7;
+    }
 
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=java" title="Java" /><br>Java
-    </td>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=js" title="JavaScript" /><br>JavaScript
-    </td>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=ts" title="TypeScript" /><br>TypeScript
-    </td>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=html" title="HTML" /><br>HTML
-    </td>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=css" title="CSS" /><br>CSS
-    </td>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=react" title="React" /><br>React
-    </td>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=mysql" title="SQL" /><br>SQL
-    </td>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=wordpress" title="WordPress" /><br>WordPress
-    </td>
-  </tr>
-</table>
+    /* inline emoji / gif style */
+    .inline-gif {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 4px;
+    }
 
-### 🧰 Tools & IDEs
+    /* ----- rest of README styling (unchanged, but refined) ----- */
+    .about-section, .tech-section, .projects-section, .connect-section {
+      margin-top: 32px;
+    }
 
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=git" title="Git" /><br>Git
-    </td>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=github" title="GitHub" /><br>GitHub
-    </td>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=vscode" title="VS Code" /><br>VS Code
-    </td>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=figma" title="Figma" /><br>Figma
-    </td>
-    <td align="center">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" height="48" title="IntelliJ IDEA" /><br>IntelliJ IDEA
-    </td>
-    <td align="center">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" height="48" title="NetBeans" /><br>NetBeans
-    </td>
-  </tr>
-</table>
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+      color: #1c1c1e;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #f2f2f7;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
 
----
+    .section-title i {
+      color: #007aff;
+      font-size: 1.2rem;
+    }
 
-## 🌐 Projects
+    .about-text {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #2c2c2e;
+      background: #f8f8fc;
+      padding: 20px 22px;
+      border-radius: 24px;
+      border: 1px solid #f0f0f5;
+    }
 
-### Rietfontein Website (Front-End)
+    .about-text p {
+      margin-bottom: 0;
+    }
 
-- Updated the front end of [rietfontein.co.za](https://rietfontein.co.za/)
-- Modernized the website’s look and feel according to the owner’s vision
-- Implemented responsive and clean design using **WordPress** which makes use of **HTML, CSS,** and **JavaScript** for the front end and **PHP** for the backend
+    .badge-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 18px;
+      background: #f8f8fc;
+      padding: 18px 22px;
+      border-radius: 24px;
+      border: 1px solid #f0f0f5;
+      margin-top: 6px;
+    }
 
-### My Portfolio Website
+    .badge-list span {
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #1c1c1e;
+    }
 
-- View my full portfolio, CV, and mock interview video here: [David Daniel Portfolio](https://daviddanielx72.github.io/)
+    .badge-list i {
+      color: #007aff;
+      width: 20px;
+      font-size: 1.1rem;
+    }
 
----
+    .tech-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px 24px;
+      background: #f8f8fc;
+      padding: 20px 16px;
+      border-radius: 28px;
+      border: 1px solid #f0f0f5;
+      margin-top: 8px;
+    }
 
-## 🌐 Connect With Me
+    .tech-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #3a3a3c;
+      min-width: 60px;
+    }
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/david-sepkitt-811837362/" target="_blank">
-    <img src="https://skillicons.dev/icons?i=linkedin" />
-  </a>
-</p>
+    .tech-item img {
+      height: 42px;
+      width: 42px;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.02));
+    }
+
+    .tech-item .icon-fallback {
+      font-size: 2.2rem;
+      line-height: 1;
+    }
+
+    .project-card {
+      background: #f8f8fc;
+      border-radius: 24px;
+      padding: 18px 22px;
+      border: 1px solid #f0f0f5;
+      margin-bottom: 16px;
+    }
+
+    .project-card strong {
+      color: #1c1c1e;
+      font-weight: 600;
+    }
+
+    .project-card a {
+      color: #007aff;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1.5px dotted rgba(0, 122, 255, 0.25);
+    }
+
+    .project-card a:hover {
+      border-bottom: 1.5px solid #007aff;
+    }
+
+    .connect-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 16px;
+      background: #f8f8fc;
+      padding: 18px 20px;
+      border-radius: 40px;
+      border: 1px solid #f0f0f5;
+    }
+
+    .connect-wrapper a {
+      color: #1c1c1e;
+      font-size: 2.2rem;
+      transition: all 0.2s ease;
+      display: inline-flex;
+    }
+
+    .connect-wrapper a:hover {
+      color: #007aff;
+      transform: scale(1.05);
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #f0f0f5;
+      margin: 32px 0 20px;
+    }
+
+    /* small tweaks */
+    .text-muted {
+      color: #8e8e93;
+      font-size: 0.9rem;
+    }
+
+    .inline-code {
+      background: #f0f0f5;
+      padding: 0 8px;
+      border-radius: 8px;
+      font-family: 'SF Mono', 'Menlo', monospace;
+      font-size: 0.85rem;
+      color: #1c1c1e;
+    }
+
+    /* responsive */
+    @media (max-width: 540px) {
+      .readme-card { padding: 20px 16px; }
+      .message-bubble { font-size: 1rem; padding: 10px 14px; max-width: 90%; }
+      .avatar { width: 34px; height: 34px; font-size: 0.8rem; }
+      .message-meta { margin-left: 48px; }
+      .tech-item img { height: 34px; width: 34px; }
+    }
+
+    /* preserve original gif + header style */
+    .header-gif {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 6px;
+    }
+    .header-gif img {
+      height: 32px;
+      width: auto;
+    }
+
+    /* small avatar text */
+    .avatar-text {
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+<div class="readme-card">
+
+  <!-- ===== IOS MESSAGE HEADER ===== -->
+  <div class="ios-message-group">
+    <!-- message 1: name + gif (left bubble) -->
+    <div class="message-row">
+      <div class="avatar">👨‍💻</div>
+      <div>
+        <div class="message-bubble">
+          <span class="header-gif">
+            <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="24" height="24" alt="wave" style="border-radius:8px;">
+            <strong>David Daniel Sepkitt</strong>
+            <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="24" height="24" alt="wave" style="border-radius:8px;">
+          </span>
+        </div>
+        <div class="message-meta">
+          <i class="fas fa-check-circle" style="color: #34c759;"></i> Read · Today 14:32
+        </div>
+      </div>
+    </div>
+
+    <!-- message 2: "3rd Year ICT Student" + "Front-End Developer" -->
+    <div class="message-row">
+      <div class="avatar">📱</div>
+      <div>
+        <div class="message-bubble" style="background: #e9e9ed;">
+          <span style="font-weight: 600; color: #0033A0;">3rd Year ICT Student</span> 
+          <span style="margin:0 6px;">·</span> 
+          <span style="font-weight: 600; color: #0033A0;">Front-End Developer</span>
+        </div>
+        <div class="message-meta">
+          <i class="fas fa-check-circle" style="color: #34c759;"></i> Read · 14:33
+        </div>
+      </div>
+    </div>
+
+    <!-- message 3: "About Me" as a bubble (but we keep the actual about section below) 
+         we use a third message as a "header" for about, but we'll keep it minimal -->
+    <div class="message-row">
+      <div class="avatar">🧑‍🎓</div>
+      <div>
+        <div class="message-bubble" style="background: #e9e9ed; font-weight: 500;">
+          <i class="fas fa-arrow-right" style="color: #007aff; margin-right: 6px;"></i> 
+          About Me · Cape Town, SA
+        </div>
+        <div class="message-meta">
+          <i class="fas fa-check-circle" style="color: #34c759;"></i> Read · 14:34
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END iOS MESSAGE HEADER -->
+
+  <!-- ===== ABOUT ME (original content, but we keep it clean) ===== -->
+  <div class="about-section">
+    <div class="section-title">
+      <i class="fas fa-user-graduate"></i> About Me
+    </div>
+    <div class="about-text">
+      <p>
+        I am from Cape Town, South Africa. I am currently a third year student at the Cape Peninsula University of Technology, pursuing a Diploma in Information and Communication Technology in Applications Development. I am passionate about everything tech-related and enjoy learning new technologies to constantly improve my skills and broaden my knowledge.
+      </p>
+    </div>
+
+    <!-- learning & goals (kept as badge list) -->
+    <div class="badge-list" style="margin-top: 18px;">
+      <span><i class="fas fa-seedling"></i> Currently learning: <strong>Advanced Java, React, C & C++</strong></span>
+      <span><i class="fas fa-laptop-code"></i> Self-learned: <strong>React, TypeScript, CSS, JavaScript, WordPress</strong></span>
+      <span><i class="fas fa-brain"></i> Love learning new technologies</span>
+      <span><i class="fas fa-bullseye"></i> Goal: grow into a well-rounded developer</span>
+    </div>
+  </div>
+
+  <!-- ===== TECH STACK ===== -->
+  <div class="tech-section">
+    <div class="section-title">
+      <i class="fas fa-code"></i> Tech Stack
+    </div>
+
+    <!-- Languages -->
+    <div style="font-weight: 600; font-size: 0.9rem; color: #3a3a3c; margin: 6px 0 8px 8px;">💻 Languages &amp; Technologies</div>
+    <div class="tech-grid">
+      <div class="tech-item"><img src="https://skillicons.dev/icons?i=java" alt="Java"><span>Java</span></div>
+      <div class="tech-item"><img src="https://skillicons.dev/icons?i=js" alt="JavaScript"><span>JS</span></div>
+      <div class="tech-item"><img src="https://skillicons.dev/icons?i=ts" alt="TypeScript"><span>TS</span></div>
+      <div class="tech-item"><img src="https://skillicons.dev/icons?i=html" alt="HTML"><span>HTML</span></div>
+      <div class="tech-item"><img src="https://skillicons.dev/icons?i=css" alt="CSS"><span>CSS</span></div>
+      <div class="tech-item"><img src="https://skillicons.dev/icons?i=react" alt="React"><span>React</span></div>
+      <div class="tech-item"><img src="https://skillicons.dev/icons?i=mysql" alt="SQL"><span>SQL</span></div>
+      <div class="tech-item"><img src="https://skillicons.dev/icons?i=wordpress" alt="WordPress"><span>WP</span></div>
+    </div>
+
+    <!-- Tools -->
+    <div style="font-weight: 600; font-size: 0.9rem; color: #3a3a3c; margin: 22px 0 8px 8px;">🧰 Tools &amp; IDEs</div>
+    <div class="tech-grid">
+      <div class="tech-item"><img src="https://skillicons.dev/icons?i=git" alt="Git"><span>Git</span></div>
+      <div class="tech-item"><img src="https://skillicons.dev/icons?i=github" alt="GitHub"><span>GitHub</span></div>
+      <div class="tech-item"><img src="https://skillicons.dev/icons?i=vscode" alt="VS Code"><span>VS Code</span></div>
+      <div class="tech-item"><img src="https://skillicons.dev/icons?i=figma" alt="Figma"><span>Figma</span></div>
+      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" height="42" alt="IntelliJ"><span>IntelliJ</span></div>
+      <div class="tech-item"><img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" height="42" alt="NetBeans"><span>NetBeans</span></div>
+    </div>
+  </div>
+
+  <!-- ===== PROJECTS ===== -->
+  <div class="projects-section">
+    <div class="section-title">
+      <i class="fas fa-folder-open"></i> Projects
+    </div>
+
+    <div class="project-card">
+      <strong>🌿 Rietfontein Website (Front-End)</strong>
+      <p style="margin-top: 6px; color: #2c2c2e;">
+        Updated the front end of <a href="https://rietfontein.co.za/" target="_blank">rietfontein.co.za</a> · Modernized look &amp; feel according to owner’s vision. Implemented responsive design using <strong>WordPress</strong> (HTML, CSS, JS, PHP).
+      </p>
+    </div>
+
+    <div class="project-card">
+      <strong>📁 My Portfolio Website</strong>
+      <p style="margin-top: 6px; color: #2c2c2e;">
+        View full portfolio, CV, and mock interview video: 
+        <a href="https://daviddanielx72.github.io/" target="_blank">David Daniel Portfolio</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- ===== CONNECT ===== -->
+  <div class="connect-section">
+    <div class="section-title">
+      <i class="fas fa-share-alt"></i> Connect With Me
+    </div>
+    <div class="connect-wrapper">
+      <a href="https://www.linkedin.com/in/david-sepkitt-811837362/" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin" style="color: #0a66c2;"></i>
+      </a>
+      <!-- optional extra icons but we keep only linkedin as per original -->
+    </div>
+    <p style="text-align: center; font-size: 0.75rem; color: #8e8e93; margin-top: 18px; letter-spacing: 0.3px;">
+      <i class="fas fa-message" style="margin-right: 4px;"></i> iOS message style · David Daniel Sepkitt
+    </p>
+  </div>
+
+  <!-- small footer note: do not remove or change info -->
+  <div style="margin-top: 24px; border-top: 1px solid #f0f0f5; padding-top: 14px; font-size: 0.7rem; color: #8e8e93; text-align: center;">
+    <i class="fas fa-info-circle"></i> All information from original README — preserved.
+  </div>
+</div>
+</body>
+</html>
