@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" width="700" height="400">
+  <defs>
+    <style>
+      @keyframes typing1 {
+        0% { opacity: 0; transform: translateY(10px); }
+        20% { opacity: 1; transform: translateY(0); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes typing2 {
+        0%, 25% { opacity: 0; transform: translateY(10px); }
+        45% { opacity: 1; transform: translateY(0); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes typing3 {
+        0%, 50% { opacity: 0; transform: translateY(10px); }
+        70% { opacity: 1; transform: translateY(0); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes typingIndicator {
+        0%, 20% { opacity: 0; }
+        30%, 100% { opacity: 1; }
+      }
+      @keyframes dot1 {
+        0%, 30% { opacity: 0; transform: translateY(0); }
+        40%, 60% { opacity: 1; transform: translateY(-5px); }
+        70%, 100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes dot2 {
+        0%, 40% { opacity: 0; transform: translateY(0); }
+        50%, 70% { opacity: 1; transform: translateY(-5px); }
+        80%, 100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes dot3 {
+        0%, 50% { opacity: 0; transform: translateY(0); }
+        60%, 80% { opacity: 1; transform: translateY(-5px); }
+        90%, 100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes bubbleIn {
+        0% { opacity: 0; transform: scale(0.8); }
+        60% { opacity: 1; transform: scale(1.02); }
+        100% { opacity: 1; transform: scale(1); }
+      }
+      
+      .message-row {
+        animation-fill-mode: forwards;
+      }
+      .bubble {
+        fill: #e9e9ed;
+        rx: 18;
+        ry: 18;
+      }
+      .text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        fill: #1c1c1e;
+      }
+      .timestamp {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 10px;
+        fill: #8e8e93;
+      }
+      .checkmark {
+        fill: #34c759;
+        font-size: 10px;
+      }
+      .avatar {
+        fill: #007aff;
+        rx: 50%;
+        ry: 50%;
+      }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="700" height="400" fill="#ffffff" rx="12" ry="12"/>
+  
+  <!-- Message 1 - Name -->
+  <g class="message-row" style="animation: typing1 3s ease forwards;">
+    <!-- Avatar -->
+    <circle cx="40" cy="40" r="18" fill="#007aff"/>
+    <text x="40" y="44" text-anchor="middle" fill="white" font-family="Arial" font-size="12" font-weight="bold">👨‍💻</text>
+    
+    <!-- Bubble -->
+    <rect x="65" y="22" width="420" height="36" class="bubble"/>
+    
+    <!-- Bubble Content -->
+    <text x="75" y="35" class="text">
+      <tspan font-size="16" font-weight="bold">David Daniel Sepkitt</tspan>
+    </text>
+    
+    <!-- Timestamp -->
+    <text x="75" y="65" class="timestamp">✅ Read · Today 14:32</text>
+  </g>
+  
+  <!-- Typing Indicator for Message 2 -->
+  <g style="animation: typingIndicator 3.5s ease forwards; opacity: 0;">
+    <circle cx="40" cy="80" r="18" fill="#007aff"/>
+    <text x="40" y="84" text-anchor="middle" fill="white" font-family="Arial" font-size="12" font-weight="bold">📱</text>
+    
+    <!-- Typing dots -->
+    <rect x="65" y="62" width="70" height="36" class="bubble"/>
+    <circle cx="82" cy="80" r="5" fill="#8e8e93" style="animation: dot1 1.2s infinite;"/>
+    <circle cx="100" cy="80" r="5" fill="#8e8e93" style="animation: dot2 1.2s infinite;"/>
+    <circle cx="118" cy="80" r="5" fill="#8e8e93" style="animation: dot3 1.2s infinite;"/>
+  </g>
+  
+  <!-- Message 2 - Role -->
+  <g class="message-row" style="animation: typing2 4.5s ease forwards; opacity: 0;">
+    <circle cx="40" cy="120" r="18" fill="#007aff"/>
+    <text x="40" y="124" text-anchor="middle" fill="white" font-family="Arial" font-size="12" font-weight="bold">📱</text>
+    
+    <rect x="65" y="102" width="340" height="36" class="bubble"/>
+    
+    <text x="75" y="126" font-family="Arial" font-size="14" font-weight="bold" fill="#0033A0">
+      3rd Year ICT Student
+    </text>
+    <text x="205" y="126" font-family="Arial" font-size="14" fill="#8e8e93">·</text>
+    <text x="215" y="126" font-family="Arial" font-size="14" font-weight="bold" fill="#0033A0">
+      Front-End Developer
+    </text>
+    
+    <text x="75" y="145" class="timestamp">✅ Read · Today 14:33</text>
+  </g>
+  
+  <!-- Typing Indicator for Message 3 -->
+  <g style="animation: typingIndicator 5.5s ease forwards; opacity: 0;">
+    <circle cx="40" cy="165" r="18" fill="#007aff"/>
+    <text x="40" y="169" text-anchor="middle" fill="white" font-family="Arial" font-size="12" font-weight="bold">🧑‍🎓</text>
+    
+    <rect x="65" y="147" width="70" height="36" class="bubble"/>
+    <circle cx="82" cy="165" r="5" fill="#8e8e93" style="animation: dot1 1.2s infinite;"/>
+    <circle cx="100" cy="165" r="5" fill="#8e8e93" style="animation: dot2 1.2s infinite;"/>
+    <circle cx="118" cy="165" r="5" fill="#8e8e93" style="animation: dot3 1.2s infinite;"/>
+  </g>
+  
+  <!-- Message 3 - About Me -->
+  <g class="message-row" style="animation: typing3 6.5s ease forwards; opacity: 0;">
+    <circle cx="40" cy="200" r="18" fill="#007aff"/>
+    <text x="40" y="204" text-anchor="middle" fill="white" font-family="Arial" font-size="12" font-weight="bold">🧑‍🎓</text>
+    
+    <rect x="65" y="182" width="250" height="36" class="bubble"/>
+    
+    <text x="75" y="197" font-family="Arial" font-size="14">
+      <tspan font-weight="bold">👉</tspan>
+      <tspan font-weight="500"> About Me · Cape Town, SA</tspan>
+    </text>
+    
+    <text x="75" y="225" class="timestamp">✅ Read · Today 14:34</text>
+  </g>
+  
+  <!-- iOS Status Bar -->
+  <rect x="0" y="0" width="700" height="20" fill="#f2f2f7" rx="12" ry="12"/>
+  <text x="350" y="14" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#1c1c1e">Messages</text>
+  <text x="685" y="14" text-anchor="end" font-family="Arial" font-size="10" fill="#1c1c1e">🔋</text>
+</svg>
