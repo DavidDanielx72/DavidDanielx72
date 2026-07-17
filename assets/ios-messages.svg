@@ -68,8 +68,12 @@
         100% { opacity: 1; transform: scale(1); }
       }
       
-      @keyframes instantFade {
-        0% { opacity: 1; }
+      @keyframes stayVisible {
+        0%, 100% { opacity: 1; }
+      }
+      
+      @keyframes hideAll {
+        0%, 90% { opacity: 1; }
         100% { opacity: 0; }
       }
       
@@ -77,37 +81,38 @@
       .msg1 { 
         animation: messageIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; 
         animation-delay: 0.3s;
+        opacity: 0;
       }
       
-      /* Typing 1 - Natural pace */
+      /* Typing 1 */
       .typing1 { 
         animation: typingIn 0.3s ease forwards; 
         animation-delay: 1.5s;
         opacity: 0;
       }
       
-      /* Message 2 - Natural pace */
+      /* Message 2 */
       .msg2 { 
         animation: messageIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; 
         animation-delay: 2.5s;
         opacity: 0;
       }
       
-      /* Typing 2 - Natural pace */
+      /* Typing 2 */
       .typing2 { 
         animation: typingIn 0.3s ease forwards; 
         animation-delay: 3.7s;
         opacity: 0;
       }
       
-      /* Message 3 - Natural pace */
+      /* Message 3 */
       .msg3 { 
         animation: messageIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; 
         animation-delay: 4.7s;
         opacity: 0;
       }
       
-      /* Read receipts - Natural pace */
+      /* Read receipts */
       .read1 { animation: readIn 0.3s ease 1.2s forwards; opacity: 0; }
       .read2 { animation: readIn 0.3s ease 3.2s forwards; opacity: 0; }
       .read3 { animation: readIn 0.3s ease 5.2s forwards; opacity: 0; }
@@ -117,14 +122,19 @@
       .dot2 { animation: dotBounce2 1.4s ease infinite; }
       .dot3 { animation: dotBounce3 1.4s ease infinite; }
       
-      /* FAST REFRESH - Everything disappears instantly at 5.8s */
+      /* Keep everything visible until 5.8s, then hide */
+      .msg1, .msg2, .msg3, .typing1, .typing2, .read1, .read2, .read3 {
+        animation-fill-mode: forwards;
+      }
+      
+      /* CHAT LOOP - Infinite with proper timing */
       .chat-loop {
-        animation: instantFade 0.1s ease 5.8s forwards;
+        animation: hideAll 6.0s ease infinite;
       }
     </style>
   </defs>
 
-  <!-- Main chat loop -->
+  <!-- Main chat loop - INFINITE -->
   <g class="chat-loop">
     
     <!-- ===== MESSAGE 1 ===== -->
