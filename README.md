@@ -1,54 +1,22 @@
-<!-- HEADER WITH iOS-STYLE MESSAGE BUBBLES -->
-<p align="center">
-  <table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; width: 100%; max-width: 600px; background: transparent;">
-    <tr>
-      <td style="padding: 4px 0;">
-        <table style="background: #e9e9ed; border-radius: 18px 18px 18px 6px; padding: 10px 16px; max-width: 90%; border: 1px solid #d1d1d6;">
-          <tr>
-            <td>
-              <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="28" height="28" style="vertical-align: middle; border-radius: 6px;">
-              <strong style="font-size: 22px; color: #1c1c1e; margin: 0 8px;">David Daniel Sepkitt</strong>
-              <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="28" height="28" style="vertical-align: middle; border-radius: 6px;">
-            </td>
-          </tr>
-        </table>
-        <div style="font-size: 12px; color: #8e8e93; margin-left: 50px; margin-top: 2px;">
-          <span>✅ Read · Today 14:32</span>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 4px 0;">
-        <table style="background: #e9e9ed; border-radius: 18px 18px 18px 6px; padding: 10px 16px; max-width: 90%; border: 1px solid #d1d1d6;">
-          <tr>
-            <td>
-              <span style="font-weight: 700; color: #0033A0; font-size: 18px;">3rd Year ICT Student</span>
-              <span style="margin: 0 6px; color: #8e8e93;">·</span>
-              <span style="font-weight: 700; color: #0033A0; font-size: 18px;">Front-End Developer</span>
-            </td>
-          </tr>
-        </table>
-        <div style="font-size: 12px; color: #8e8e93; margin-left: 50px; margin-top: 2px;">
-          <span>✅ Read · Today 14:33</span>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 4px 0;">
-        <table style="background: #e9e9ed; border-radius: 18px 18px 18px 6px; padding: 10px 16px; max-width: 90%; border: 1px solid #d1d1d6;">
-          <tr>
-            <td>
-              <span style="font-weight: 500; font-size: 16px;">👉 About Me · Cape Town, SA</span>
-            </td>
-          </tr>
-        </table>
-        <div style="font-size: 12px; color: #8e8e93; margin-left: 50px; margin-top: 2px;">
-          <span>✅ Read · Today 14:34</span>
-        </div>
-      </td>
-    </tr>
-  </table>
-</p>
+<!-- HEADER WITH iOS ANIMATED MESSAGES -->
+<div align="center">
+  
+  <!-- Animated iOS Messages SVG -->
+  <img src="https://raw.githubusercontent.com/daviddanielx72/daviddanielx72/main/ios-messages.svg" alt="iOS Messages" width="700" />
+  
+  <!-- Fallback text in case SVG doesn't load -->
+  <details>
+    <summary>📱 View iOS Messages</summary>
+    <p>
+      <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="30"/>
+      <strong>David Daniel Sepkitt</strong>
+      <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="30"/>
+      <br>
+      <span style="color: #0033A0;">3rd Year ICT Student · Front-End Developer</span>
+    </p>
+  </details>
+  
+</div>
 
 ---
 
@@ -117,4 +85,4 @@
 
 ---
 
-*💬 iOS message style · David Daniel Sepkitt*
+*💬 iOS animated messages · David Daniel Sepkitt*
