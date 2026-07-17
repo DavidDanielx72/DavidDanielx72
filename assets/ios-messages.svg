@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420">
   <defs>
-    <!-- iOS 26 Glass-morphism Bubble -->
+    <!-- iOS 26 Authentic Bubble Gradients -->
     <linearGradient id="bubbleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f5f5f7;stop-opacity:0.92" />
-      <stop offset="100%" style="stop-color:#e8e8ed;stop-opacity:0.92" />
+      <stop offset="0%" style="stop-color:#f8f8fa;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#ececf0;stop-opacity:0.95" />
     </linearGradient>
     
-    <!-- iOS 26 Avatar Gradients - More vibrant -->
+    <!-- iOS 26 Avatar Gradients -->
     <linearGradient id="avatarGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#00D4FF" />
       <stop offset="100%" style="stop-color:#007AFF" />
@@ -22,109 +22,104 @@
       <stop offset="100%" style="stop-color:#FF9500" />
     </linearGradient>
     
-    <!-- iOS 26 Glass Shadow -->
+    <!-- iOS 26 Glass Shadows -->
     <filter id="bubbleShadow" x="-5%" y="-5%" width="110%" height="110%">
-      <feDropShadow dx="0" dy="2" stdDeviation="8" flood-color="#000" flood-opacity="0.06"/>
-      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000" flood-opacity="0.04"/>
+      <feDropShadow dx="0" dy="3" stdDeviation="10" flood-color="#000" flood-opacity="0.05"/>
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.03"/>
     </filter>
     
     <filter id="avatarShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.15"/>
-    </filter>
-    
-    <!-- iOS 26 Glass Blur Effect -->
-    <filter id="glassBlur">
-      <feGaussianBlur stdDeviation="1" />
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.12"/>
     </filter>
 
     <!-- Animations -->
     <style>
       @keyframes messageAppear {
-        0% { opacity: 0; transform: translateY(30px) scale(0.85) rotate(-0.5deg); }
-        60% { opacity: 1; transform: translateY(-8px) scale(1.02) rotate(0.3deg); }
-        100% { opacity: 1; transform: translateY(0) scale(1) rotate(0deg); }
+        0% { opacity: 0; transform: translateY(25px) scale(0.9); }
+        70% { opacity: 1; transform: translateY(-5px) scale(1.02); }
+        100% { opacity: 1; transform: translateY(0) scale(1); }
       }
       
-      @keyframes typingDots {
-        0%, 20% { opacity: 0; transform: translateY(15px) scale(0.9); }
-        30%, 100% { opacity: 1; transform: translateY(0) scale(1); }
+      @keyframes typingAppear {
+        0% { opacity: 0; transform: translateY(15px); }
+        100% { opacity: 1; transform: translateY(0); }
       }
       
       @keyframes dotPulse1 {
-        0%, 30% { opacity: 0.2; transform: translateY(0) scale(0.8); }
-        50% { opacity: 1; transform: translateY(-10px) scale(1.2); }
-        70%, 100% { opacity: 0.2; transform: translateY(0) scale(0.8); }
+        0%, 40% { opacity: 0.3; transform: translateY(0); }
+        60% { opacity: 1; transform: translateY(-8px); }
+        80%, 100% { opacity: 0.3; transform: translateY(0); }
       }
       
       @keyframes dotPulse2 {
-        0%, 40% { opacity: 0.2; transform: translateY(0) scale(0.8); }
-        60% { opacity: 1; transform: translateY(-10px) scale(1.2); }
-        80%, 100% { opacity: 0.2; transform: translateY(0) scale(0.8); }
+        0%, 50% { opacity: 0.3; transform: translateY(0); }
+        70% { opacity: 1; transform: translateY(-8px); }
+        90%, 100% { opacity: 0.3; transform: translateY(0); }
       }
       
       @keyframes dotPulse3 {
-        0%, 50% { opacity: 0.2; transform: translateY(0) scale(0.8); }
-        70% { opacity: 1; transform: translateY(-10px) scale(1.2); }
-        90%, 100% { opacity: 0.2; transform: translateY(0) scale(0.8); }
+        0%, 60% { opacity: 0.3; transform: translateY(0); }
+        80% { opacity: 1; transform: translateY(-8px); }
+        100% { opacity: 0.3; transform: translateY(0); }
       }
       
       @keyframes readReceipt {
-        0% { opacity: 0; transform: scale(0.5); }
+        0% { opacity: 0; transform: scale(0.6); }
         100% { opacity: 1; transform: scale(1); }
       }
       
-      @keyframes fadeOut {
+      @keyframes fadeOutAll {
         0% { opacity: 1; }
         100% { opacity: 0; }
       }
       
-      /* Message 1 */
+      /* Message 1 - Name */
       .msg1 { 
-        animation: messageAppear 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; 
-        animation-delay: 0.3s;
+        animation: messageAppear 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; 
+        animation-delay: 0.4s;
       }
       
-      /* Typing 1 */
+      /* Typing 1 - Appears after message 1 */
       .typing1 { 
-        animation: typingDots 0.5s ease forwards; 
-        animation-delay: 1.5s;
+        animation: typingAppear 0.4s ease forwards; 
+        animation-delay: 1.6s;
         opacity: 0;
       }
       
-      /* Message 2 */
+      /* Message 2 - Role */
       .msg2 { 
-        animation: messageAppear 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; 
-        animation-delay: 2.5s;
+        animation: messageAppear 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; 
+        animation-delay: 2.6s;
         opacity: 0;
       }
       
-      /* Typing 2 */
+      /* Typing 2 - Appears after message 2 */
       .typing2 { 
-        animation: typingDots 0.5s ease forwards; 
-        animation-delay: 3.7s;
+        animation: typingAppear 0.4s ease forwards; 
+        animation-delay: 3.8s;
         opacity: 0;
       }
       
-      /* Message 3 */
+      /* Message 3 - About Me */
       .msg3 { 
-        animation: messageAppear 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; 
-        animation-delay: 4.7s;
+        animation: messageAppear 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; 
+        animation-delay: 4.8s;
         opacity: 0;
       }
       
-      /* Read receipts */
+      /* Read receipts - Appear after each message */
       .read1 { animation: readReceipt 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 1.2s forwards; opacity: 0; }
       .read2 { animation: readReceipt 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 3.2s forwards; opacity: 0; }
-      .read3 { animation: readReceipt 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 5.2s forwards; opacity: 0; }
+      .read3 { animation: readReceipt 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 5.4s forwards; opacity: 0; }
       
-      /* Typing dots */
-      .dot1 { animation: dotPulse1 1.4s ease infinite; }
-      .dot2 { animation: dotPulse2 1.4s ease infinite; }
-      .dot3 { animation: dotPulse3 1.4s ease infinite; }
+      /* Typing dots animation */
+      .dot1 { animation: dotPulse1 1.6s ease infinite; }
+      .dot2 { animation: dotPulse2 1.6s ease infinite; }
+      .dot3 { animation: dotPulse3 1.6s ease infinite; }
       
-      /* Loop wrapper */
+      /* Loop wrapper - Fade out everything and restart */
       .chat-loop {
-        animation: fadeOut 0.6s ease 7.2s forwards;
+        animation: fadeOutAll 0.5s ease 7.0s forwards;
       }
     </style>
   </defs>
@@ -132,109 +127,124 @@
   <!-- Main chat group that loops -->
   <g class="chat-loop">
     
-    <!-- Message 1 - Name -->
+    <!-- ===== MESSAGE 1: Name ===== -->
     <g class="msg1">
-      <!-- iOS 26 Avatar - Glass style -->
-      <circle cx="45" cy="40" r="20" fill="url(#avatarGrad1)" filter="url(#avatarShadow)"/>
-      <circle cx="45" cy="40" r="18" fill="none" stroke="white" stroke-width="1.5" opacity="0.3"/>
-      <text x="45" y="46" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="14" fill="white">👋</text>
+      <!-- Avatar -->
+      <circle cx="45" cy="40" r="22" fill="url(#avatarGrad1)" filter="url(#avatarShadow)"/>
+      <circle cx="45" cy="40" r="20" fill="none" stroke="white" stroke-width="2" opacity="0.25"/>
+      <text x="45" y="46" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="15" fill="white">👋</text>
       
-      <!-- iOS 26 Bubble - Glass morphism -->
-      <rect x="75" y="22" width="290" height="40" rx="22" ry="22" fill="url(#bubbleGrad)" filter="url(#bubbleShadow)"/>
-      <rect x="75" y="22" width="290" height="40" rx="22" ry="22" fill="none" stroke="white" stroke-width="0.5" opacity="0.4"/>
+      <!-- Bubble -->
+      <rect x="77" y="20" width="295" height="42" rx="24" ry="24" fill="url(#bubbleGrad)" filter="url(#bubbleShadow)"/>
+      <rect x="77" y="20" width="295" height="42" rx="24" ry="24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="0.8"/>
       
-      <!-- Bubble Tail - iOS 26 style -->
-      <path d="M65 45 L75 34 L75 56 Z" fill="#f5f5f7" opacity="0.92"/>
+      <!-- Bubble Tail -->
+      <path d="M67 45 L77 33 L77 57 Z" fill="#f8f8fa" opacity="0.95"/>
       
       <!-- Text -->
-      <text x="95" y="48" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="15" font-weight="600" fill="#1c1c1e">
+      <text x="100" y="48" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="16" font-weight="600" fill="#1c1c1e">
         David Daniel Sepkitt
-        <tspan font-size="13" font-weight="400"> ✨</tspan>
       </text>
+      <text x="340" y="48" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="14" fill="#1c1c1e">✨</text>
       
-      <!-- Read Receipt - iOS 26 style -->
+      <!-- Read Receipt -->
       <g class="read1">
-        <text x="360" y="70" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="11" fill="#8e8e93" font-weight="400">Read</text>
-        <circle cx="387" cy="68" r="6" fill="#00D4FF"/>
-        <circle cx="387" cy="68" r="4" fill="none" stroke="white" stroke-width="1.5"/>
-        <path d="M384 68 L386.5 70.5 L391 66" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <text x="367" y="72" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="11" fill="#8e8e93" font-weight="400">Read</text>
+        <circle cx="397" cy="70" r="7" fill="#00D4FF"/>
+        <circle cx="397" cy="70" r="5" fill="none" stroke="white" stroke-width="2"/>
+        <path d="M393 70 L396 73 L401 67" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
       </g>
     </g>
 
-    <!-- Typing Indicator 1 - iOS 26 style -->
+    <!-- ===== TYPING INDICATOR 1 ===== -->
     <g class="typing1">
-      <circle cx="45" cy="105" r="20" fill="url(#avatarGrad1)" filter="url(#avatarShadow)"/>
-      <circle cx="45" cy="105" r="18" fill="none" stroke="white" stroke-width="1.5" opacity="0.3"/>
-      <text x="45" y="111" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="14" fill="white">📱</text>
+      <!-- Avatar -->
+      <circle cx="45" cy="105" r="22" fill="url(#avatarGrad1)" filter="url(#avatarShadow)"/>
+      <circle cx="45" cy="105" r="20" fill="none" stroke="white" stroke-width="2" opacity="0.25"/>
+      <text x="45" y="111" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="14" fill="white">✍️</text>
       
-      <rect x="75" y="90" width="64" height="30" rx="15" ry="15" fill="url(#bubbleGrad)" filter="url(#bubbleShadow)"/>
-      <rect x="75" y="90" width="64" height="30" rx="15" ry="15" fill="none" stroke="white" stroke-width="0.5" opacity="0.4"/>
-      <path d="M65 105 L75 94 L75 116 Z" fill="#f5f5f7" opacity="0.92"/>
+      <!-- Typing Bubble -->
+      <rect x="77" y="88" width="70" height="34" rx="17" ry="17" fill="url(#bubbleGrad)" filter="url(#bubbleShadow)"/>
+      <rect x="77" y="88" width="70" height="34" rx="17" ry="17" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="0.8"/>
+      <path d="M67 105 L77 93 L77 117 Z" fill="#f8f8fa" opacity="0.95"/>
       
-      <circle cx="91" cy="105" r="4.5" fill="#8e8e93" class="dot1"/>
-      <circle cx="107" cy="105" r="4.5" fill="#8e8e93" class="dot2"/>
-      <circle cx="123" cy="105" r="4.5" fill="#8e8e93" class="dot3"/>
+      <!-- Dots -->
+      <circle cx="94" cy="105" r="5" fill="#8e8e93" class="dot1"/>
+      <circle cx="112" cy="105" r="5" fill="#8e8e93" class="dot2"/>
+      <circle cx="130" cy="105" r="5" fill="#8e8e93" class="dot3"/>
     </g>
 
-    <!-- Message 2 - Role -->
+    <!-- ===== MESSAGE 2: Role ===== -->
     <g class="msg2">
-      <circle cx="45" cy="160" r="20" fill="url(#avatarGrad2)" filter="url(#avatarShadow)"/>
-      <circle cx="45" cy="160" r="18" fill="none" stroke="white" stroke-width="1.5" opacity="0.3"/>
-      <text x="45" y="166" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="14" fill="white">💻</text>
+      <!-- Avatar -->
+      <circle cx="45" cy="165" r="22" fill="url(#avatarGrad2)" filter="url(#avatarShadow)"/>
+      <circle cx="45" cy="165" r="20" fill="none" stroke="white" stroke-width="2" opacity="0.25"/>
+      <text x="45" y="171" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="14" fill="white">💻</text>
       
-      <rect x="75" y="142" width="360" height="40" rx="22" ry="22" fill="url(#bubbleGrad)" filter="url(#bubbleShadow)"/>
-      <rect x="75" y="142" width="360" height="40" rx="22" ry="22" fill="none" stroke="white" stroke-width="0.5" opacity="0.4"/>
-      <path d="M65 165 L75 154 L75 176 Z" fill="#f5f5f7" opacity="0.92"/>
+      <!-- Bubble -->
+      <rect x="77" y="145" width="370" height="42" rx="24" ry="24" fill="url(#bubbleGrad)" filter="url(#bubbleShadow)"/>
+      <rect x="77" y="145" width="370" height="42" rx="24" ry="24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="0.8"/>
+      <path d="M67 170 L77 158 L77 182 Z" fill="#f8f8fa" opacity="0.95"/>
       
-      <text x="95" y="168" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="15" fill="#1c1c1e">
+      <!-- Text -->
+      <text x="100" y="173" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="16" fill="#1c1c1e">
         <tspan font-weight="700" fill="#00D4FF">3rd Year ICT Student</tspan>
-        <tspan fill="#8e8e93"> · </tspan>
+        <tspan fill="#8e8e93" font-weight="400">  ·  </tspan>
         <tspan font-weight="700" fill="#FF6B8A">Front-End Developer</tspan>
       </text>
       
+      <!-- Read Receipt -->
       <g class="read2">
-        <text x="430" y="190" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="11" fill="#8e8e93" font-weight="400">Read</text>
-        <circle cx="457" cy="188" r="6" fill="#00D4FF"/>
-        <circle cx="457" cy="188" r="4" fill="none" stroke="white" stroke-width="1.5"/>
-        <path d="M454 188 L456.5 190.5 L461 186" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <text x="442" y="197" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="11" fill="#8e8e93" font-weight="400">Read</text>
+        <circle cx="472" cy="195" r="7" fill="#00D4FF"/>
+        <circle cx="472" cy="195" r="5" fill="none" stroke="white" stroke-width="2"/>
+        <path d="M468 195 L471 198 L476 192" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
       </g>
     </g>
 
-    <!-- Typing Indicator 2 -->
+    <!-- ===== TYPING INDICATOR 2 ===== -->
     <g class="typing2">
-      <circle cx="45" cy="225" r="20" fill="url(#avatarGrad3)" filter="url(#avatarShadow)"/>
-      <circle cx="45" cy="225" r="18" fill="none" stroke="white" stroke-width="1.5" opacity="0.3"/>
-      <text x="45" y="231" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="14" fill="white">🧑‍🎓</text>
+      <!-- Avatar -->
+      <circle cx="45" cy="230" r="22" fill="url(#avatarGrad3)" filter="url(#avatarShadow)"/>
+      <circle cx="45" cy="230" r="20" fill="none" stroke="white" stroke-width="2" opacity="0.25"/>
+      <text x="45" y="236" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="14" fill="white">✍️</text>
       
-      <rect x="75" y="210" width="64" height="30" rx="15" ry="15" fill="url(#bubbleGrad)" filter="url(#bubbleShadow)"/>
-      <rect x="75" y="210" width="64" height="30" rx="15" ry="15" fill="none" stroke="white" stroke-width="0.5" opacity="0.4"/>
-      <path d="M65 225 L75 214 L75 236 Z" fill="#f5f5f7" opacity="0.92"/>
+      <!-- Typing Bubble -->
+      <rect x="77" y="213" width="70" height="34" rx="17" ry="17" fill="url(#bubbleGrad)" filter="url(#bubbleShadow)"/>
+      <rect x="77" y="213" width="70" height="34" rx="17" ry="17" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="0.8"/>
+      <path d="M67 230 L77 218 L77 242 Z" fill="#f8f8fa" opacity="0.95"/>
       
-      <circle cx="91" cy="225" r="4.5" fill="#8e8e93" class="dot1"/>
-      <circle cx="107" cy="225" r="4.5" fill="#8e8e93" class="dot2"/>
-      <circle cx="123" cy="225" r="4.5" fill="#8e8e93" class="dot3"/>
+      <!-- Dots -->
+      <circle cx="94" cy="230" r="5" fill="#8e8e93" class="dot1"/>
+      <circle cx="112" cy="230" r="5" fill="#8e8e93" class="dot2"/>
+      <circle cx="130" cy="230" r="5" fill="#8e8e93" class="dot3"/>
     </g>
 
-    <!-- Message 3 - About Me -->
+    <!-- ===== MESSAGE 3: About Me ===== -->
     <g class="msg3">
-      <circle cx="45" cy="280" r="20" fill="url(#avatarGrad3)" filter="url(#avatarShadow)"/>
-      <circle cx="45" cy="280" r="18" fill="none" stroke="white" stroke-width="1.5" opacity="0.3"/>
-      <text x="45" y="286" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="14" fill="white">📍</text>
+      <!-- Avatar -->
+      <circle cx="45" cy="290" r="22" fill="url(#avatarGrad3)" filter="url(#avatarShadow)"/>
+      <circle cx="45" cy="290" r="20" fill="none" stroke="white" stroke-width="2" opacity="0.25"/>
+      <text x="45" y="296" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="14" fill="white">📍</text>
       
-      <rect x="75" y="262" width="270" height="40" rx="22" ry="22" fill="url(#bubbleGrad)" filter="url(#bubbleShadow)"/>
-      <rect x="75" y="262" width="270" height="40" rx="22" ry="22" fill="none" stroke="white" stroke-width="0.5" opacity="0.4"/>
-      <path d="M65 285 L75 274 L75 296 Z" fill="#f5f5f7" opacity="0.92"/>
+      <!-- Bubble -->
+      <rect x="77" y="270" width="280" height="42" rx="24" ry="24" fill="url(#bubbleGrad)" filter="url(#bubbleShadow)"/>
+      <rect x="77" y="270" width="280" height="42" rx="24" ry="24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="0.8"/>
+      <path d="M67 295 L77 283 L77 307 Z" fill="#f8f8fa" opacity="0.95"/>
       
-      <text x="95" y="288" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="15" fill="#1c1c1e">
-        <tspan font-weight="500"> About Me</tspan>
-        <tspan> · Cape Town, SA</tspan>
+      <!-- Text -->
+      <text x="100" y="298" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="16" fill="#1c1c1e">
+        <tspan font-weight="600">About Me</tspan>
+        <tspan font-weight="400" fill="#8e8e93">  ·  </tspan>
+        <tspan font-weight="500">Cape Town, SA</tspan>
       </text>
       
+      <!-- Read Receipt -->
       <g class="read3">
-        <text x="340" y="310" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="11" fill="#8e8e93" font-weight="400">Read</text>
-        <circle cx="367" cy="308" r="6" fill="#00D4FF"/>
-        <circle cx="367" cy="308" r="4" fill="none" stroke="white" stroke-width="1.5"/>
-        <path d="M364 308 L366.5 310.5 L371 306" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <text x="352" y="322" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="11" fill="#8e8e93" font-weight="400">Read</text>
+        <circle cx="382" cy="320" r="7" fill="#00D4FF"/>
+        <circle cx="382" cy="320" r="5" fill="none" stroke="white" stroke-width="2"/>
+        <path d="M378 320 L381 323 L386 317" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
       </g>
     </g>
 
