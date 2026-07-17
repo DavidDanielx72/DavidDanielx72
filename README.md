@@ -2,8 +2,6 @@
   <img src="https://raw.githubusercontent.com/daviddanielx72/daviddanielx72/main/assets/ios-messages.svg" alt="iOS Chat" width="600" />
 </div>
 
----
-
 ## 👨‍💻 About Me
 
 > I am from Cape Town, South Africa. I am currently a third year student at the Cape Peninsula University of Technology, pursuing a Diploma in Information and Communication Technology in Applications Development. I am passionate about everything tech-related and enjoy learning new technologies to constantly improve my skills and broaden my knowledge.
