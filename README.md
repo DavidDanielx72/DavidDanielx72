@@ -17,7 +17,7 @@
     }
 
     body {
-      background: #f2f2f7;  /* iOS light gray */
+      background: #f2f2f7;
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       padding: 24px 16px 40px;
       display: flex;
@@ -31,7 +31,6 @@
       border-radius: 36px;
       box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.02);
       padding: 32px 24px 40px;
-      transition: all 0.2s ease;
     }
 
     /* ----- iOS MESSAGE BUBBLE (header replacement) ----- */
@@ -52,7 +51,6 @@
       animation: messagePop 0.45s cubic-bezier(0.22, 0.68, 0, 1) forwards;
     }
 
-    /* different delays for each row (set inline via style) */
     .message-row:nth-child(1) { animation-delay: 0.05s; }
     .message-row:nth-child(2) { animation-delay: 0.25s; }
     .message-row:nth-child(3) { animation-delay: 0.45s; }
@@ -62,9 +60,8 @@
       100% { opacity: 1; transform: translateY(0) scale(1); }
     }
 
-    /* iOS bubble – left aligned (incoming) */
     .message-bubble {
-      background: #e9e9ed;        /* iOS light gray bubble */
+      background: #e9e9ed;
       padding: 12px 18px;
       border-radius: 22px 22px 22px 6px;
       font-size: 1.1rem;
@@ -76,10 +73,8 @@
       line-height: 1.4;
       letter-spacing: -0.01em;
       border: 0.5px solid rgba(0,0,0,0.02);
-      backdrop-filter: blur(2px);
     }
 
-    /* avatar (iOS-style circle) */
     .avatar {
       flex-shrink: 0;
       width: 40px;
@@ -92,13 +87,11 @@
       color: white;
       font-weight: 600;
       font-size: 1rem;
-      letter-spacing: 0.3px;
       background-image: linear-gradient(145deg, #007aff, #0055b3);
       box-shadow: 0 2px 6px rgba(0, 122, 255, 0.2);
       margin-top: 2px;
     }
 
-    /* small subtitle under bubble (like iMessage time) */
     .message-meta {
       display: flex;
       align-items: center;
@@ -116,14 +109,21 @@
       opacity: 0.7;
     }
 
-    /* inline emoji / gif style */
-    .inline-gif {
-      display: inline-block;
-      vertical-align: middle;
-      margin: 0 4px;
+    .header-gif {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      flex-wrap: wrap;
     }
 
-    /* ----- rest of README styling (unchanged, but refined) ----- */
+    .header-gif img {
+      height: 28px;
+      width: auto;
+      border-radius: 8px;
+    }
+
+    /* ----- rest of README styling ----- */
     .about-section, .tech-section, .projects-section, .connect-section {
       margin-top: 32px;
     }
@@ -212,12 +212,6 @@
       height: 42px;
       width: 42px;
       object-fit: contain;
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.02));
-    }
-
-    .tech-item .icon-fallback {
-      font-size: 2.2rem;
-      line-height: 1;
     }
 
     .project-card {
@@ -273,48 +267,17 @@
       margin: 32px 0 20px;
     }
 
-    /* small tweaks */
     .text-muted {
       color: #8e8e93;
       font-size: 0.9rem;
     }
 
-    .inline-code {
-      background: #f0f0f5;
-      padding: 0 8px;
-      border-radius: 8px;
-      font-family: 'SF Mono', 'Menlo', monospace;
-      font-size: 0.85rem;
-      color: #1c1c1e;
-    }
-
-    /* responsive */
     @media (max-width: 540px) {
       .readme-card { padding: 20px 16px; }
       .message-bubble { font-size: 1rem; padding: 10px 14px; max-width: 90%; }
       .avatar { width: 34px; height: 34px; font-size: 0.8rem; }
       .message-meta { margin-left: 48px; }
       .tech-item img { height: 34px; width: 34px; }
-    }
-
-    /* preserve original gif + header style */
-    .header-gif {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      flex-wrap: wrap;
-      margin-bottom: 6px;
-    }
-    .header-gif img {
-      height: 32px;
-      width: auto;
-    }
-
-    /* small avatar text */
-    .avatar-text {
-      font-size: 0.9rem;
-      font-weight: 600;
     }
   </style>
 </head>
@@ -323,15 +286,15 @@
 
   <!-- ===== IOS MESSAGE HEADER ===== -->
   <div class="ios-message-group">
-    <!-- message 1: name + gif (left bubble) -->
+    <!-- message 1: name + gif -->
     <div class="message-row">
       <div class="avatar">👨‍💻</div>
       <div>
         <div class="message-bubble">
           <span class="header-gif">
-            <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="24" height="24" alt="wave" style="border-radius:8px;">
+            <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="24" height="24" alt="wave">
             <strong>David Daniel Sepkitt</strong>
-            <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="24" height="24" alt="wave" style="border-radius:8px;">
+            <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="24" height="24" alt="wave">
           </span>
         </div>
         <div class="message-meta">
@@ -340,7 +303,7 @@
       </div>
     </div>
 
-    <!-- message 2: "3rd Year ICT Student" + "Front-End Developer" -->
+    <!-- message 2: role -->
     <div class="message-row">
       <div class="avatar">📱</div>
       <div>
@@ -355,8 +318,7 @@
       </div>
     </div>
 
-    <!-- message 3: "About Me" as a bubble (but we keep the actual about section below) 
-         we use a third message as a "header" for about, but we'll keep it minimal -->
+    <!-- message 3: about me teaser -->
     <div class="message-row">
       <div class="avatar">🧑‍🎓</div>
       <div>
@@ -372,7 +334,7 @@
   </div>
   <!-- END iOS MESSAGE HEADER -->
 
-  <!-- ===== ABOUT ME (original content, but we keep it clean) ===== -->
+  <!-- ===== ABOUT ME ===== -->
   <div class="about-section">
     <div class="section-title">
       <i class="fas fa-user-graduate"></i> About Me
@@ -383,7 +345,6 @@
       </p>
     </div>
 
-    <!-- learning & goals (kept as badge list) -->
     <div class="badge-list" style="margin-top: 18px;">
       <span><i class="fas fa-seedling"></i> Currently learning: <strong>Advanced Java, React, C & C++</strong></span>
       <span><i class="fas fa-laptop-code"></i> Self-learned: <strong>React, TypeScript, CSS, JavaScript, WordPress</strong></span>
@@ -398,7 +359,6 @@
       <i class="fas fa-code"></i> Tech Stack
     </div>
 
-    <!-- Languages -->
     <div style="font-weight: 600; font-size: 0.9rem; color: #3a3a3c; margin: 6px 0 8px 8px;">💻 Languages &amp; Technologies</div>
     <div class="tech-grid">
       <div class="tech-item"><img src="https://skillicons.dev/icons?i=java" alt="Java"><span>Java</span></div>
@@ -411,7 +371,6 @@
       <div class="tech-item"><img src="https://skillicons.dev/icons?i=wordpress" alt="WordPress"><span>WP</span></div>
     </div>
 
-    <!-- Tools -->
     <div style="font-weight: 600; font-size: 0.9rem; color: #3a3a3c; margin: 22px 0 8px 8px;">🧰 Tools &amp; IDEs</div>
     <div class="tech-grid">
       <div class="tech-item"><img src="https://skillicons.dev/icons?i=git" alt="Git"><span>Git</span></div>
@@ -454,14 +413,12 @@
       <a href="https://www.linkedin.com/in/david-sepkitt-811837362/" target="_blank" aria-label="LinkedIn">
         <i class="fab fa-linkedin" style="color: #0a66c2;"></i>
       </a>
-      <!-- optional extra icons but we keep only linkedin as per original -->
     </div>
     <p style="text-align: center; font-size: 0.75rem; color: #8e8e93; margin-top: 18px; letter-spacing: 0.3px;">
       <i class="fas fa-message" style="margin-right: 4px;"></i> iOS message style · David Daniel Sepkitt
     </p>
   </div>
 
-  <!-- small footer note: do not remove or change info -->
   <div style="margin-top: 24px; border-top: 1px solid #f0f0f5; padding-top: 14px; font-size: 0.7rem; color: #8e8e93; text-align: center;">
     <i class="fas fa-info-circle"></i> All information from original README — preserved.
   </div>
