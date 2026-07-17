@@ -2,7 +2,6 @@
 <div align="center">
   
   <!-- Animated iOS Messages SVG -->
-  <img src="https://raw.githubusercontent.com/daviddanielx72/daviddanielx72/main/assets/ios-messages.svg" alt="iOS Messages" width="700" />
   
   <!-- Fallback text in case SVG doesn't load -->
   <details>
@@ -13,6 +12,8 @@
       <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="30"/>
       <br>
       <span style="color: #0033A0;">3rd Year ICT Student · Front-End Developer</span>
+      <img src="https://raw.githubusercontent.com/daviddanielx72/daviddanielx72/main/assets/ios-messages.svg" alt="iOS Messages" width="700" />
+  
     </p>
   </details>
   
