@@ -2,16 +2,23 @@
   <img src="https://raw.githubusercontent.com/daviddanielx72/daviddanielx72/main/assets/ios-messages.svg" alt="iOS Chat" width="600" />
 </div>
 
+---
+
 ## 👨‍💻 About Me
 
-> I am from Cape Town, South Africa. I am currently a third year student at the Cape Peninsula University of Technology, pursuing a Diploma in Information and Communication Technology in Applications Development. I am passionate about everything tech-related and enjoy learning new technologies to constantly improve my skills and broaden my knowledge.
+> I am an aspiring software developer with a passion for building practical, user-focused solutions and continuously expanding my technical knowledge. Currently pursuing a Diploma in ICT in Applications Development at CPUT, I bring a strong work ethic, adaptability, and problem-solving skills to every project I undertake.
+
+<br>
+
+I am driven by the opportunity to use technology to create innovative solutions and am committed to writing clean, efficient code while collaborating effectively with teams. My goal is to grow into a **Full Stack Software Developer** and contribute to building the technologies of the future.
 
 <br>
 
 - 🌱 **Currently learning:** Advanced Java, React, C & C++
-- 💻 **Self-learned:** React, TypeScript, CSS, JavaScript, WordPress for front-end development
-- 🧠 **Love learning** new technologies and expanding my IT knowledge
-- 🎯 **Goal:** continuously improve my development skills and grow into a well-rounded software developer
+- 💻 **Building with:** React, TypeScript, JavaScript, WordPress
+- 🎯 **Goal:** Full Stack Software Developer
+- 🧠 **Exploring:** Emerging technologies, particularly Artificial Intelligence
+- 📍 **Based in:** Cape Town, South Africa
 
 <br>
 
@@ -45,26 +52,60 @@
 
 ---
 
-## 🌐 Projects
+## 🌐 Featured Projects
 
-### 🌿 Rietfontein Website (Front-End)
-- Updated the front end of [rietfontein.co.za](https://rietfontein.co.za/)
-- Modernized the website's look and feel according to the owner's vision
-- Implemented responsive and clean design using **WordPress** which makes use of **HTML, CSS,** and **JavaScript** for the front end and **PHP** for the backend
+### 🌿 Rietfontein Guest Farm Website
+- **Front-End Development & Content Strategy**
+- Modernized the website's look and feel, updated business information, and improved page layouts to align with the client's brand vision
+- Implemented responsive design using **WordPress**, **HTML**, **CSS**, and **JavaScript** for the front end, with **PHP** for backend functionality
+- [rietfontein.co.za](https://rietfontein.co.za/)
 
-### 📁 My Portfolio Website
-- View my full portfolio, CV, and mock interview video here: [David Daniel Portfolio](https://daviddanielx72.github.io/)
+### 📁 Portfolio Website
+- **Personal Brand & Showcase**
+- View my full portfolio, CV, and mock interview video
+- [daviddanielx72.github.io](https://daviddanielx72.github.io/)
 
 ---
 
-## 🌐 Connect With Me
+## 💼 Professional Experience
+
+### Country Road Waterfront (Woolworths Group) — *Seasonal Sales Consultant*
+*Dec 2025 – Jan 2026*
+- Delivered exceptional customer service in the menswear department during the high-volume holiday season
+- Maintained stock levels and visual merchandising standards on the sales floor
+
+### Cape Town DHL Stadium — *Casual Bar Attendant*
+*Dec 2023 – Feb 2024*
+- Provided efficient beverage service during high-profile events
+- Demonstrated composure and accuracy in fast-paced environments
+
+---
+
+## 📫 Connect With Me
 
 <p align="center">
   <a href="https://www.linkedin.com/in/david-sepkitt-811837362/" target="_blank">
     <img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" width="60" height="60"/>
   </a>
+  <a href="https://github.com/DavidDanielx72" target="_blank" style="margin-left: 20px;">
+    <img src="https://skillicons.dev/icons?i=github" alt="GitHub" width="60" height="60"/>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/david-sepkitt-811837362/" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="https://github.com/DavidDanielx72" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
 </p>
 
 ---
 
-*💬 iOS 17 style chat · David Daniel Sepkitt*
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=DavidDanielx72&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views" />
+  <img src="https://img.shields.io/badge/Age-20-blue" alt="Age" />
+  <img src="https://img.shields.io/badge/Location-Cape%20Town-green" alt="Location" />
+</p>
+
