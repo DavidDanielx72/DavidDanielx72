@@ -32,11 +32,11 @@
       <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.15"/>
     </filter>
 
-    <!-- Animations - FASTER -->
+    <!-- Animations -->
     <style>
       @keyframes messageIn {
-        0% { opacity: 0; transform: translateY(15px) scale(0.92); }
-        70% { opacity: 1; transform: translateY(-3px) scale(1.01); }
+        0% { opacity: 0; transform: translateY(20px) scale(0.92); }
+        70% { opacity: 1; transform: translateY(-4px) scale(1.01); }
         100% { opacity: 1; transform: translateY(0) scale(1); }
       }
       
@@ -68,58 +68,58 @@
         100% { opacity: 1; transform: scale(1); }
       }
       
-      @keyframes fadeLoop {
+      @keyframes instantFade {
         0% { opacity: 1; }
         100% { opacity: 0; }
       }
       
-      /* FASTER TIMING - Message 1 */
+      /* Message 1 - Natural pace */
       .msg1 { 
-        animation: messageIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; 
-        animation-delay: 0.2s;
+        animation: messageIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; 
+        animation-delay: 0.3s;
       }
       
-      /* Typing 1 - FAST */
+      /* Typing 1 - Natural pace */
       .typing1 { 
-        animation: typingIn 0.2s ease forwards; 
-        animation-delay: 0.9s;
-        opacity: 0;
-      }
-      
-      /* Message 2 - FAST */
-      .msg2 { 
-        animation: messageIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; 
+        animation: typingIn 0.3s ease forwards; 
         animation-delay: 1.5s;
         opacity: 0;
       }
       
-      /* Typing 2 - FAST */
+      /* Message 2 - Natural pace */
+      .msg2 { 
+        animation: messageIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; 
+        animation-delay: 2.5s;
+        opacity: 0;
+      }
+      
+      /* Typing 2 - Natural pace */
       .typing2 { 
-        animation: typingIn 0.2s ease forwards; 
-        animation-delay: 2.2s;
+        animation: typingIn 0.3s ease forwards; 
+        animation-delay: 3.7s;
         opacity: 0;
       }
       
-      /* Message 3 - FAST */
+      /* Message 3 - Natural pace */
       .msg3 { 
-        animation: messageIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; 
-        animation-delay: 2.8s;
+        animation: messageIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; 
+        animation-delay: 4.7s;
         opacity: 0;
       }
       
-      /* Read receipts - FAST */
-      .read1 { animation: readIn 0.2s ease 0.7s forwards; opacity: 0; }
-      .read2 { animation: readIn 0.2s ease 1.9s forwards; opacity: 0; }
-      .read3 { animation: readIn 0.2s ease 3.2s forwards; opacity: 0; }
+      /* Read receipts - Natural pace */
+      .read1 { animation: readIn 0.3s ease 1.2s forwards; opacity: 0; }
+      .read2 { animation: readIn 0.3s ease 3.2s forwards; opacity: 0; }
+      .read3 { animation: readIn 0.3s ease 5.2s forwards; opacity: 0; }
       
       /* Typing dots */
-      .dot1 { animation: dotBounce1 1.2s ease infinite; }
-      .dot2 { animation: dotBounce2 1.2s ease infinite; }
-      .dot3 { animation: dotBounce3 1.2s ease infinite; }
+      .dot1 { animation: dotBounce1 1.4s ease infinite; }
+      .dot2 { animation: dotBounce2 1.4s ease infinite; }
+      .dot3 { animation: dotBounce3 1.4s ease infinite; }
       
-      /* Loop wrapper - FASTER FADE */
+      /* FAST REFRESH - Everything disappears instantly at 5.8s */
       .chat-loop {
-        animation: fadeLoop 0.3s ease 4.0s forwards;
+        animation: instantFade 0.1s ease 5.8s forwards;
       }
     </style>
   </defs>
