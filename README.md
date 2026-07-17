@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/daviddanielx72/daviddanielx72/main/ios-chat.svg" alt="iOS Chat" width="600" />
+  <img src="https://raw.githubusercontent.com/daviddanielx72/daviddanielx72/main/assets/ios-chat.svg" alt="iOS Chat" width="600" />
 </div>
 
 ---
