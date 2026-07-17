@@ -2,7 +2,7 @@
 <div align="center">
   
   <!-- Animated iOS Messages SVG -->
-  <img src="https://raw.githubusercontent.com/daviddanielx72/daviddanielx72/main/ios-messages.svg" alt="iOS Messages" width="700" />
+  <img src="https://raw.githubusercontent.com/daviddanielx72/daviddanielx72/main/assets/ios-messages.svg" alt="iOS Messages" width="700" />
   
   <!-- Fallback text in case SVG doesn't load -->
   <details>
