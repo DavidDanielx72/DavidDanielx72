@@ -116,7 +116,3 @@ I am driven by the opportunity to use technology to create innovative solutions 
   <img src="https://img.shields.io/badge/Age-20-blue" alt="Age" />
   <img src="https://img.shields.io/badge/Location-Cape%20Town-green" alt="Location" />
 </p>
-
-<p align="center">
-  <i>💬 iOS 26 style chat · David Daniel Sepkitt</i>
-</p>
