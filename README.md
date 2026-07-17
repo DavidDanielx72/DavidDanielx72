@@ -6,7 +6,7 @@
 
 ## 👨‍💻 About Me
 
-> I am an aspiring software developer with a passion for building practical, user-focused solutions and continuously expanding my technical knowledge. Currently pursuing a Diploma in ICT in Applications Development at CPUT, I bring a strong work ethic, adaptability, and problem-solving skills to every project I undertake.
+I am an aspiring software developer with a passion for building practical, user-focused solutions and continuously expanding my technical knowledge. Currently pursuing a Diploma in ICT in Applications Development at CPUT, I bring a strong work ethic, adaptability, and problem-solving skills to every project I undertake.
 
 <br>
 
@@ -29,25 +29,25 @@ I am driven by the opportunity to use technology to create innovative solutions 
 ### 💻 Languages & Technologies
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=java" alt="Java" width="50" height="50" style="margin: 0 8px;"/>
-  <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" width="50" height="50" style="margin: 0 8px;"/>
-  <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" width="50" height="50" style="margin: 0 8px;"/>
-  <img src="https://skillicons.dev/icons?i=html" alt="HTML" width="50" height="50" style="margin: 0 8px;"/>
-  <img src="https://skillicons.dev/icons?i=css" alt="CSS" width="50" height="50" style="margin: 0 8px;"/>
-  <img src="https://skillicons.dev/icons?i=react" alt="React" width="50" height="50" style="margin: 0 8px;"/>
-  <img src="https://skillicons.dev/icons?i=mysql" alt="SQL" width="50" height="50" style="margin: 0 8px;"/>
-  <img src="https://skillicons.dev/icons?i=wordpress" alt="WordPress" width="50" height="50" style="margin: 0 8px;"/>
+  <img src="https://skillicons.dev/icons?i=java" alt="Java" width="50" height="50" style="margin: 0 10px;"/>
+  <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" width="50" height="50" style="margin: 0 10px;"/>
+  <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" width="50" height="50" style="margin: 0 10px;"/>
+  <img src="https://skillicons.dev/icons?i=html" alt="HTML" width="50" height="50" style="margin: 0 10px;"/>
+  <img src="https://skillicons.dev/icons?i=css" alt="CSS" width="50" height="50" style="margin: 0 10px;"/>
+  <img src="https://skillicons.dev/icons?i=react" alt="React" width="50" height="50" style="margin: 0 10px;"/>
+  <img src="https://skillicons.dev/icons?i=mysql" alt="SQL" width="50" height="50" style="margin: 0 10px;"/>
+  <img src="https://skillicons.dev/icons?i=wordpress" alt="WordPress" width="50" height="50" style="margin: 0 10px;"/>
 </p>
 
 ### 🧰 Tools & IDEs
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=git" alt="Git" width="50" height="50" style="margin: 0 8px;"/>
-  <img src="https://skillicons.dev/icons?i=github" alt="GitHub" width="50" height="50" style="margin: 0 8px;"/>
-  <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" width="50" height="50" style="margin: 0 8px;"/>
-  <img src="https://skillicons.dev/icons?i=figma" alt="Figma" width="50" height="50" style="margin: 0 8px;"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ" width="50" height="50" style="margin: 0 8px;"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="NetBeans" width="50" height="50" style="margin: 0 8px;"/>
+  <img src="https://skillicons.dev/icons?i=git" alt="Git" width="50" height="50" style="margin: 0 10px;"/>
+  <img src="https://skillicons.dev/icons?i=github" alt="GitHub" width="50" height="50" style="margin: 0 10px;"/>
+  <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" width="50" height="50" style="margin: 0 10px;"/>
+  <img src="https://skillicons.dev/icons?i=figma" alt="Figma" width="50" height="50" style="margin: 0 10px;"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ" width="50" height="50" style="margin: 0 10px;"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="NetBeans" width="50" height="50" style="margin: 0 10px;"/>
 </p>
 
 ---
@@ -80,20 +80,6 @@ I am driven by the opportunity to use technology to create innovative solutions 
 - Supports all 11 official languages of South Africa, providing responses in the user's chosen language
 - Uses location services to help users find nearby Home Affairs buildings
 - 🔗 [Ubuntu Navigator Repository](https://github.com/DavidDanielx72/Ubuntu-Navigator-AI-Chatbot-)
-
----
-
-## 💼 Professional Experience
-
-### Country Road Waterfront (Woolworths Group) — *Seasonal Sales Consultant*
-*Dec 2025 – Jan 2026*
-- Delivered exceptional customer service in the menswear department during the high-volume holiday season
-- Maintained stock levels and visual merchandising standards on the sales floor
-
-### Cape Town DHL Stadium — *Casual Bar Attendant*
-*Dec 2023 – Feb 2024*
-- Provided efficient beverage service during high-profile events
-- Demonstrated composure and accuracy in fast-paced environments
 
 ---
 
