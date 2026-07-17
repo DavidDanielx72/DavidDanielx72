@@ -1,7 +1,11 @@
-<h1 align="center"> <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="30"/> David Daniel Sepkitt <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="30"/> </h1>
+<h1 align="center">
+  <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="30"/>
+  David Daniel Sepkitt
+  <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="30"/>
+</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=34&pause=1000&width=600&color=0033A0&lines=3rd+Year+ICT+Student;Front-End+Developer;" />
+  <img src="./images/ios-messages-header.svg" alt="iOS Messages Header" width="750"/>
 </p>
 
 ---
@@ -14,9 +18,9 @@ I am from Cape Town, South Africa. I am currently a third year student at the Ca
 
 <br>
 
-- 🌱 Currently learning: **Advanced Java, React, C & C++**  
-- 💻 Self-learned: **React, TypeScript, CSS, JavaScript, WordPress** for front-end development  
-- 🧠 Love learning new technologies and expanding my IT knowledge  
+- 🌱 Currently learning: **Advanced Java, React, C & C++**
+- 💻 Self-learned: **React, TypeScript, CSS, JavaScript, WordPress** for front-end development
+- 🧠 Love learning new technologies and expanding my IT knowledge
 - 🎯 Goal: continuously improve my development skills and grow into a well-rounded software developer
 
 <br>
@@ -26,6 +30,7 @@ I am from Cape Town, South Africa. I am currently a third year student at the Ca
 ## 🛠️ Tech Stack
 
 ### 💻 Languages & Technologies
+
 <table align="center">
   <tr>
     <td align="center">
@@ -56,6 +61,7 @@ I am from Cape Town, South Africa. I am currently a third year student at the Ca
 </table>
 
 ### 🧰 Tools & IDEs
+
 <table align="center">
   <tr>
     <td align="center">
@@ -83,12 +89,14 @@ I am from Cape Town, South Africa. I am currently a third year student at the Ca
 
 ## 🌐 Projects
 
-###  Rietfontein Website (Front-End)
-- Updated the front end of [rietfontein.co.za](https://rietfontein.co.za/)  
-- Modernized the website’s look and feel according to the owner’s vision  
+### Rietfontein Website (Front-End)
+
+- Updated the front end of [rietfontein.co.za](https://rietfontein.co.za/)
+- Modernized the website’s look and feel according to the owner’s vision
 - Implemented responsive and clean design using **WordPress** which makes use of **HTML, CSS,** and **JavaScript** for the front end and **PHP** for the backend
 
 ### My Portfolio Website
+
 - View my full portfolio, CV, and mock interview video here: [David Daniel Portfolio](https://daviddanielx72.github.io/)
 
 ---
