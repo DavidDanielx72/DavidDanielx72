@@ -6,7 +6,7 @@
 
 ## 👨‍💻 About Me
 
-I am an aspiring software developer with a passion for building practical, user-focused solutions and continuously expanding my technical knowledge. Currently pursuing a Diploma in ICT in Applications Development at CPUT, I bring a strong work ethic, adaptability, and problem-solving skills to every project I undertake.
+I am an aspiring software developer with a passion for building practical, user-focused solutions and continuously expanding my technical knowledge. I am currently a third year student pursuing a Diploma in ICT in Applications Development at CPUT, I bring a strong work ethic, adaptability, and problem-solving skills to every project I undertake.
 
 <br>
 
