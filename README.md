@@ -14,8 +14,8 @@ I am driven by the opportunity to use technology to create innovative solutions 
 
 <br>
 
-- 🌱 **Currently learning:** Advanced Java, React, C & C++
-- 💻 **Building with:** React, TypeScript, JavaScript, WordPress
+- 🌱 **Currently learning:** Advanced Java, React, C & C++, Python
+- 💻 **Building with:** React, TypeScript, JavaScript, WordPress, JavaScript, CSS, HTML, Java
 - 🎯 **Goal:** Full Stack Software Developer
 - 🧠 **Exploring:** Emerging technologies, particularly Artificial Intelligence
 - 📍 **Based in:** Cape Town, South Africa
