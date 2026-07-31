@@ -1,7 +1,4 @@
-<div align="center">
-  <img src="https://raw.githubusercontent.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/main/assets/dinosaur.gif" alt="Dinosaur Game" width="800" />
-</div>
-
+![Dinosaur Game](https://raw.githubusercontent.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/main/assets/dinosaur.gif)
 <div align="left">
   <img src="https://raw.githubusercontent.com/daviddanielx72/daviddanielx72/main/assets/ios-messages.svg" alt="iOS Chat" width="450" />
 </div>
