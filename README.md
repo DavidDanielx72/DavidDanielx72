@@ -269,20 +269,6 @@ I am driven by the opportunity to use technology to create innovative solutions 
 
 ---
 
-## 💼 Professional Experience
-
-### Country Road Waterfront (Woolworths Group) — *Seasonal Sales Consultant*
-*Dec 2025 – Jan 2026*
-- Delivered exceptional customer service in the menswear department during the high-volume holiday season
-- Maintained stock levels and visual merchandising standards on the sales floor
-
-### Cape Town DHL Stadium — *Casual Bar Attendant*
-*Dec 2023 – Feb 2024*
-- Provided efficient beverage service during high-profile events
-- Demonstrated composure and accuracy in fast-paced environments
-
----
-
 ## 📫 Let's Connect!
 
 <p align="center">
