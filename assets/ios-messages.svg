@@ -1,38 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="800" height="250">
   <defs>
-    <!-- Gradients -->
+    <!-- Creative Gradients -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e"/>
-      <stop offset="50%" style="stop-color:#16213e"/>
-      <stop offset="100%" style="stop-color:#0f3460"/>
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="50%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#0a0a0a"/>
     </linearGradient>
     
-    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#f7971e"/>
-      <stop offset="100%" style="stop-color:#ffd200"/>
+    <linearGradient id="rainbow1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B6B"/>
+      <stop offset="25%" style="stop-color:#FFE66D"/>
+      <stop offset="50%" style="stop-color:#4ECDC4"/>
+      <stop offset="75%" style="stop-color:#A8E6CF"/>
+      <stop offset="100%" style="stop-color:#FF6B6B"/>
     </linearGradient>
     
-    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00f260"/>
-      <stop offset="100%" style="stop-color:#0575e6"/>
+    <linearGradient id="rainbow2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF9A9E"/>
+      <stop offset="33%" style="stop-color:#FECFEF"/>
+      <stop offset="66%" style="stop-color:#FDFCFB"/>
+      <stop offset="100%" style="stop-color:#FF9A9E"/>
     </linearGradient>
     
-    <linearGradient id="fireGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#f12711"/>
-      <stop offset="100%" style="stop-color:#f5af19"/>
+    <linearGradient id="rainbow3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FAD0C4"/>
+      <stop offset="50%" style="stop-color:#FFD1FF"/>
+      <stop offset="100%" style="stop-color:#FAD0C4"/>
     </linearGradient>
     
-    <!-- Glow Filters -->
-    <filter id="neonGlow">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    
-    <filter id="softGlow">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
+    <!-- Glow Filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -40,218 +38,208 @@
     </filter>
     
     <style>
-      @keyframes floatUp {
-        0% { transform: translateY(0) scale(1); opacity: 0.6; }
-        50% { transform: translateY(-20px) scale(1.1); opacity: 1; }
-        100% { transform: translateY(0) scale(1); opacity: 0.6; }
+      @keyframes slide {
+        0% { transform: translateX(100%) rotate(0deg); opacity: 0; }
+        20% { transform: translateX(0) rotate(0deg); opacity: 1; }
+        80% { transform: translateX(0) rotate(0deg); opacity: 1; }
+        100% { transform: translateX(-100%) rotate(0deg); opacity: 0; }
       }
       
-      @keyframes floatDown {
-        0% { transform: translateY(0) scale(1); opacity: 0.6; }
-        50% { transform: translateY(20px) scale(1.1); opacity: 1; }
-        100% { transform: translateY(0) scale(1); opacity: 0.6; }
+      @keyframes bounce {
+        0%, 100% { transform: translateY(0) rotate(0deg); }
+        50% { transform: translateY(-15px) rotate(5deg); }
       }
       
-      @keyframes pulseGlow {
-        0%, 100% { opacity: 0.3; transform: scale(1); }
-        50% { opacity: 0.8; transform: scale(1.1); }
+      @keyframes bounce2 {
+        0%, 100% { transform: translateY(0) rotate(0deg); }
+        50% { transform: translateY(-12px) rotate(-5deg); }
       }
       
-      @keyframes spinSlow {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
+      @keyframes spin3D {
+        0% { transform: rotateY(0deg); }
+        100% { transform: rotateY(360deg); }
       }
       
-      @keyframes spinReverse {
-        0% { transform: rotate(360deg); }
-        100% { transform: rotate(0deg); }
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); opacity: 0.6; }
+        50% { transform: scale(1.1); opacity: 1; }
       }
       
-      @keyframes dash {
-        to { stroke-dashoffset: 0; }
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
       }
       
-      @keyframes fadeInOut {
-        0%, 100% { opacity: 0; transform: translateX(-20px); }
-        20% { opacity: 1; transform: translateX(0); }
-        80% { opacity: 1; transform: translateX(0); }
-        100% { opacity: 0; transform: translateX(20px); }
+      @keyframes rainbowMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
       }
       
-      @keyframes twinkle {
-        0%, 100% { opacity: 0.2; transform: scale(0.5); }
-        50% { opacity: 1; transform: scale(1); }
+      @keyframes typewriter {
+        0% { opacity: 0; transform: translateX(-30px); }
+        15% { opacity: 1; transform: translateX(0); }
+        85% { opacity: 1; transform: translateX(0); }
+        100% { opacity: 0; transform: translateX(30px); }
+      }
+      
+      @keyframes starFloat {
+        0% { opacity: 0; transform: translateY(0) scale(0); }
+        50% { opacity: 1; transform: translateY(-30px) scale(1); }
+        100% { opacity: 0; transform: translateY(-60px) scale(0); }
       }
       
       @keyframes wave {
         0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-8px); }
+        50% { transform: translateY(-5px); }
       }
       
-      @keyframes shimmerText {
-        0% { background-position: -200% center; }
-        100% { background-position: 200% center; }
-      }
+      .slide-text { animation: slide 8s ease-in-out infinite; }
+      .bounce { animation: bounce 3s ease-in-out infinite; }
+      .bounce2 { animation: bounce2 3.5s ease-in-out infinite; }
+      .spin3D { animation: spin3D 6s linear infinite; }
+      .pulse { animation: pulse 2s ease-in-out infinite; }
+      .float { animation: float 2.5s ease-in-out infinite; }
+      .typewriter1 { animation: typewriter 6s ease-in-out infinite; }
+      .typewriter2 { animation: typewriter 6s ease-in-out infinite 2s; }
+      .typewriter3 { animation: typewriter 6s ease-in-out infinite 4s; }
+      .wave { animation: wave 1.5s ease-in-out infinite; }
+      .wave2 { animation: wave 1.5s ease-in-out infinite 0.3s; }
+      .wave3 { animation: wave 1.5s ease-in-out infinite 0.6s; }
       
-      @keyframes orbitPulse {
-        0%, 100% { r: 3; opacity: 0.8; }
-        50% { r: 6; opacity: 0.3; }
-      }
+      .star { animation: starFloat 2.5s ease-in-out infinite; }
+      .star:nth-child(2) { animation-delay: 0.8s; }
+      .star:nth-child(3) { animation-delay: 1.6s; }
+      .star:nth-child(4) { animation-delay: 0.4s; }
+      .star:nth-child(5) { animation-delay: 1.2s; }
+      .star:nth-child(6) { animation-delay: 0.6s; }
       
-      .float-up { animation: floatUp 3s ease-in-out infinite; }
-      .float-down { animation: floatDown 3.5s ease-in-out infinite; }
-      .pulse-glow { animation: pulseGlow 2s ease-in-out infinite; }
-      .spin-slow { animation: spinSlow 10s linear infinite; }
-      .spin-reverse { animation: spinReverse 10s linear infinite; }
-      .twinkle { animation: twinkle 2s ease-in-out infinite; }
-      .wave { animation: wave 2s ease-in-out infinite; }
-      .wave2 { animation: wave 2s ease-in-out infinite 0.3s; }
-      .wave3 { animation: wave 2s ease-in-out infinite 0.6s; }
-      .shimmer-gold {
-        background: linear-gradient(90deg, #f7971e, #ffd200, #f7971e);
-        background-size: 200% auto;
+      .rainbow-text {
+        background: linear-gradient(90deg, #FF6B6B, #FFE66D, #4ECDC4, #A8E6CF, #FF6B6B);
+        background-size: 300% auto;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: shimmerText 3s linear infinite;
+        animation: rainbowMove 3s linear infinite;
       }
-      .shimmer-neon {
-        background: linear-gradient(90deg, #00f260, #0575e6, #00f260);
-        background-size: 200% auto;
+      
+      .rainbow-text2 {
+        background: linear-gradient(90deg, #FF9A9E, #FECFEF, #FDFCFB, #FF9A9E);
+        background-size: 300% auto;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: shimmerText 3s linear infinite 1.5s;
-      }
-      
-      .fade-text { animation: fadeInOut 5s ease-in-out infinite; }
-      .fade-text2 { animation: fadeInOut 5s ease-in-out infinite 1.8s; }
-      .fade-text3 { animation: fadeInOut 5s ease-in-out infinite 3.6s; }
-      
-      .orbit-dot {
-        animation: orbitPulse 2s ease-in-out infinite;
+        animation: rainbowMove 4s linear infinite;
       }
     </style>
   </defs>
   
   <!-- Background -->
-  <rect width="800" height="250" fill="url(#bgGrad)" rx="16"/>
+  <rect width="800" height="250" fill="url(#bgGrad)" rx="20"/>
   
-  <!-- Background Grid Pattern -->
-  <g opacity="0.05">
-    <line x1="0" y1="30" x2="800" y2="30" stroke="#00f260" stroke-width="0.5"/>
-    <line x1="0" y1="60" x2="800" y2="60" stroke="#00f260" stroke-width="0.5"/>
-    <line x1="0" y1="90" x2="800" y2="90" stroke="#00f260" stroke-width="0.5"/>
-    <line x1="0" y1="120" x2="800" y2="120" stroke="#00f260" stroke-width="0.5"/>
-    <line x1="0" y1="150" x2="800" y2="150" stroke="#00f260" stroke-width="0.5"/>
-    <line x1="0" y1="180" x2="800" y2="180" stroke="#00f260" stroke-width="0.5"/>
-    <line x1="0" y1="210" x2="800" y2="210" stroke="#00f260" stroke-width="0.5"/>
-    <line x1="0" y1="240" x2="800" y2="240" stroke="#00f260" stroke-width="0.5"/>
-    <line x1="100" y1="0" x2="100" y2="250" stroke="#00f260" stroke-width="0.5"/>
-    <line x1="200" y1="0" x2="200" y2="250" stroke="#00f260" stroke-width="0.5"/>
-    <line x1="300" y1="0" x2="300" y2="250" stroke="#00f260" stroke-width="0.5"/>
-    <line x1="400" y1="0" x2="400" y2="250" stroke="#00f260" stroke-width="0.5"/>
-    <line x1="500" y1="0" x2="500" y2="250" stroke="#00f260" stroke-width="0.5"/>
-    <line x1="600" y1="0" x2="600" y2="250" stroke="#00f260" stroke-width="0.5"/>
-    <line x1="700" y1="0" x2="700" y2="250" stroke="#00f260" stroke-width="0.5"/>
+  <!-- Stars Background -->
+  <circle cx="50" cy="30" r="1.5" fill="white" opacity="0.3" class="star"/>
+  <circle cx="150" cy="60" r="1" fill="white" opacity="0.2" class="star"/>
+  <circle cx="250" cy="25" r="1.5" fill="white" opacity="0.3" class="star"/>
+  <circle cx="350" cy="50" r="1" fill="white" opacity="0.2" class="star"/>
+  <circle cx="450" cy="35" r="1.5" fill="white" opacity="0.3" class="star"/>
+  <circle cx="550" cy="55" r="1" fill="white" opacity="0.2" class="star"/>
+  
+  <!-- Fun Decorative Elements -->
+  <!-- Left side - Code brackets with animation -->
+  <g opacity="0.15" class="pulse">
+    <text x="25" y="60" font-family="monospace" font-size="24" fill="#4ECDC4">{"</text>
+    <text x="25" y="90" font-family="monospace" font-size="24" fill="#4ECDC4">}</text>
+    <text x="25" y="120" font-family="monospace" font-size="24" fill="#4ECDC4">;</text>
   </g>
   
-  <!-- Decorative Circles -->
-  <circle cx="650" cy="125" r="100" fill="none" stroke="#00f260" stroke-width="0.5" opacity="0.1" class="spin-slow"/>
-  <circle cx="650" cy="125" r="80" fill="none" stroke="#f7971e" stroke-width="0.5" opacity="0.1" class="spin-reverse"/>
-  <circle cx="650" cy="125" r="60" fill="none" stroke="#f12711" stroke-width="0.5" opacity="0.1" class="spin-slow"/>
+  <!-- Right side - Fun symbols -->
+  <g opacity="0.1" class="spin3D">
+    <text x="750" y="80" font-family="monospace" font-size="20" fill="#FFE66D">()</text>
+    <text x="750" y="110" font-family="monospace" font-size="20" fill="#FFE66D">[]</text>
+    <text x="750" y="140" font-family="monospace" font-size="20" fill="#FFE66D">{}</text>
+  </g>
   
-  <!-- Orbiting Dots -->
-  <circle cx="650" cy="125" r="3" fill="#00f260" class="orbit-dot"/>
-  <circle cx="650" cy="125" r="3" fill="#f7971e" class="orbit-dot" style="animation-delay: 0.5s;"/>
-  <circle cx="650" cy="125" r="3" fill="#f12711" class="orbit-dot" style="animation-delay: 1s;"/>
-  
-  <!-- Central Avatar -->
-  <g transform="translate(650, 125)">
-    <circle cx="0" cy="0" r="40" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.6"/>
-    <circle cx="0" cy="0" r="35" fill="#1a1a2e" stroke="url(#neonGrad)" stroke-width="1.5"/>
-    <text x="0" y="12" text-anchor="middle" font-size="32" fill="white">👨‍💻</text>
+  <!-- Main Content -->
+  <g transform="translate(60, 45)">
+    <!-- Greeting -->
+    <text x="0" y="0" font-family="'Comic Sans MS', cursive, sans-serif" font-size="16" fill="#4ECDC4" opacity="0.7" class="float">
+      👋 Hey there!
+    </text>
     
-    <!-- Glowing ring -->
-    <circle cx="0" cy="0" r="45" fill="none" stroke="#00f260" stroke-width="0.5" opacity="0.3" class="spin-slow"/>
-  </g>
-  
-  <!-- Main Title with Gold Gradient -->
-  <g transform="translate(50, 55)">
-    <text x="0" y="0" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#00f260" opacity="0.6" letter-spacing="4">HELLO, I'M</text>
-    <text x="0" y="55" font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="800" class="shimmer-gold">
+    <!-- Name - Rainbow style -->
+    <text x="0" y="50" font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="900" class="rainbow-text">
       David Daniel
     </text>
-    <text x="0" y="95" font-family="'Segoe UI', Arial, sans-serif" font-size="38" font-weight="700" class="shimmer-neon">
+    <text x="0" y="95" font-family="'Segoe UI', Arial, sans-serif" font-size="38" font-weight="700" class="rainbow-text2">
       Sepkitt
     </text>
   </g>
   
-  <!-- Role Tags -->
-  <g transform="translate(50, 145)">
-    <!-- Decorative line -->
-    <rect x="0" y="0" width="40" height="3" rx="1.5" fill="url(#goldGrad)"/>
-    
-    <text x="55" y="8" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#a0a0b0" class="fade-text">
+  <!-- Fun Tags with Emojis -->
+  <g transform="translate(60, 170)">
+    <text x="0" y="0" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#d0d0d0" class="typewriter1">
       🚀 Aspiring Full Stack Developer
     </text>
-    <text x="55" y="8" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#a0a0b0" class="fade-text2">
-      💡 Building the future, one line at a time
+    <text x="0" y="0" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#d0d0d0" class="typewriter2">
+      💡 Building cool things with code
     </text>
-    <text x="55" y="8" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#a0a0b0" class="fade-text3">
+    <text x="0" y="0" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#d0d0d0" class="typewriter3">
       🌍 Cape Town, South Africa
     </text>
   </g>
   
-  <!-- Tech Stack Pills -->
-  <g transform="translate(50, 185)">
-    <rect x="0" y="0" width="80" height="28" rx="14" fill="none" stroke="#00f260" stroke-width="1.5" opacity="0.4" class="float-up"/>
-    <text x="40" y="19" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#00f260" font-weight="600">React</text>
-    
-    <rect x="90" y="0" width="70" height="28" rx="14" fill="none" stroke="#f7971e" stroke-width="1.5" opacity="0.4" class="float-down"/>
-    <text x="125" y="19" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#f7971e" font-weight="600">Java</text>
-    
-    <rect x="170" y="0" width="95" height="28" rx="14" fill="none" stroke="#f12711" stroke-width="1.5" opacity="0.4" class="float-up"/>
-    <text x="217" y="19" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#f12711" font-weight="600">JavaScript</text>
-    
-    <rect x="275" y="0" width="95" height="28" rx="14" fill="none" stroke="#00f260" stroke-width="1.5" opacity="0.4" class="float-down"/>
-    <text x="322" y="19" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#00f260" font-weight="600">TypeScript</text>
-    
-    <rect x="380" y="0" width="80" height="28" rx="14" fill="none" stroke="#f7971e" stroke-width="1.5" opacity="0.4" class="float-up"/>
-    <text x="420" y="19" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#f7971e" font-weight="600">Python</text>
-    
-    <rect x="470" y="0" width="90" height="28" rx="14" fill="none" stroke="#f12711" stroke-width="1.5" opacity="0.4" class="float-down"/>
-    <text x="515" y="19" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#f12711" font-weight="600">Node.js</text>
+  <!-- Tech Stack - Fun Emoji Style -->
+  <g transform="translate(60, 205)">
+    <text font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#8e8e93" class="bounce">
+      ⚛️ React
+    </text>
+    <text x="80" y="0" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#8e8e93" class="bounce2">
+      ☕ Java
+    </text>
+    <text x="150" y="0" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#8e8e93" class="bounce">
+      💛 JavaScript
+    </text>
+    <text x="255" y="0" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#8e8e93" class="bounce2">
+      💙 TypeScript
+    </text>
+    <text x="365" y="0" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#8e8e93" class="bounce">
+      🐍 Python
+    </text>
+    <text x="445" y="0" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#8e8e93" class="bounce2">
+      🟢 Node.js
+    </text>
   </g>
   
-  <!-- Status Indicator -->
-  <g transform="translate(680, 220)">
-    <circle cx="0" cy="0" r="4" fill="#00f260">
-      <animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite"/>
+  <!-- Status Dot -->
+  <g transform="translate(700, 220)">
+    <circle cx="0" cy="0" r="5" fill="#4ECDC4">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
     </circle>
-    <text x="10" y="4" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#00f260" opacity="0.7">Available for opportunities</text>
+    <text x="12" y="4" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#4ECDC4" opacity="0.7">✨ Open to opportunities</text>
   </g>
   
-  <!-- Decorative Elements -->
-  <!-- Top left corner -->
-  <rect x="10" y="10" width="30" height="2" rx="1" fill="#00f260" opacity="0.4"/>
-  <rect x="10" y="10" width="2" height="20" rx="1" fill="#00f260" opacity="0.4"/>
+  <!-- Fun Decorative Emojis - Floating -->
+  <g opacity="0.15">
+    <text x="730" y="40" font-size="28" class="float" style="animation-delay: 0s;">🚀</text>
+    <text x="710" y="70" font-size="22" class="float" style="animation-delay: 0.5s;">💻</text>
+    <text x="750" y="100" font-size="26" class="float" style="animation-delay: 1s;">🎯</text>
+    <text x="720" y="130" font-size="20" class="float" style="animation-delay: 1.5s;">⚡</text>
+    <text x="740" y="160" font-size="24" class="float" style="animation-delay: 0.8s;">🔥</text>
+  </g>
   
-  <!-- Top right corner -->
-  <rect x="760" y="10" width="30" height="2" rx="1" fill="#f7971e" opacity="0.4"/>
-  <rect x="788" y="10" width="2" height="20" rx="1" fill="#f7971e" opacity="0.4"/>
+  <!-- Corner Decorations -->
+  <rect x="15" y="15" width="25" height="3" rx="1.5" fill="#4ECDC4" opacity="0.3"/>
+  <rect x="15" y="15" width="3" height="18" rx="1.5" fill="#4ECDC4" opacity="0.3"/>
+  <rect x="760" y="15" width="25" height="3" rx="1.5" fill="#FFE66D" opacity="0.3"/>
+  <rect x="782" y="15" width="3" height="18" rx="1.5" fill="#FFE66D" opacity="0.3"/>
+  <rect x="15" y="232" width="25" height="3" rx="1.5" fill="#FF6B6B" opacity="0.3"/>
+  <rect x="15" y="217" width="3" height="18" rx="1.5" fill="#FF6B6B" opacity="0.3"/>
+  <rect x="760" y="232" width="25" height="3" rx="1.5" fill="#A8E6CF" opacity="0.3"/>
+  <rect x="782" y="217" width="3" height="18" rx="1.5" fill="#A8E6CF" opacity="0.3"/>
   
-  <!-- Bottom left corner -->
-  <rect x="10" y="238" width="30" height="2" rx="1" fill="#f12711" opacity="0.4"/>
-  <rect x="10" y="220" width="2" height="20" rx="1" fill="#f12711" opacity="0.4"/>
-  
-  <!-- Bottom right corner -->
-  <rect x="760" y="238" width="30" height="2" rx="1" fill="#00f260" opacity="0.4"/>
-  <rect x="788" y="220" width="2" height="20" rx="1" fill="#00f260" opacity="0.4"/>
-  
-  <!-- Floating Code Symbols -->
-  <text x="720" y="40" font-family="monospace" font-size="12" fill="#00f260" opacity="0.15" class="float-up">{ }</text>
-  <text x="30" y="220" font-family="monospace" font-size="12" fill="#f7971e" opacity="0.15" class="float-down">()</text>
-  <text x="750" y="210" font-family="monospace" font-size="12" fill="#f12711" opacity="0.15" class="float-up">[]</text>
-  
-  <!-- Subtle wave lines at bottom -->
-  <path d="M0 240 Q50 232 100 240 Q150 248 200 240 Q250 232 300 240 Q350 248 400 240 Q450 232 500 240 Q550 248 600 240 Q650 232 700 240 Q750 248 800 240" stroke="#00f260" stroke-width="0.5" opacity="0.1" fill="none"/>
+  <!-- Rainbow Wave at Bottom -->
+  <g opacity="0.08">
+    <path d="M0 240 Q50 232 100 240 Q150 248 200 240 Q250 232 300 240 Q350 248 400 240 Q450 232 500 240 Q550 248 600 240 Q650 232 700 240 Q750 248 800 240" stroke="url(#rainbow1)" stroke-width="2" fill="none" class="wave"/>
+    <path d="M0 242 Q50 234 100 242 Q150 250 200 242 Q250 234 300 242 Q350 250 400 242 Q450 234 500 242 Q550 250 600 242 Q650 234 700 242 Q750 250 800 242" stroke="url(#rainbow2)" stroke-width="2" fill="none" class="wave2"/>
+    <path d="M0 244 Q50 236 100 244 Q150 252 200 244 Q250 236 300 244 Q350 252 400 244 Q450 236 500 244 Q550 252 600 244 Q650 236 700 244 Q750 252 800 244" stroke="url(#rainbow3)" stroke-width="2" fill="none" class="wave3"/>
+  </g>
 </svg>
