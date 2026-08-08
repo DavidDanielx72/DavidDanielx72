@@ -1,223 +1,225 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="800" height="250">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f0c29"/>
-      <stop offset="50%" style="stop-color:#1a1a3e"/>
-      <stop offset="100%" style="stop-color:#0f0c29"/>
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="50%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#0a0a0a"/>
     </linearGradient>
+    
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00D4FF;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#00D4FF;stop-opacity:0"/>
+    </radialGradient>
+    
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FF6B8A;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#FF6B8A;stop-opacity:0"/>
+    </radialGradient>
+    
+    <radialGradient id="glow3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#7B2FBE;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#7B2FBE;stop-opacity:0"/>
+    </radialGradient>
+    
+    <radialGradient id="glow4" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00F260;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#00F260;stop-opacity:0"/>
+    </radialGradient>
 
     <style>
       @keyframes float1 {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-25px) rotate(5deg); }
+        0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+        25% { transform: translateY(-15px) rotate(3deg) scale(1.05); }
+        75% { transform: translateY(-8px) rotate(-3deg) scale(0.95); }
       }
       @keyframes float2 {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-18px) rotate(-5deg); }
+        0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+        30% { transform: translateY(-20px) rotate(-5deg) scale(1.08); }
+        70% { transform: translateY(-10px) rotate(5deg) scale(0.92); }
       }
       @keyframes float3 {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-30px) rotate(8deg); }
+        0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+        20% { transform: translateY(-25px) rotate(4deg) scale(1.1); }
+        80% { transform: translateY(-12px) rotate(-4deg) scale(0.9); }
       }
       @keyframes float4 {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-15px) rotate(-8deg); }
+        0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+        35% { transform: translateY(-18px) rotate(-6deg) scale(1.06); }
+        65% { transform: translateY(-8px) rotate(6deg) scale(0.94); }
       }
       @keyframes float5 {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-22px) rotate(3deg); }
+        0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+        25% { transform: translateY(-22px) rotate(5deg) scale(1.12); }
+        75% { transform: translateY(-10px) rotate(-5deg) scale(0.88); }
       }
       @keyframes float6 {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-28px) rotate(-3deg); }
-      }
-      @keyframes float7 {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-20px) rotate(6deg); }
-      }
-      @keyframes float8 {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-32px) rotate(-6deg); }
-      }
-      @keyframes float9 {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-16px) rotate(4deg); }
-      }
-      @keyframes float10 {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-24px) rotate(-4deg); }
-      }
-      @keyframes float11 {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-35px) rotate(7deg); }
-      }
-      @keyframes float12 {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-14px) rotate(-7deg); }
-      }
-      @keyframes float13 {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-27px) rotate(5deg); }
-      }
-      @keyframes float14 {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-19px) rotate(-5deg); }
-      }
-      @keyframes float15 {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-33px) rotate(9deg); }
+        0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+        40% { transform: translateY(-16px) rotate(-4deg) scale(1.04); }
+        60% { transform: translateY(-6px) rotate(4deg) scale(0.96); }
       }
       @keyframes pulse {
-        0%, 100% { opacity: 0.15; }
+        0%, 100% { opacity: 0.1; transform: scale(1); }
+        50% { opacity: 0.25; transform: scale(1.1); }
+      }
+      @keyframes pulseSlow {
+        0%, 100% { opacity: 0.05; r: 60; }
+        50% { opacity: 0.15; r: 80; }
+      }
+      @keyframes twinkle {
+        0%, 100% { opacity: 0.1; }
         50% { opacity: 0.4; }
       }
-      @keyframes glow {
-        0%, 100% { opacity: 0.05; r: 40; }
-        50% { opacity: 0.15; r: 55; }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes slideLeft {
+        0% { transform: translateX(0); opacity: 0.15; }
+        50% { opacity: 0.4; }
+        100% { transform: translateX(-50px); opacity: 0.15; }
       }
       
-      .f1 { animation: float1 4.2s ease-in-out infinite; }
+      .f1 { animation: float1 4.5s ease-in-out infinite; }
       .f2 { animation: float2 3.8s ease-in-out infinite; }
-      .f3 { animation: float3 4.6s ease-in-out infinite; }
-      .f4 { animation: float4 3.4s ease-in-out infinite; }
-      .f5 { animation: float5 4.8s ease-in-out infinite; }
-      .f6 { animation: float6 3.6s ease-in-out infinite; }
-      .f7 { animation: float7 4.4s ease-in-out infinite; }
-      .f8 { animation: float8 3.2s ease-in-out infinite; }
-      .f9 { animation: float9 4.0s ease-in-out infinite; }
-      .f10 { animation: float10 3.5s ease-in-out infinite; }
-      .f11 { animation: float11 4.7s ease-in-out infinite; }
-      .f12 { animation: float12 3.3s ease-in-out infinite; }
-      .f13 { animation: float13 4.3s ease-in-out infinite; }
-      .f14 { animation: float14 3.7s ease-in-out infinite; }
-      .f15 { animation: float15 4.5s ease-in-out infinite; }
+      .f3 { animation: float3 5.2s ease-in-out infinite; }
+      .f4 { animation: float4 4.2s ease-in-out infinite; }
+      .f5 { animation: float5 3.5s ease-in-out infinite; }
+      .f6 { animation: float6 4.8s ease-in-out infinite; }
+      
       .pulse { animation: pulse 3s ease-in-out infinite; }
-      .glow { animation: glow 4s ease-in-out infinite; }
+      .pulse-slow { animation: pulseSlow 5s ease-in-out infinite; }
+      .twinkle { animation: twinkle 2s ease-in-out infinite; }
+      .spin { animation: spin 12s linear infinite; }
+      .slide { animation: slideLeft 4s ease-in-out infinite; }
     </style>
   </defs>
   
   <!-- Background -->
-  <rect width="800" height="250" fill="url(#bgGrad)" rx="16"/>
+  <rect width="800" height="250" fill="url(#bgGrad)" rx="20"/>
   
   <!-- Glow Orbs -->
-  <circle cx="150" cy="80" r="40" fill="#00D4FF" class="glow"/>
-  <circle cx="400" cy="140" r="40" fill="#7B2FBE" class="glow" style="animation-delay: 1.5s;"/>
-  <circle cx="650" cy="60" r="40" fill="#FF6B8A" class="glow" style="animation-delay: 2.5s;"/>
+  <circle cx="120" cy="80" r="60" fill="url(#glow1)" class="pulse-slow"/>
+  <circle cx="400" cy="150" r="60" fill="url(#glow3)" class="pulse-slow" style="animation-delay: 1.5s;"/>
+  <circle cx="680" cy="70" r="60" fill="url(#glow2)" class="pulse-slow" style="animation-delay: 2.5s;"/>
+  <circle cx="250" cy="200" r="60" fill="url(#glow4)" class="pulse-slow" style="animation-delay: 3.5s;"/>
   
-  <!-- Row 1 - Large Icons -->
-  <g class="f1" opacity="0.25">
-    <text x="40" y="55" font-family="monospace" font-size="34" fill="#00D4FF">&lt;/&gt;</text>
+  <!-- Big Icons - Row 1 -->
+  <g class="f1">
+    <text x="40" y="55" font-family="monospace" font-size="42" fill="#00D4FF" opacity="0.35" font-weight="bold">&lt;/&gt;</text>
   </g>
-  <g class="f2" opacity="0.2" style="animation-delay: 0.4s;">
-    <text x="140" y="45" font-family="monospace" font-size="30" fill="#7B2FBE">{ }</text>
+  <g class="f2" style="animation-delay: 0.6s;">
+    <text x="180" y="45" font-family="monospace" font-size="38" fill="#7B2FBE" opacity="0.3" font-weight="bold">{ }</text>
   </g>
-  <g class="f3" opacity="0.25" style="animation-delay: 0.8s;">
-    <text x="240" y="60" font-family="monospace" font-size="32" fill="#FF6B8A">[ ]</text>
+  <g class="f3" style="animation-delay: 1.2s;">
+    <text x="320" y="60" font-family="monospace" font-size="40" fill="#FF6B8A" opacity="0.35" font-weight="bold">[ ]</text>
   </g>
-  <g class="f4" opacity="0.2" style="animation-delay: 1.2s;">
-    <text x="340" y="50" font-family="monospace" font-size="36" fill="#00F260">( )</text>
+  <g class="f4" style="animation-delay: 0.8s;">
+    <text x="460" y="50" font-family="monospace" font-size="44" fill="#00F260" opacity="0.3" font-weight="bold">( )</text>
   </g>
-  <g class="f5" opacity="0.25" style="animation-delay: 0.3s;">
-    <text x="450" y="55" font-family="monospace" font-size="30" fill="#F7971E">{ }</text>
+  <g class="f5" style="animation-delay: 1.5s;">
+    <text x="600" y="55" font-family="monospace" font-size="38" fill="#F7971E" opacity="0.35" font-weight="bold">#</text>
   </g>
-  <g class="f6" opacity="0.2" style="animation-delay: 0.9s;">
-    <text x="550" y="45" font-family="monospace" font-size="34" fill="#00D4FF">&lt;/&gt;</text>
-  </g>
-  <g class="f7" opacity="0.25" style="animation-delay: 1.5s;">
-    <text x="660" y="60" font-family="monospace" font-size="28" fill="#7B2FBE">[ ]</text>
-  </g>
-  <g class="f8" opacity="0.2" style="animation-delay: 0.6s;">
-    <text x="750" y="50" font-family="monospace" font-size="32" fill="#FF6B8A">( )</text>
+  <g class="f6" style="animation-delay: 0.4s;">
+    <text x="730" y="45" font-family="monospace" font-size="40" fill="#00D4FF" opacity="0.3" font-weight="bold">$</text>
   </g>
   
-  <!-- Row 2 - Medium Icons -->
-  <g class="f9" opacity="0.2" style="animation-delay: 0.5s;">
-    <text x="80" y="110" font-family="monospace" font-size="26" fill="#00F260">#</text>
+  <!-- Medium Icons - Row 2 -->
+  <g class="f3" style="animation-delay: 0.3s;">
+    <text x="80" y="110" font-family="monospace" font-size="30" fill="#FF6B8A" opacity="0.25">★</text>
   </g>
-  <g class="f10" opacity="0.25" style="animation-delay: 1.1s;">
-    <text x="180" y="100" font-family="monospace" font-size="28" fill="#F7971E">$</text>
+  <g class="f5" style="animation-delay: 0.9s;">
+    <text x="220" y="100" font-family="monospace" font-size="28" fill="#00F260" opacity="0.2">◈</text>
   </g>
-  <g class="f11" opacity="0.2" style="animation-delay: 0.7s;">
-    <text x="280" y="115" font-family="monospace" font-size="24" fill="#00D4FF">&amp;</text>
+  <g class="f1" style="animation-delay: 1.3s;">
+    <text x="360" y="115" font-family="monospace" font-size="32" fill="#F7971E" opacity="0.25">✦</text>
   </g>
-  <g class="f12" opacity="0.25" style="animation-delay: 1.3s;">
-    <text x="380" y="105" font-family="monospace" font-size="30" fill="#7B2FBE">*</text>
+  <g class="f4" style="animation-delay: 0.5s;">
+    <text x="500" y="105" font-family="monospace" font-size="30" fill="#00D4FF" opacity="0.2">⌘</text>
   </g>
-  <g class="f13" opacity="0.2" style="animation-delay: 0.4s;">
-    <text x="490" y="110" font-family="monospace" font-size="26" fill="#FF6B8A">_</text>
-  </g>
-  <g class="f14" opacity="0.25" style="animation-delay: 1.0s;">
-    <text x="590" y="100" font-family="monospace" font-size="28" fill="#00F260">|</text>
-  </g>
-  <g class="f15" opacity="0.2" style="animation-delay: 0.8s;">
-    <text x="690" y="115" font-family="monospace" font-size="24" fill="#F7971E">~</text>
+  <g class="f2" style="animation-delay: 1.1s;">
+    <text x="640" y="110" font-family="monospace" font-size="28" fill="#7B2FBE" opacity="0.25">◆</text>
   </g>
   
-  <!-- Row 3 - Small Icons & Symbols -->
-  <g class="f1" opacity="0.15" style="animation-delay: 0.2s;">
-    <text x="30" y="175" font-family="monospace" font-size="22" fill="#00D4FF">▲</text>
+  <!-- Small Icons - Row 3 -->
+  <g class="f6" style="animation-delay: 0.7s;">
+    <text x="30" y="175" font-family="monospace" font-size="22" fill="#00F260" opacity="0.2">▲</text>
   </g>
-  <g class="f2" opacity="0.2" style="animation-delay: 0.9s;">
-    <text x="120" y="165" font-family="monospace" font-size="24" fill="#7B2FBE">◆</text>
+  <g class="f1" style="animation-delay: 1.4s;">
+    <text x="130" y="165" font-family="monospace" font-size="24" fill="#FF6B8A" opacity="0.15">►</text>
   </g>
-  <g class="f3" opacity="0.15" style="animation-delay: 1.4s;">
-    <text x="210" y="180" font-family="monospace" font-size="20" fill="#FF6B8A">★</text>
+  <g class="f3" style="animation-delay: 0.2s;">
+    <text x="240" y="180" font-family="monospace" font-size="20" fill="#7B2FBE" opacity="0.2">▸</text>
   </g>
-  <g class="f4" opacity="0.2" style="animation-delay: 0.6s;">
-    <text x="300" y="170" font-family="monospace" font-size="26" fill="#00F260">◈</text>
+  <g class="f5" style="animation-delay: 1.0s;">
+    <text x="350" y="170" font-family="monospace" font-size="24" fill="#00D4FF" opacity="0.15">♢</text>
   </g>
-  <g class="f5" opacity="0.15" style="animation-delay: 1.1s;">
-    <text x="400" y="175" font-family="monospace" font-size="22" fill="#F7971E">✦</text>
+  <g class="f2" style="animation-delay: 0.6s;">
+    <text x="460" y="175" font-family="monospace" font-size="22" fill="#F7971E" opacity="0.2">♤</text>
   </g>
-  <g class="f6" opacity="0.2" style="animation-delay: 0.3s;">
-    <text x="500" y="165" font-family="monospace" font-size="24" fill="#00D4FF">►</text>
+  <g class="f4" style="animation-delay: 1.3s;">
+    <text x="570" y="165" font-family="monospace" font-size="24" fill="#00F260" opacity="0.15">♧</text>
   </g>
-  <g class="f7" opacity="0.15" style="animation-delay: 1.5s;">
-    <text x="600" y="180" font-family="monospace" font-size="20" fill="#7B2FBE">⌘</text>
+  <g class="f6" style="animation-delay: 0.4s;">
+    <text x="680" y="180" font-family="monospace" font-size="20" fill="#FF6B8A" opacity="0.2">♥</text>
   </g>
-  <g class="f8" opacity="0.2" style="animation-delay: 0.7s;">
-    <text x="690" y="170" font-family="monospace" font-size="26" fill="#FF6B8A">◆</text>
-  </g>
-  <g class="f9" opacity="0.15" style="animation-delay: 1.2s;">
-    <text x="770" y="175" font-family="monospace" font-size="22" fill="#00F260">▲</text>
+  <g class="f1" style="animation-delay: 1.5s;">
+    <text x="770" y="170" font-family="monospace" font-size="22" fill="#7B2FBE" opacity="0.15">♦</text>
   </g>
   
-  <!-- Row 4 - Tiny Symbols -->
-  <g class="f10" opacity="0.12" style="animation-delay: 0.5s;">
-    <text x="60" y="225" font-family="monospace" font-size="18" fill="#00D4FF">+</text>
+  <!-- Tiny Operators - Row 4 -->
+  <g class="f4" style="animation-delay: 0.8s;">
+    <text x="50" y="225" font-family="monospace" font-size="18" fill="#00D4FF" opacity="0.15">+</text>
   </g>
-  <g class="f11" opacity="0.15" style="animation-delay: 1.0s;">
-    <text x="140" y="215" font-family="monospace" font-size="20" fill="#7B2FBE">-</text>
+  <g class="f2" style="animation-delay: 0.3s;">
+    <text x="150" y="215" font-family="monospace" font-size="20" fill="#7B2FBE" opacity="0.12">-</text>
   </g>
-  <g class="f12" opacity="0.12" style="animation-delay: 0.4s;">
-    <text x="220" y="230" font-family="monospace" font-size="16" fill="#FF6B8A">=</text>
+  <g class="f5" style="animation-delay: 1.2s;">
+    <text x="260" y="230" font-family="monospace" font-size="16" fill="#FF6B8A" opacity="0.15">=</text>
   </g>
-  <g class="f13" opacity="0.15" style="animation-delay: 1.3s;">
-    <text x="310" y="220" font-family="monospace" font-size="20" fill="#00F260">&gt;</text>
+  <g class="f1" style="animation-delay: 0.5s;">
+    <text x="370" y="220" font-family="monospace" font-size="20" fill="#00F260" opacity="0.12">&gt;</text>
   </g>
-  <g class="f14" opacity="0.12" style="animation-delay: 0.8s;">
-    <text x="400" y="225" font-family="monospace" font-size="18" fill="#F7971E">&lt;</text>
+  <g class="f3" style="animation-delay: 1.4s;">
+    <text x="480" y="225" font-family="monospace" font-size="18" fill="#F7971E" opacity="0.15">&lt;</text>
   </g>
-  <g class="f15" opacity="0.15" style="animation-delay: 1.5s;">
-    <text x="490" y="215" font-family="monospace" font-size="20" fill="#00D4FF">/</text>
+  <g class="f6" style="animation-delay: 0.9s;">
+    <text x="590" y="215" font-family="monospace" font-size="20" fill="#00D4FF" opacity="0.12">/</text>
   </g>
-  <g class="f1" opacity="0.12" style="animation-delay: 0.3s;">
-    <text x="580" y="230" font-family="monospace" font-size="16" fill="#7B2FBE">\</text>
+  <g class="f2" style="animation-delay: 1.1s;">
+    <text x="700" y="230" font-family="monospace" font-size="16" fill="#7B2FBE" opacity="0.15">\</text>
   </g>
-  <g class="f2" opacity="0.15" style="animation-delay: 1.1s;">
-    <text x="670" y="220" font-family="monospace" font-size="20" fill="#FF6B8A">|</text>
+  
+  <!-- Code Rain Drops -->
+  <g opacity="0.08">
+    <text x="100" y="30" font-family="monospace" font-size="12" fill="#00D4FF" class="slide">;</text>
+    <text x="300" y="30" font-family="monospace" font-size="12" fill="#00D4FF" class="slide" style="animation-delay: 1.5s;">;</text>
+    <text x="500" y="30" font-family="monospace" font-size="12" fill="#00D4FF" class="slide" style="animation-delay: 3s;">;</text>
+    <text x="700" y="30" font-family="monospace" font-size="12" fill="#00D4FF" class="slide" style="animation-delay: 4.5s;">;</text>
   </g>
-  <g class="f3" opacity="0.12" style="animation-delay: 0.7s;">
-    <text x="750" y="225" font-family="monospace" font-size="18" fill="#00F260">~</text>
+  
+  <!-- Subtle Grid Lines -->
+  <g opacity="0.03">
+    <line x1="0" y1="50" x2="800" y2="50" stroke="#00D4FF" stroke-width="0.5"/>
+    <line x1="0" y1="100" x2="800" y2="100" stroke="#00D4FF" stroke-width="0.5"/>
+    <line x1="0" y1="150" x2="800" y2="150" stroke="#00D4FF" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="800" y2="200" stroke="#00D4FF" stroke-width="0.5"/>
   </g>
   
   <!-- Corner Decorations -->
-  <rect x="15" y="15" width="25" height="2" rx="1" fill="#00D4FF" opacity="0.2"/>
-  <rect x="15" y="15" width="2" height="18" rx="1" fill="#00D4FF" opacity="0.2"/>
-  <rect x="760" y="15" width="25" height="2" rx="1" fill="#FF6B8A" opacity="0.2"/>
-  <rect x="783" y="15" width="2" height="18" rx="1" fill="#FF6B8A" opacity="0.2"/>
-  <rect x="15" y="233" width="25" height="2" rx="1" fill="#7B2FBE" opacity="0.2"/>
-  <rect x="15" y="217" width="2" height="18" rx="1" fill="#7B2FBE" opacity="0.2"/>
-  <rect x="760" y="233" width="25" height="2" rx="1" fill="#00F260" opacity="0.2"/>
-  <rect x="783" y="217" width="2" height="18" rx="1" fill="#00F260" opacity="0.2"/>
+  <rect x="20" y="20" width="30" height="2" rx="1" fill="#00D4FF" opacity="0.15"/>
+  <rect x="20" y="20" width="2" height="22" rx="1" fill="#00D4FF" opacity="0.15"/>
+  <rect x="750" y="20" width="30" height="2" rx="1" fill="#FF6B8A" opacity="0.15"/>
+  <rect x="778" y="20" width="2" height="22" rx="1" fill="#FF6B8A" opacity="0.15"/>
+  <rect x="20" y="228" width="30" height="2" rx="1" fill="#7B2FBE" opacity="0.15"/>
+  <rect x="20" y="208" width="2" height="22" rx="1" fill="#7B2FBE" opacity="0.15"/>
+  <rect x="750" y="228" width="30" height="2" rx="1" fill="#00F260" opacity="0.15"/>
+  <rect x="778" y="208" width="2" height="22" rx="1" fill="#00F260" opacity="0.15"/>
+  
+  <!-- Decorative Dots -->
+  <circle cx="50" cy="15" r="2" fill="#00D4FF" opacity="0.2" class="twinkle"/>
+  <circle cx="400" cy="15" r="2" fill="#FF6B8A" opacity="0.2" class="twinkle" style="animation-delay: 1s;"/>
+  <circle cx="750" cy="15" r="2" fill="#7B2FBE" opacity="0.2" class="twinkle" style="animation-delay: 2s;"/>
+  <circle cx="50" cy="235" r="2" fill="#00F260" opacity="0.2" class="twinkle" style="animation-delay: 1.5s;"/>
+  <circle cx="400" cy="235" r="2" fill="#F7971E" opacity="0.2" class="twinkle" style="animation-delay: 0.5s;"/>
+  <circle cx="750" cy="235" r="2" fill="#00D4FF" opacity="0.2" class="twinkle" style="animation-delay: 2.5s;"/>
 </svg>
