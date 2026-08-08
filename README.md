@@ -2,7 +2,6 @@
   <!-- Chrome Dino Game SVG Animation -->
   <img src="https://raw.githubusercontent.com/DavidDanielx72/DavidDanielx72/main/assets/ios-messages.svg" alt="Chrome Dino Game" width="600" />
   <br>
-  <i>🏃‍♂️ Press Space to jump · 🏆 How far can you go?</i>
 </div>
 
 <br>
