@@ -1,243 +1,257 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="800" height="250">
   <defs>
-    <!-- Gradient Backgrounds -->
+    <!-- Gradients -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f0c29"/>
-      <stop offset="50%" style="stop-color:#302b63"/>
-      <stop offset="100%" style="stop-color:#24243e"/>
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
     </linearGradient>
     
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00D4FF"/>
-      <stop offset="50%" style="stop-color:#7B2FBE"/>
-      <stop offset="100%" style="stop-color:#FF6B8A"/>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f7971e"/>
+      <stop offset="100%" style="stop-color:#ffd200"/>
     </linearGradient>
     
-    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00D4FF"/>
-      <stop offset="100%" style="stop-color:#FF6B8A"/>
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00f260"/>
+      <stop offset="100%" style="stop-color:#0575e6"/>
+    </linearGradient>
+    
+    <linearGradient id="fireGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f12711"/>
+      <stop offset="100%" style="stop-color:#f5af19"/>
     </linearGradient>
     
     <!-- Glow Filters -->
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
       <feMerge>
-        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
     
     <filter id="softGlow">
-      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="8" result="blur"/>
       <feMerge>
-        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
     
     <style>
-      @keyframes float {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-15px) rotate(3deg); }
+      @keyframes floatUp {
+        0% { transform: translateY(0) scale(1); opacity: 0.6; }
+        50% { transform: translateY(-20px) scale(1.1); opacity: 1; }
+        100% { transform: translateY(0) scale(1); opacity: 0.6; }
       }
       
-      @keyframes floatReverse {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-10px) rotate(-3deg); }
+      @keyframes floatDown {
+        0% { transform: translateY(0) scale(1); opacity: 0.6; }
+        50% { transform: translateY(20px) scale(1.1); opacity: 1; }
+        100% { transform: translateY(0) scale(1); opacity: 0.6; }
       }
       
-      @keyframes pulse {
-        0%, 100% { opacity: 1; transform: scale(1); }
-        50% { opacity: 0.7; transform: scale(1.05); }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.8; transform: scale(1.1); }
       }
       
-      @keyframes codeRain {
-        0% { opacity: 0; transform: translateY(-20px); }
-        20% { opacity: 1; transform: translateY(0); }
-        80% { opacity: 1; transform: translateY(0); }
-        100% { opacity: 0; transform: translateY(20px); }
-      }
-      
-      @keyframes shimmer {
-        0% { background-position: -200% center; }
-        100% { background-position: 200% center; }
-      }
-      
-      @keyframes rotate {
+      @keyframes spinSlow {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
       }
       
-      @keyframes orbit1 {
-        0% { transform: rotate(0deg) translateX(60px) rotate(0deg); }
-        100% { transform: rotate(360deg) translateX(60px) rotate(-360deg); }
+      @keyframes spinReverse {
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg); }
       }
       
-      @keyframes orbit2 {
-        0% { transform: rotate(120deg) translateX(60px) rotate(-120deg); }
-        100% { transform: rotate(480deg) translateX(60px) rotate(-480deg); }
+      @keyframes dash {
+        to { stroke-dashoffset: 0; }
       }
       
-      @keyframes orbit3 {
-        0% { transform: rotate(240deg) translateX(60px) rotate(-240deg); }
-        100% { transform: rotate(600deg) translateX(60px) rotate(-600deg); }
-      }
-      
-      @keyframes typeWriter {
-        0% { opacity: 0; transform: translateX(-20px); }
+      @keyframes fadeInOut {
+        0%, 100% { opacity: 0; transform: translateX(-20px); }
         20% { opacity: 1; transform: translateX(0); }
         80% { opacity: 1; transform: translateX(0); }
         100% { opacity: 0; transform: translateX(20px); }
       }
       
-      @keyframes particleFloat {
-        0% { opacity: 0; transform: translateY(0) scale(0); }
-        50% { opacity: 1; transform: translateY(-30px) scale(1); }
-        100% { opacity: 0; transform: translateY(-60px) scale(0); }
+      @keyframes twinkle {
+        0%, 100% { opacity: 0.2; transform: scale(0.5); }
+        50% { opacity: 1; transform: scale(1); }
       }
       
-      @keyframes lineDraw {
-        0% { stroke-dashoffset: 1000; }
-        100% { stroke-dashoffset: 0; }
+      @keyframes wave {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-8px); }
       }
       
-      .floating { animation: float 4s ease-in-out infinite; }
-      .floating-reverse { animation: floatReverse 4s ease-in-out infinite 2s; }
-      .pulsing { animation: pulse 3s ease-in-out infinite; }
-      .rotating { animation: rotate 8s linear infinite; }
-      .orbit1 { animation: orbit1 8s linear infinite; }
-      .orbit2 { animation: orbit2 8s linear infinite; }
-      .orbit3 { animation: orbit3 8s linear infinite; }
-      .shimmer-text {
-        background: linear-gradient(90deg, #00D4FF, #7B2FBE, #FF6B8A, #00D4FF);
+      @keyframes shimmerText {
+        0% { background-position: -200% center; }
+        100% { background-position: 200% center; }
+      }
+      
+      @keyframes orbitPulse {
+        0%, 100% { r: 3; opacity: 0.8; }
+        50% { r: 6; opacity: 0.3; }
+      }
+      
+      .float-up { animation: floatUp 3s ease-in-out infinite; }
+      .float-down { animation: floatDown 3.5s ease-in-out infinite; }
+      .pulse-glow { animation: pulseGlow 2s ease-in-out infinite; }
+      .spin-slow { animation: spinSlow 10s linear infinite; }
+      .spin-reverse { animation: spinReverse 10s linear infinite; }
+      .twinkle { animation: twinkle 2s ease-in-out infinite; }
+      .wave { animation: wave 2s ease-in-out infinite; }
+      .wave2 { animation: wave 2s ease-in-out infinite 0.3s; }
+      .wave3 { animation: wave 2s ease-in-out infinite 0.6s; }
+      .shimmer-gold {
+        background: linear-gradient(90deg, #f7971e, #ffd200, #f7971e);
         background-size: 200% auto;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: shimmer 3s linear infinite;
+        animation: shimmerText 3s linear infinite;
+      }
+      .shimmer-neon {
+        background: linear-gradient(90deg, #00f260, #0575e6, #00f260);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shimmerText 3s linear infinite 1.5s;
       }
       
-      .particle { animation: particleFloat 2s ease-in-out infinite; }
-      .particle:nth-child(2) { animation-delay: 0.5s; }
-      .particle:nth-child(3) { animation-delay: 1s; }
-      .particle:nth-child(4) { animation-delay: 1.5s; }
-      .particle:nth-child(5) { animation-delay: 0.8s; }
-      .particle:nth-child(6) { animation-delay: 1.2s; }
+      .fade-text { animation: fadeInOut 5s ease-in-out infinite; }
+      .fade-text2 { animation: fadeInOut 5s ease-in-out infinite 1.8s; }
+      .fade-text3 { animation: fadeInOut 5s ease-in-out infinite 3.6s; }
       
-      .code-line { animation: codeRain 3s ease-in-out infinite; }
-      .code-line:nth-child(2) { animation-delay: 1s; }
-      .code-line:nth-child(3) { animation-delay: 2s; }
-      
-      .type-text { animation: typeWriter 4s ease-in-out infinite; }
-      .type-text:nth-child(2) { animation-delay: 1.5s; }
-      .type-text:nth-child(3) { animation-delay: 3s; }
+      .orbit-dot {
+        animation: orbitPulse 2s ease-in-out infinite;
+      }
     </style>
   </defs>
   
   <!-- Background -->
   <rect width="800" height="250" fill="url(#bgGrad)" rx="16"/>
   
-  <!-- Background Particles -->
-  <circle cx="100" cy="50" r="2" fill="#00D4FF" opacity="0.3" class="particle"/>
-  <circle cx="200" cy="80" r="1.5" fill="#7B2FBE" opacity="0.3" class="particle"/>
-  <circle cx="300" cy="40" r="2" fill="#FF6B8A" opacity="0.3" class="particle"/>
-  <circle cx="500" cy="60" r="1.5" fill="#00D4FF" opacity="0.3" class="particle"/>
-  <circle cx="600" cy="90" r="2" fill="#7B2FBE" opacity="0.3" class="particle"/>
-  <circle cx="700" cy="50" r="1.5" fill="#FF6B8A" opacity="0.3" class="particle"/>
+  <!-- Background Grid Pattern -->
+  <g opacity="0.05">
+    <line x1="0" y1="30" x2="800" y2="30" stroke="#00f260" stroke-width="0.5"/>
+    <line x1="0" y1="60" x2="800" y2="60" stroke="#00f260" stroke-width="0.5"/>
+    <line x1="0" y1="90" x2="800" y2="90" stroke="#00f260" stroke-width="0.5"/>
+    <line x1="0" y1="120" x2="800" y2="120" stroke="#00f260" stroke-width="0.5"/>
+    <line x1="0" y1="150" x2="800" y2="150" stroke="#00f260" stroke-width="0.5"/>
+    <line x1="0" y1="180" x2="800" y2="180" stroke="#00f260" stroke-width="0.5"/>
+    <line x1="0" y1="210" x2="800" y2="210" stroke="#00f260" stroke-width="0.5"/>
+    <line x1="0" y1="240" x2="800" y2="240" stroke="#00f260" stroke-width="0.5"/>
+    <line x1="100" y1="0" x2="100" y2="250" stroke="#00f260" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="250" stroke="#00f260" stroke-width="0.5"/>
+    <line x1="300" y1="0" x2="300" y2="250" stroke="#00f260" stroke-width="0.5"/>
+    <line x1="400" y1="0" x2="400" y2="250" stroke="#00f260" stroke-width="0.5"/>
+    <line x1="500" y1="0" x2="500" y2="250" stroke="#00f260" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="250" stroke="#00f260" stroke-width="0.5"/>
+    <line x1="700" y1="0" x2="700" y2="250" stroke="#00f260" stroke-width="0.5"/>
+  </g>
   
   <!-- Decorative Circles -->
-  <circle cx="680" cy="80" r="80" fill="#00D4FF" opacity="0.03" class="pulsing"/>
-  <circle cx="680" cy="80" r="120" fill="#7B2FBE" opacity="0.02" class="pulsing" style="animation-delay: 1s;"/>
+  <circle cx="650" cy="125" r="100" fill="none" stroke="#00f260" stroke-width="0.5" opacity="0.1" class="spin-slow"/>
+  <circle cx="650" cy="125" r="80" fill="none" stroke="#f7971e" stroke-width="0.5" opacity="0.1" class="spin-reverse"/>
+  <circle cx="650" cy="125" r="60" fill="none" stroke="#f12711" stroke-width="0.5" opacity="0.1" class="spin-slow"/>
   
-  <!-- Orbiting Code Symbols -->
-  <g class="orbit1">
-    <text x="680" y="80" font-size="18" fill="#00D4FF" opacity="0.6">{"</text>
-  </g>
-  <g class="orbit2">
-    <text x="680" y="80" font-size="18" fill="#FF6B8A" opacity="0.6">}</text>
-  </g>
-  <g class="orbit3">
-    <text x="680" y="80" font-size="18" fill="#7B2FBE" opacity="0.6">;</text>
-  </g>
+  <!-- Orbiting Dots -->
+  <circle cx="650" cy="125" r="3" fill="#00f260" class="orbit-dot"/>
+  <circle cx="650" cy="125" r="3" fill="#f7971e" class="orbit-dot" style="animation-delay: 0.5s;"/>
+  <circle cx="650" cy="125" r="3" fill="#f12711" class="orbit-dot" style="animation-delay: 1s;"/>
   
-  <!-- Central Icon - Developer -->
-  <g transform="translate(680, 80)">
-    <circle cx="0" cy="0" r="35" fill="none" stroke="url(#accentGrad)" stroke-width="2" opacity="0.3"/>
-    <circle cx="0" cy="0" r="45" fill="none" stroke="url(#accentGrad)" stroke-width="1" opacity="0.15"/>
-    <text x="0" y="10" text-anchor="middle" font-size="28" fill="white">💻</text>
-  </g>
-  
-  <!-- Code Rain Lines -->
-  <g opacity="0.1">
-    <text x="30" y="30" font-family="monospace" font-size="10" fill="#00D4FF" class="code-line">const future = 'build';</text>
-    <text x="30" y="50" font-family="monospace" font-size="10" fill="#00D4FF" class="code-line">let innovation = true;</text>
-    <text x="30" y="70" font-family="monospace" font-size="10" fill="#00D4FF" class="code-line">while (learning) { code(); }</text>
-  </g>
-  
-  <!-- Main Title -->
-  <g transform="translate(40, 60)">
-    <text x="0" y="30" font-family="'Segoe UI', Arial, sans-serif" font-size="42" font-weight="800" fill="white">
-      David
-    </text>
-    <text x="0" y="80" font-family="'Segoe UI', Arial, sans-serif" font-size="42" font-weight="800" class="shimmer-text">
-      Daniel Sepkitt
-    </text>
-  </g>
-  
-  <!-- Subtitle with typing effect -->
-  <g transform="translate(40, 150)">
-    <!-- Glowing line -->
-    <line x1="0" y1="0" x2="60" y2="0" stroke="#00D4FF" stroke-width="2" opacity="0.5"/>
+  <!-- Central Avatar -->
+  <g transform="translate(650, 125)">
+    <circle cx="0" cy="0" r="40" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.6"/>
+    <circle cx="0" cy="0" r="35" fill="#1a1a2e" stroke="url(#neonGrad)" stroke-width="1.5"/>
+    <text x="0" y="12" text-anchor="middle" font-size="32" fill="white">👨‍💻</text>
     
-    <text x="75" y="5" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#a0a0b0" class="type-text">
+    <!-- Glowing ring -->
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#00f260" stroke-width="0.5" opacity="0.3" class="spin-slow"/>
+  </g>
+  
+  <!-- Main Title with Gold Gradient -->
+  <g transform="translate(50, 55)">
+    <text x="0" y="0" font-family="'Segoe UI', Arial, sans-serif" font-size="14" fill="#00f260" opacity="0.6" letter-spacing="4">HELLO, I'M</text>
+    <text x="0" y="55" font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="800" class="shimmer-gold">
+      David Daniel
+    </text>
+    <text x="0" y="95" font-family="'Segoe UI', Arial, sans-serif" font-size="38" font-weight="700" class="shimmer-neon">
+      Sepkitt
+    </text>
+  </g>
+  
+  <!-- Role Tags -->
+  <g transform="translate(50, 145)">
+    <!-- Decorative line -->
+    <rect x="0" y="0" width="40" height="3" rx="1.5" fill="url(#goldGrad)"/>
+    
+    <text x="55" y="8" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#a0a0b0" class="fade-text">
       🚀 Aspiring Full Stack Developer
     </text>
-    <text x="75" y="5" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#a0a0b0" class="type-text">
+    <text x="55" y="8" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#a0a0b0" class="fade-text2">
       💡 Building the future, one line at a time
     </text>
-    <text x="75" y="5" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#a0a0b0" class="type-text">
-      🌍 Based in Cape Town, South Africa
+    <text x="55" y="8" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#a0a0b0" class="fade-text3">
+      🌍 Cape Town, South Africa
     </text>
   </g>
   
-  <!-- Tech Stack Tags - Floating -->
-  <g transform="translate(40, 195)">
-    <rect x="0" y="0" width="95" height="24" rx="12" fill="#00D4FF" opacity="0.15"/>
-    <text x="47" y="16" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#00D4FF" font-weight="600">React</text>
+  <!-- Tech Stack Pills -->
+  <g transform="translate(50, 185)">
+    <rect x="0" y="0" width="80" height="28" rx="14" fill="none" stroke="#00f260" stroke-width="1.5" opacity="0.4" class="float-up"/>
+    <text x="40" y="19" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#00f260" font-weight="600">React</text>
     
-    <rect x="105" y="0" width="85" height="24" rx="12" fill="#7B2FBE" opacity="0.15" class="floating-reverse"/>
-    <text x="147" y="16" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#7B2FBE" font-weight="600">Java</text>
+    <rect x="90" y="0" width="70" height="28" rx="14" fill="none" stroke="#f7971e" stroke-width="1.5" opacity="0.4" class="float-down"/>
+    <text x="125" y="19" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#f7971e" font-weight="600">Java</text>
     
-    <rect x="200" y="0" width="100" height="24" rx="12" fill="#FF6B8A" opacity="0.15" class="floating"/>
-    <text x="250" y="16" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#FF6B8A" font-weight="600">JavaScript</text>
+    <rect x="170" y="0" width="95" height="28" rx="14" fill="none" stroke="#f12711" stroke-width="1.5" opacity="0.4" class="float-up"/>
+    <text x="217" y="19" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#f12711" font-weight="600">JavaScript</text>
     
-    <rect x="310" y="0" width="105" height="24" rx="12" fill="#00D4FF" opacity="0.15" class="floating-reverse"/>
-    <text x="362" y="16" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#00D4FF" font-weight="600">TypeScript</text>
+    <rect x="275" y="0" width="95" height="28" rx="14" fill="none" stroke="#00f260" stroke-width="1.5" opacity="0.4" class="float-down"/>
+    <text x="322" y="19" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#00f260" font-weight="600">TypeScript</text>
     
-    <rect x="425" y="0" width="95" height="24" rx="12" fill="#7B2FBE" opacity="0.15" class="floating"/>
-    <text x="472" y="16" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#7B2FBE" font-weight="600">Node.js</text>
+    <rect x="380" y="0" width="80" height="28" rx="14" fill="none" stroke="#f7971e" stroke-width="1.5" opacity="0.4" class="float-up"/>
+    <text x="420" y="19" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#f7971e" font-weight="600">Python</text>
     
-    <rect x="530" y="0" width="95" height="24" rx="12" fill="#FF6B8A" opacity="0.15" class="floating-reverse"/>
-    <text x="577" y="16" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#FF6B8A" font-weight="600">Python</text>
+    <rect x="470" y="0" width="90" height="28" rx="14" fill="none" stroke="#f12711" stroke-width="1.5" opacity="0.4" class="float-down"/>
+    <text x="515" y="19" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#f12711" font-weight="600">Node.js</text>
   </g>
   
-  <!-- Decorative Line -->
-  <line x1="40" y1="180" x2="640" y2="180" stroke="url(#accentGrad)" stroke-width="1" opacity="0.1"/>
-  
-  <!-- Status Indicator - Bottom Right -->
+  <!-- Status Indicator -->
   <g transform="translate(680, 220)">
-    <circle cx="0" cy="0" r="4" fill="#34C759">
-      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    <circle cx="0" cy="0" r="4" fill="#00f260">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite"/>
     </circle>
-    <text x="10" y="4" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8e8e93">Open to opportunities</text>
+    <text x="10" y="4" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#00f260" opacity="0.7">Available for opportunities</text>
   </g>
   
-  <!-- Corner decorations -->
-  <rect x="0" y="0" width="20" height="3" fill="#00D4FF" opacity="0.3" rx="1.5"/>
-  <rect x="0" y="0" width="3" height="20" fill="#00D4FF" opacity="0.3" rx="1.5"/>
-  <rect x="780" y="0" width="20" height="3" fill="#FF6B8A" opacity="0.3" rx="1.5"/>
-  <rect x="797" y="0" width="3" height="20" fill="#FF6B8A" opacity="0.3" rx="1.5"/>
-  <rect x="0" y="247" width="20" height="3" fill="#7B2FBE" opacity="0.3" rx="1.5"/>
-  <rect x="0" y="230" width="3" height="20" fill="#7B2FBE" opacity="0.3" rx="1.5"/>
-  <rect x="780" y="247" width="20" height="3" fill="#00D4FF" opacity="0.3" rx="1.5"/>
-  <rect x="797" y="230" width="3" height="20" fill="#00D4FF" opacity="0.3" rx="1.5"/>
+  <!-- Decorative Elements -->
+  <!-- Top left corner -->
+  <rect x="10" y="10" width="30" height="2" rx="1" fill="#00f260" opacity="0.4"/>
+  <rect x="10" y="10" width="2" height="20" rx="1" fill="#00f260" opacity="0.4"/>
+  
+  <!-- Top right corner -->
+  <rect x="760" y="10" width="30" height="2" rx="1" fill="#f7971e" opacity="0.4"/>
+  <rect x="788" y="10" width="2" height="20" rx="1" fill="#f7971e" opacity="0.4"/>
+  
+  <!-- Bottom left corner -->
+  <rect x="10" y="238" width="30" height="2" rx="1" fill="#f12711" opacity="0.4"/>
+  <rect x="10" y="220" width="2" height="20" rx="1" fill="#f12711" opacity="0.4"/>
+  
+  <!-- Bottom right corner -->
+  <rect x="760" y="238" width="30" height="2" rx="1" fill="#00f260" opacity="0.4"/>
+  <rect x="788" y="220" width="2" height="20" rx="1" fill="#00f260" opacity="0.4"/>
+  
+  <!-- Floating Code Symbols -->
+  <text x="720" y="40" font-family="monospace" font-size="12" fill="#00f260" opacity="0.15" class="float-up">{ }</text>
+  <text x="30" y="220" font-family="monospace" font-size="12" fill="#f7971e" opacity="0.15" class="float-down">()</text>
+  <text x="750" y="210" font-family="monospace" font-size="12" fill="#f12711" opacity="0.15" class="float-up">[]</text>
+  
+  <!-- Subtle wave lines at bottom -->
+  <path d="M0 240 Q50 232 100 240 Q150 248 200 240 Q250 232 300 240 Q350 248 400 240 Q450 232 500 240 Q550 248 600 240 Q650 232 700 240 Q750 248 800 240" stroke="#00f260" stroke-width="0.5" opacity="0.1" fill="none"/>
 </svg>
