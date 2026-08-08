@@ -7,8 +7,8 @@
 <br>
 
 <div align="center">
-  <!-- Premium Typing Animation -->
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=30&duration=3500&pause=600&color=00D4FF&center=true&vCenter=true&width=800&height=70&lines=✦+Aspiring+Full+Stack+Developer;✦+Building+the+future%2C+one+line+at+a+time;✦+Based+in+Cape+Town%2C+South+Africa;✦+AI+Enthusiast+%26+Problem+Solver;✦+Turning+ideas+into+reality;✦+Open+to+exciting+opportunities" alt="Premium Typing Animation" />
+  <!-- Premium Typing Animation - GOLD -->
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=30&duration=3500&pause=600&color=FFD700&center=true&vCenter=true&width=800&height=70&lines=✦+Aspiring+Full+Stack+Developer;✦+Building+the+future%2C+one+line+at+a+time;✦+Based+in+Cape+Town%2C+South+Africa;✦+AI+Enthusiast+%26+Problem+Solver;✦+Turning+ideas+into+reality;✦+Open+to+exciting+opportunities" alt="Premium Typing Animation" />
 </div>
 
 <br>
