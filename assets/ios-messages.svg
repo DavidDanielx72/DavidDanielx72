@@ -1,281 +1,243 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250" width="600" height="250">
   <defs>
     <style>
-      /* Ground scrolling */
+      /* Ground scrolling - authentic speed */
       @keyframes groundScroll {
         0% { transform: translateX(0); }
-        100% { transform: translateX(-48px); }
+        100% { transform: translateX(-24px); }
       }
       
-      /* Dino running animation - leg movement */
-      @keyframes dinoRun {
-        0%, 100% { transform: rotate(0deg); }
-        50% { transform: rotate(-20deg); }
-      }
-      
-      @keyframes dinoRunBack {
-        0%, 100% { transform: rotate(0deg); }
-        50% { transform: rotate(20deg); }
-      }
-      
-      /* Dino arm swing */
-      @keyframes armSwing {
-        0%, 100% { transform: rotate(0deg); }
-        50% { transform: rotate(-15deg); }
-      }
-      
-      /* Jump animation */
-      @keyframes jump {
+      /* Dino running - 2-frame animation like the real game */
+      @keyframes dinoRun1 {
         0%, 100% { transform: translateY(0); }
-        30% { transform: translateY(-70px); }
-        50% { transform: translateY(-75px); }
-        70% { transform: translateY(-70px); }
+        50% { transform: translateY(-2px); }
+      }
+      
+      @keyframes dinoRun2 {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(2px); }
+      }
+      
+      /* Jump animation - parabolic arc */
+      @keyframes jump {
+        0% { transform: translateY(0); }
+        10% { transform: translateY(-10px); }
+        30% { transform: translateY(-60px); }
+        50% { transform: translateY(-65px); }
+        70% { transform: translateY(-60px); }
+        90% { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
       }
       
       /* Cactus movement */
       @keyframes cactusMove {
         0% { transform: translateX(0); }
-        100% { transform: translateX(-600px); }
+        100% { transform: translateX(-620px); }
       }
       
-      /* Cloud movement */
+      /* Cloud movement - slower */
       @keyframes cloudMove {
         0% { transform: translateX(0); }
         100% { transform: translateX(-500px); }
       }
       
-      /* Pterodactyl movement with wing flap */
+      /* Pterodactyl movement */
       @keyframes pteraMove {
         0% { transform: translateX(0) translateY(0); }
-        20% { transform: translateX(-100px) translateY(-8px); }
-        40% { transform: translateX(-200px) translateY(0); }
-        60% { transform: translateX(-300px) translateY(-8px); }
-        80% { transform: translateX(-400px) translateY(0); }
-        100% { transform: translateX(-500px) translateY(-5px); }
+        25% { transform: translateX(-150px) translateY(-5px); }
+        50% { transform: translateX(-300px) translateY(0); }
+        75% { transform: translateX(-450px) translateY(-5px); }
+        100% { transform: translateX(-600px) translateY(0); }
       }
       
+      /* Wing flap for pterodactyl */
       @keyframes wingFlap {
         0%, 100% { transform: scaleY(1); }
-        50% { transform: scaleY(-1); }
+        50% { transform: scaleY(-0.6); }
       }
       
-      /* Stars twinkling */
-      @keyframes twinkle {
-        0%, 100% { opacity: 0.3; }
-        50% { opacity: 0.8; }
-      }
+      .ground-line { animation: groundScroll 0.8s linear infinite; }
+      .dino-jump { animation: jump 0.7s ease-in-out infinite; }
+      .cactus { animation: cactusMove 3.5s linear infinite; }
+      .cactus2 { animation: cactusMove 3.5s linear infinite 1.8s; }
+      .cloud { animation: cloudMove 8s linear infinite; }
+      .cloud2 { animation: cloudMove 8s linear infinite 4s; }
+      .ptera { animation: pteraMove 4s linear infinite; }
+      .wing-flap { animation: wingFlap 0.2s ease-in-out infinite; }
       
-      /* Cactus wobble */
-      @keyframes cactusWobble {
-        0%, 100% { transform: rotate(0deg); }
-        25% { transform: rotate(1deg); }
-        75% { transform: rotate(-1deg); }
-      }
+      /* Dino leg positions - 2 frame running */
+      .leg-up { animation: dinoRun1 0.2s steps(2) infinite; }
+      .leg-down { animation: dinoRun2 0.2s steps(2) infinite; }
       
-      .ground-line { animation: groundScroll 0.6s linear infinite; }
-      .dino-body { animation: jump 0.6s ease-in-out infinite; }
-      .leg-front { animation: dinoRun 0.25s steps(2) infinite; transform-origin: 60px 150px; }
-      .leg-back { animation: dinoRunBack 0.25s steps(2) infinite; transform-origin: 75px 150px; }
-      .arm { animation: armSwing 0.25s steps(2) infinite; transform-origin: 72px 135px; }
-      .cactus { animation: cactusMove 2.5s linear infinite; }
-      .cactus2 { animation: cactusMove 2.5s linear infinite 1.2s; }
-      .cloud { animation: cloudMove 6s linear infinite; }
-      .cloud2 { animation: cloudMove 6s linear infinite 3s; }
-      .ptera { animation: pteraMove 3.5s linear infinite; }
-      .wing { animation: wingFlap 0.15s ease-in-out infinite; }
-      .star { animation: twinkle 2s ease-in-out infinite; }
+      /* Dino arm position */
+      .arm-back { animation: dinoRun1 0.2s steps(2) infinite; }
+      .arm-forward { animation: dinoRun2 0.2s steps(2) infinite; }
     </style>
   </defs>
   
-  <!-- Sky Background -->
+  <!-- Sky Background - Authentic Chrome color -->
   <rect width="600" height="250" fill="#f7f7f7"/>
   
-  <!-- Stars (subtle background decoration) -->
-  <circle cx="50" cy="20" r="1.5" fill="#d0d0d0" class="star"/>
-  <circle cx="150" cy="35" r="1" fill="#d0d0d0" class="star" style="animation-delay: 0.5s;"/>
-  <circle cx="250" cy="15" r="1.5" fill="#d0d0d0" class="star" style="animation-delay: 1s;"/>
-  <circle cx="400" cy="25" r="1" fill="#d0d0d0" class="star" style="animation-delay: 1.5s;"/>
-  <circle cx="500" cy="40" r="1.5" fill="#d0d0d0" class="star" style="animation-delay: 0.7s;"/>
-  
-  <!-- Clouds -->
+  <!-- Clouds - Authentic style -->
   <g class="cloud">
-    <ellipse cx="80" cy="45" rx="35" ry="18" fill="#e8e8e8"/>
-    <ellipse cx="105" cy="38" rx="28" ry="14" fill="#e8e8e8"/>
-    <ellipse cx="55" cy="40" rx="22" ry="12" fill="#e8e8e8"/>
-    <ellipse cx="80" cy="42" rx="30" ry="15" fill="#ececec"/>
+    <ellipse cx="80" cy="45" rx="30" ry="14" fill="#e5e5e5"/>
+    <ellipse cx="100" cy="40" rx="22" ry="11" fill="#e5e5e5"/>
+    <ellipse cx="60" cy="42" rx="18" ry="9" fill="#e5e5e5"/>
   </g>
   <g class="cloud2">
-    <ellipse cx="280" cy="55" rx="30" ry="15" fill="#e8e8e8"/>
-    <ellipse cx="305" cy="48" rx="25" ry="12" fill="#e8e8e8"/>
-    <ellipse cx="260" cy="50" rx="20" ry="10" fill="#e8e8e8"/>
+    <ellipse cx="280" cy="55" rx="25" ry="12" fill="#e5e5e5"/>
+    <ellipse cx="300" cy="50" rx="20" ry="10" fill="#e5e5e5"/>
+    <ellipse cx="265" cy="52" rx="16" ry="8" fill="#e5e5e5"/>
   </g>
   
-  <!-- Ground -->
+  <!-- Ground - Authentic -->
   <rect x="0" y="210" width="600" height="40" fill="#e0e0e0"/>
   <rect x="0" y="208" width="600" height="3" fill="#d5d5d5"/>
   
-  <!-- Ground lines (scrolling) -->
+  <!-- Ground lines - authentic spacing -->
   <g class="ground-line">
-    <rect x="0" y="220" width="24" height="2" fill="#c8c8c8" rx="1"/>
-    <rect x="48" y="220" width="24" height="2" fill="#c8c8c8" rx="1"/>
-    <rect x="96" y="220" width="24" height="2" fill="#c8c8c8" rx="1"/>
-    <rect x="144" y="220" width="24" height="2" fill="#c8c8c8" rx="1"/>
-    <rect x="192" y="220" width="24" height="2" fill="#c8c8c8" rx="1"/>
-    <rect x="240" y="220" width="24" height="2" fill="#c8c8c8" rx="1"/>
-    <rect x="288" y="220" width="24" height="2" fill="#c8c8c8" rx="1"/>
-    <rect x="336" y="220" width="24" height="2" fill="#c8c8c8" rx="1"/>
-    <rect x="384" y="220" width="24" height="2" fill="#c8c8c8" rx="1"/>
-    <rect x="432" y="220" width="24" height="2" fill="#c8c8c8" rx="1"/>
-    <rect x="480" y="220" width="24" height="2" fill="#c8c8c8" rx="1"/>
-    <rect x="528" y="220" width="24" height="2" fill="#c8c8c8" rx="1"/>
-    <rect x="576" y="220" width="24" height="2" fill="#c8c8c8" rx="1"/>
+    <rect x="0" y="220" width="20" height="2" fill="#c8c8c8"/>
+    <rect x="40" y="220" width="20" height="2" fill="#c8c8c8"/>
+    <rect x="80" y="220" width="20" height="2" fill="#c8c8c8"/>
+    <rect x="120" y="220" width="20" height="2" fill="#c8c8c8"/>
+    <rect x="160" y="220" width="20" height="2" fill="#c8c8c8"/>
+    <rect x="200" y="220" width="20" height="2" fill="#c8c8c8"/>
+    <rect x="240" y="220" width="20" height="2" fill="#c8c8c8"/>
+    <rect x="280" y="220" width="20" height="2" fill="#c8c8c8"/>
+    <rect x="320" y="220" width="20" height="2" fill="#c8c8c8"/>
+    <rect x="360" y="220" width="20" height="2" fill="#c8c8c8"/>
+    <rect x="400" y="220" width="20" height="2" fill="#c8c8c8"/>
+    <rect x="440" y="220" width="20" height="2" fill="#c8c8c8"/>
+    <rect x="480" y="220" width="20" height="2" fill="#c8c8c8"/>
+    <rect x="520" y="220" width="20" height="2" fill="#c8c8c8"/>
+    <rect x="560" y="220" width="20" height="2" fill="#c8c8c8"/>
+    <rect x="600" y="220" width="20" height="2" fill="#c8c8c8"/>
   </g>
   
-  <!-- DINO -->
-  <g class="dino-body">
-    <!-- Body -->
-    <rect x="50" y="165" width="32" height="28" rx="4" fill="#535353"/>
+  <!-- DINO - Authentic pixel art style -->
+  <g class="dino-jump">
+    <!-- Body - Pixel perfect shape -->
+    <rect x="50" y="165" width="34" height="30" fill="#535353"/>
+    <rect x="52" y="162" width="30" height="6" fill="#535353"/>
+    <rect x="54" y="158" width="24" height="6" fill="#535353"/>
     
     <!-- Head -->
-    <rect x="78" y="157" width="22" height="18" rx="4" fill="#535353"/>
-    <rect x="82" y="153" width="16" height="8" rx="3" fill="#535353"/> <!-- Snout -->
+    <rect x="78" y="155" width="20" height="12" fill="#535353"/>
+    <rect x="82" y="152" width="14" height="6" fill="#535353"/>
+    <rect x="92" y="150" width="6" height="6" fill="#535353"/> <!-- Snout tip -->
     
-    <!-- Mouth -->
-    <line x1="84" y1="168" x2="96" y2="168" stroke="#333" stroke-width="1"/>
+    <!-- Jaw -->
+    <rect x="82" y="164" width="14" height="3" fill="#535353"/>
     
     <!-- Eye -->
-    <circle cx="89" cy="160" r="3.5" fill="white"/>
-    <circle cx="90" cy="160" r="2" fill="#222"/>
-    <circle cx="90.5" cy="159" r="0.8" fill="white"/> <!-- Eye highlight -->
-    
-    <!-- Eyebrow -->
-    <line x1="86" y1="155" x2="92" y2="155" stroke="#444" stroke-width="1.5" stroke-linecap="round"/>
+    <rect x="84" y="156" width="4" height="4" fill="white"/>
+    <rect x="85" y="157" width="2" height="2" fill="#222"/>
     
     <!-- Teeth -->
-    <rect x="86" y="168" width="2" height="2" fill="white" rx="0.5"/>
-    <rect x="90" y="168" width="2" height="2" fill="white" rx="0.5"/>
-    <rect x="94" y="168" width="2" height="2" fill="white" rx="0.5"/>
+    <rect x="84" y="164" width="2" height="2" fill="white"/>
+    <rect x="88" y="164" width="2" height="2" fill="white"/>
+    <rect x="92" y="164" width="2" height="2" fill="white"/>
     
-    <!-- Back plates (spikes) -->
-    <polygon points="55,165 58,158 61,165" fill="#444"/>
-    <polygon points="63,165 66,156 69,165" fill="#444"/>
-    <polygon points="71,165 74,157 77,165" fill="#444"/>
+    <!-- Back plates -->
+    <rect x="54" y="158" width="4" height="6" fill="#444"/>
+    <rect x="60" y="156" width="4" height="8" fill="#444"/>
+    <rect x="66" y="156" width="4" height="8" fill="#444"/>
+    <rect x="72" y="158" width="4" height="6" fill="#444"/>
     
     <!-- Tail -->
-    <path d="M52 175 L35 168 L38 178 L45 182 Z" fill="#535353"/>
-    <path d="M35 168 L28 165 L30 172 L38 178 Z" fill="#484848"/>
+    <rect x="46" y="170" width="6" height="4" fill="#535353"/>
+    <rect x="42" y="168" width="6" height="4" fill="#535353"/>
+    <rect x="38" y="170" width="6" height="4" fill="#535353"/>
+    <rect x="34" y="172" width="6" height="2" fill="#535353"/>
     
-    <!-- Front Leg -->
-    <g class="leg-front">
-      <rect x="55" y="188" width="8" height="18" rx="2" fill="#535353"/>
-      <rect x="53" y="203" width="12" height="5" rx="2" fill="#444"/>
-      <!-- Toes -->
-      <rect x="53" y="206" width="3" height="3" rx="1" fill="#444"/>
-      <rect x="57" y="206" width="3" height="3" rx="1" fill="#444"/>
-      <rect x="61" y="206" width="3" height="3" rx="1" fill="#444"/>
+    <!-- Legs - Frame 1 -->
+    <g class="leg-up">
+      <rect x="54" y="192" width="8" height="16" fill="#535353"/>
+      <rect x="52" y="206" width="12" height="4" fill="#535353"/>
+    </g>
+    <g class="leg-down">
+      <rect x="70" y="195" width="8" height="13" fill="#535353"/>
+      <rect x="68" y="206" width="12" height="4" fill="#535353"/>
     </g>
     
-    <!-- Back Leg -->
-    <g class="leg-back">
-      <rect x="70" y="188" width="8" height="18" rx="2" fill="#535353"/>
-      <rect x="68" y="203" width="12" height="5" rx="2" fill="#444"/>
-      <!-- Toes -->
-      <rect x="68" y="206" width="3" height="3" rx="1" fill="#444"/>
-      <rect x="72" y="206" width="3" height="3" rx="1" fill="#444"/>
-      <rect x="76" y="206" width="3" height="3" rx="1" fill="#444"/>
+    <!-- Arms -->
+    <g class="arm-back">
+      <rect x="74" y="178" width="4" height="10" fill="#535353"/>
     </g>
-    
-    <!-- Arm -->
-    <g class="arm">
-      <rect x="72" y="175" width="4" height="12" rx="2" fill="#535353"/>
-      <rect x="70" y="185" width="8" height="3" rx="1.5" fill="#444"/> <!-- Hand -->
+    <g class="arm-forward">
+      <rect x="78" y="176" width="4" height="10" fill="#535353"/>
     </g>
-    
-    <!-- Belly highlight -->
-    <rect x="55" y="180" width="18" height="10" rx="2" fill="#666" opacity="0.3"/>
   </g>
   
-  <!-- CACTUS 1 (Large) -->
+  <!-- CACTUS 1 - Classic T-Rex game cactus -->
   <g class="cactus">
-    <rect x="580" y="180" width="14" height="30" rx="4" fill="#4CAF50"/>
-    <rect x="575" y="185" width="10" height="20" rx="3" fill="#43A047"/>
-    <rect x="589" y="183" width="10" height="18" rx="3" fill="#43A047"/>
-    <!-- Cactus spikes -->
-    <line x1="587" y1="188" x2="591" y2="186" stroke="#388E3C" stroke-width="1"/>
-    <line x1="587" y1="195" x2="591" y2="193" stroke="#388E3C" stroke-width="1"/>
-    <line x1="577" y1="190" x2="573" y2="188" stroke="#388E3C" stroke-width="1"/>
-    <line x1="577" y1="198" x2="573" y2="196" stroke="#388E3C" stroke-width="1"/>
-    <!-- Shading -->
-    <rect x="580" y="180" width="5" height="30" rx="4" fill="#66BB6A" opacity="0.3"/>
+    <!-- Main trunk -->
+    <rect x="580" y="180" width="12" height="30" rx="2" fill="#4CAF50"/>
+    <!-- Left arm -->
+    <rect x="574" y="184" width="8" height="14" rx="2" fill="#4CAF50"/>
+    <!-- Right arm -->
+    <rect x="590" y="186" width="8" height="12" rx="2" fill="#4CAF50"/>
+    <!-- Highlights -->
+    <rect x="580" y="180" width="4" height="30" rx="2" fill="#66BB6A" opacity="0.4"/>
+    <rect x="574" y="184" width="3" height="14" rx="2" fill="#66BB6A" opacity="0.4"/>
+    <rect x="590" y="186" width="3" height="12" rx="2" fill="#66BB6A" opacity="0.4"/>
   </g>
   
-  <!-- CACTUS 2 (Small) -->
+  <!-- CACTUS 2 - Small cactus -->
   <g class="cactus2">
-    <rect x="580" y="188" width="10" height="22" rx="3" fill="#43A047"/>
-    <rect x="576" y="192" width="8" height="15" rx="2.5" fill="#388E3C"/>
-    <!-- Cactus spikes -->
-    <line x1="585" y1="193" x2="588" y2="191" stroke="#2E7D32" stroke-width="1"/>
-    <line x1="585" y1="200" x2="588" y2="198" stroke="#2E7D32" stroke-width="1"/>
-    <!-- Shading -->
-    <rect x="580" y="188" width="4" height="22" rx="3" fill="#66BB6A" opacity="0.25"/>
+    <!-- Main trunk -->
+    <rect x="580" y="188" width="10" height="22" rx="2" fill="#43A047"/>
+    <!-- Left arm -->
+    <rect x="575" y="190" width="7" height="10" rx="2" fill="#43A047"/>
+    <!-- Highlights -->
+    <rect x="580" y="188" width="3" height="22" rx="2" fill="#66BB6A" opacity="0.4"/>
   </g>
   
-  <!-- PTERODACTYL -->
+  <!-- PTERODACTYL - Authentic pixel style -->
   <g class="ptera">
     <!-- Body -->
-    <ellipse cx="560" cy="95" rx="16" ry="9" fill="#555"/>
-    <ellipse cx="560" cy="95" rx="12" ry="7" fill="#666"/>
+    <rect x="560" y="95" width="14" height="8" fill="#666"/>
+    <rect x="562" y="93" width="10" height="6" fill="#666"/>
     
     <!-- Head -->
-    <circle cx="572" cy="90" r="5" fill="#555"/>
-    <circle cx="574" cy="88" r="2.5" fill="white"/>
-    <circle cx="575" cy="88" r="1.5" fill="#222"/>
-    <!-- Beak -->
-    <polygon points="576,88 582,89 576,91" fill="#444"/>
+    <rect x="572" y="90" width="6" height="6" fill="#666"/>
+    <rect x="576" y="88" width="4" height="4" fill="#666"/>
     
-    <!-- Wing (flapping) -->
-    <g class="wing">
-      <polygon points="555,92 580,75 585,72 575,85" fill="#444"/>
-      <polygon points="555,92 580,78 585,75 575,88" fill="#555"/>
+    <!-- Eye -->
+    <rect x="574" y="91" width="2" height="2" fill="white"/>
+    <rect x="575" y="91" width="1" height="1" fill="#222"/>
+    
+    <!-- Wing - Flapping -->
+    <g class="wing-flap">
+      <rect x="556" y="88" width="4" height="16" fill="#555"/>
+      <rect x="552" y="84" width="4" height="16" fill="#555"/>
+      <rect x="548" y="82" width="4" height="16" fill="#555"/>
     </g>
     
-    <!-- Wing (back) -->
-    <polygon points="555,92 540,80 535,78 545,88" fill="#444" opacity="0.7"/>
+    <!-- Wing bottom -->
+    <rect x="556" y="98" width="4" height="6" fill="#555"/>
     
     <!-- Tail -->
-    <polygon points="545,95 538,93 540,97" fill="#444"/>
+    <rect x="554" y="97" width="6" height="4" fill="#666"/>
+    <rect x="550" y="95" width="6" height="4" fill="#666"/>
   </g>
   
-  <!-- Score Board -->
+  <!-- SCORE - Authentic Chrome Dino Game style -->
   <g>
-    <!-- Score background -->
-    <rect x="500" y="15" width="85" height="35" rx="4" fill="#f0f0f0" opacity="0.8"/>
+    <!-- Score number display -->
+    <text x="520" y="28" font-family="'Courier New', monospace" font-size="16" font-weight="bold" fill="#535353" letter-spacing="2">0000</text>
     
-    <!-- Score text -->
-    <text x="508" y="33" font-family="'Courier New', monospace" font-size="14" font-weight="bold" fill="#535353">HI 0000</text>
-    <text x="508" y="48" font-family="'Courier New', monospace" font-size="14" font-weight="bold" fill="#535353">0000</text>
-    
-    <!-- High score crown -->
-    <text x="542" y="17" font-size="10">👑</text>
+    <!-- HI Score -->
+    <text x="520" y="48" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#8e8e93" letter-spacing="1">HI 0000</text>
   </g>
   
-  <!-- Game Over / Instruction Text -->
-  <text x="50" y="120" font-family="'Courier New', monospace" font-size="13" fill="#8e8e93" opacity="0.4">
-    ⬆️  Press SPACE to jump
+  <!-- GAME OVER TEXT - Subtle instruction -->
+  <text x="200" y="100" font-family="'Courier New', monospace" font-size="13" fill="#8e8e93" opacity="0.25">
+    Press SPACE to jump
   </text>
   
-  <!-- Second instruction -->
-  <text x="50" y="140" font-family="'Courier New', monospace" font-size="11" fill="#8e8e93" opacity="0.3">
-    🏃  Press R to restart
-  </text>
-  
-  <!-- Subtle gradient overlay for depth -->
-  <rect x="0" y="0" width="600" height="250" fill="url(#skyGrad)" opacity="0.05">
-    <defs>
-      <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#87CEEB"/>
-        <stop offset="100%" stop-color="#f7f7f7"/>
-      </linearGradient>
-    </defs>
-  </rect>
+  <!-- Speed indicator - subtle dots -->
+  <circle cx="30" cy="30" r="2" fill="#d0d0d0" opacity="0.3"/>
+  <circle cx="38" cy="30" r="2" fill="#d0d0d0" opacity="0.2"/>
+  <circle cx="46" cy="30" r="2" fill="#d0d0d0" opacity="0.1"/>
 </svg>
