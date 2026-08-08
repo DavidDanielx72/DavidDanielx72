@@ -1,223 +1,111 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
   <defs>
-    <!-- iOS 26 Authentic Bubble Colors -->
-    <linearGradient id="bubbleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#f5f5f7" />
-      <stop offset="100%" style="stop-color:#e8e8ed" />
-    </linearGradient>
-    
-    <!-- iOS 26 Avatar Gradients -->
-    <linearGradient id="avatar1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#5AC8FA" />
-      <stop offset="100%" style="stop-color:#007AFF" />
-    </linearGradient>
-    
-    <linearGradient id="avatar2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#FF6B8A" />
-      <stop offset="100%" style="stop-color:#FF2D55" />
-    </linearGradient>
-    
-    <linearGradient id="avatar3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#FFD60A" />
-      <stop offset="100%" style="stop-color:#FF9500" />
-    </linearGradient>
-    
-    <!-- iOS 26 Shadows -->
-    <filter id="bubbleShadow" x="-5%" y="-5%" width="115%" height="115%">
-      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.06"/>
-      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000" flood-opacity="0.04"/>
-    </filter>
-    
-    <filter id="avatarShadow" x="-15%" y="-15%" width="130%" height="130%">
-      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.15"/>
-    </filter>
-
-    <!-- ANIMATIONS - Using keyframes with percentages for loop -->
     <style>
-      /* Message animations - visible at specific times in the loop */
-      @keyframes message1Anim {
-        0%, 5% { opacity: 0; transform: translateY(20px) scale(0.92); }
-        10% { opacity: 1; transform: translateY(-4px) scale(1.01); }
-        15%, 100% { opacity: 1; transform: translateY(0) scale(1); }
+      @keyframes run {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100px); }
+      }
+      @keyframes jump {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-60px); }
+      }
+      @keyframes cactusMove {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-500px); }
+      }
+      @keyframes cloudMove {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-400px); }
+      }
+      @keyframes pteraMove {
+        0% { transform: translateX(0) translateY(0); }
+        25% { transform: translateX(-100px) translateY(-10px); }
+        50% { transform: translateX(-200px) translateY(0); }
+        75% { transform: translateX(-300px) translateY(-10px); }
+        100% { transform: translateX(-400px) translateY(0); }
+      }
+      @keyframes scoreUpdate {
+        0%, 100% { opacity: 1; }
+      }
+      @keyframes groundScroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100px); }
       }
       
-      @keyframes typing1Anim {
-        0%, 25% { opacity: 0; transform: translateY(10px) scale(0.95); }
-        30% { opacity: 1; transform: translateY(0) scale(1); }
-        45%, 100% { opacity: 0; transform: translateY(0) scale(1); }
-      }
-      
-      @keyframes message2Anim {
-        0%, 40% { opacity: 0; transform: translateY(20px) scale(0.92); }
-        45% { opacity: 1; transform: translateY(-4px) scale(1.01); }
-        50%, 100% { opacity: 1; transform: translateY(0) scale(1); }
-      }
-      
-      @keyframes typing2Anim {
-        0%, 60% { opacity: 0; transform: translateY(10px) scale(0.95); }
-        65% { opacity: 1; transform: translateY(0) scale(1); }
-        80%, 100% { opacity: 0; transform: translateY(0) scale(1); }
-      }
-      
-      @keyframes message3Anim {
-        0%, 78% { opacity: 0; transform: translateY(20px) scale(0.92); }
-        83% { opacity: 1; transform: translateY(-4px) scale(1.01); }
-        88%, 100% { opacity: 1; transform: translateY(0) scale(1); }
-      }
-      
-      @keyframes read1Anim {
-        0%, 20% { opacity: 0; transform: scale(0.7); }
-        25% { opacity: 1; transform: scale(1); }
-        100% { opacity: 1; transform: scale(1); }
-      }
-      
-      @keyframes read2Anim {
-        0%, 52% { opacity: 0; transform: scale(0.7); }
-        57% { opacity: 1; transform: scale(1); }
-        100% { opacity: 1; transform: scale(1); }
-      }
-      
-      @keyframes read3Anim {
-        0%, 86% { opacity: 0; transform: scale(0.7); }
-        91% { opacity: 1; transform: scale(1); }
-        100% { opacity: 1; transform: scale(1); }
-      }
-      
-      @keyframes dotBounce1 {
-        0%, 40% { opacity: 0.4; transform: translateY(0); }
-        60% { opacity: 1; transform: translateY(-6px); }
-        80%, 100% { opacity: 0.4; transform: translateY(0); }
-      }
-      
-      @keyframes dotBounce2 {
-        0%, 50% { opacity: 0.4; transform: translateY(0); }
-        70% { opacity: 1; transform: translateY(-6px); }
-        90%, 100% { opacity: 0.4; transform: translateY(0); }
-      }
-      
-      @keyframes dotBounce3 {
-        0%, 60% { opacity: 0.4; transform: translateY(0); }
-        80% { opacity: 1; transform: translateY(-6px); }
-        100% { opacity: 0.4; transform: translateY(0); }
-      }
-      
-      /* Apply animations with infinite loop */
-      .msg1 { animation: message1Anim 6s ease infinite; }
-      .typing1 { animation: typing1Anim 6s ease infinite; }
-      .msg2 { animation: message2Anim 6s ease infinite; }
-      .typing2 { animation: typing2Anim 6s ease infinite; }
-      .msg3 { animation: message3Anim 6s ease infinite; }
-      .read1 { animation: read1Anim 6s ease infinite; }
-      .read2 { animation: read2Anim 6s ease infinite; }
-      .read3 { animation: read3Anim 6s ease infinite; }
-      
-      .dot1 { animation: dotBounce1 1.4s ease infinite; }
-      .dot2 { animation: dotBounce2 1.4s ease infinite; }
-      .dot3 { animation: dotBounce3 1.4s ease infinite; }
-      
-      /* Always visible elements */
-      .avatar, .bubble-bg, .text-content {
-        opacity: 1;
-      }
+      .dino { animation: run 0.3s steps(2) infinite; }
+      .jumping { animation: jump 0.5s ease infinite; }
+      .cactus { animation: cactusMove 2s linear infinite; }
+      .cloud { animation: cloudMove 4s linear infinite; }
+      .ptera { animation: pteraMove 3s linear infinite; }
+      .ground { animation: groundScroll 0.5s linear infinite; }
     </style>
   </defs>
-
-  <!-- Main chat group - NO fade wrapper, each element loops independently -->
-  <g>
-    
-    <!-- ===== MESSAGE 1 - Name ===== -->
-    <g class="msg1">
-      <!-- Avatar -->
-      <circle cx="42" cy="38" r="20" fill="url(#avatar1)" filter="url(#avatarShadow)"/>
-      <text x="42" y="44" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro', sans-serif" font-size="15" fill="white">👋</text>
-      
-      <!-- Bubble -->
-      <rect x="72" y="18" width="290" height="42" rx="22" ry="22" fill="url(#bubbleGrad)" filter="url(#bubbleShadow)"/>
-      <path d="M62 42 L72 30 L72 54 Z" fill="#f5f5f7"/>
-      
-      <!-- Text -->
-      <text x="95" y="46" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro', sans-serif" font-size="16" font-weight="600" fill="#1c1c1e">
-        David Daniel Sepkitt
-      </text>
-      <text x="340" y="46" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro', sans-serif" font-size="15">✨</text>
-    </g>
-
-    <!-- Read receipt 1 -->
-    <g class="read1">
-      <text x="357" y="68" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro', sans-serif" font-size="11" fill="#8e8e93">Read</text>
-      <circle cx="387" cy="66" r="6" fill="#34C759"/>
-      <path d="M384 66 L386.5 68.5 L391 64" stroke="white" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-    </g>
-
-    <!-- ===== TYPING 1 ===== -->
-    <g class="typing1">
-      <circle cx="42" cy="103" r="20" fill="url(#avatar1)" filter="url(#avatarShadow)"/>
-      <text x="42" y="109" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro', sans-serif" font-size="14" fill="white">✍️</text>
-      
-      <rect x="72" y="86" width="66" height="34" rx="17" ry="17" fill="url(#bubbleGrad)" filter="url(#bubbleShadow)"/>
-      <path d="M62 103 L72 91 L72 115 Z" fill="#f5f5f7"/>
-      
-      <circle cx="89" cy="103" r="4.5" fill="#8e8e93" class="dot1"/>
-      <circle cx="105" cy="103" r="4.5" fill="#8e8e93" class="dot2"/>
-      <circle cx="121" cy="103" r="4.5" fill="#8e8e93" class="dot3"/>
-    </g>
-
-    <!-- ===== MESSAGE 2 - Role ===== -->
-    <g class="msg2">
-      <circle cx="42" cy="163" r="20" fill="url(#avatar2)" filter="url(#avatarShadow)"/>
-      <text x="42" y="169" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro', sans-serif" font-size="14" fill="white">💻</text>
-      
-      <rect x="72" y="143" width="370" height="42" rx="22" ry="22" fill="url(#bubbleGrad)" filter="url(#bubbleShadow)"/>
-      <path d="M62 167 L72 155 L72 179 Z" fill="#f5f5f7"/>
-      
-      <text x="95" y="171" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro', sans-serif" font-size="16" fill="#1c1c1e">
-        <tspan font-weight="700" fill="#007AFF">3rd Year ICT Student</tspan>
-        <tspan font-weight="400" fill="#8e8e93">  ·  </tspan>
-        <tspan font-weight="700" fill="#FF2D55">Aspiring Full Stack Developer</tspan>
-      </text>
-    </g>
-
-    <!-- Read receipt 2 -->
-    <g class="read2">
-      <text x="437" y="193" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro', sans-serif" font-size="11" fill="#8e8e93">Read</text>
-      <circle cx="467" cy="191" r="6" fill="#34C759"/>
-      <path d="M464 191 L466.5 193.5 L471 189" stroke="white" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-    </g>
-
-    <!-- ===== TYPING 2 ===== -->
-    <g class="typing2">
-      <circle cx="42" cy="228" r="20" fill="url(#avatar3)" filter="url(#avatarShadow)"/>
-      <text x="42" y="234" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro', sans-serif" font-size="14" fill="white">✍️</text>
-      
-      <rect x="72" y="211" width="66" height="34" rx="17" ry="17" fill="url(#bubbleGrad)" filter="url(#bubbleShadow)"/>
-      <path d="M62 228 L72 216 L72 240 Z" fill="#f5f5f7"/>
-      
-      <circle cx="89" cy="228" r="4.5" fill="#8e8e93" class="dot1"/>
-      <circle cx="105" cy="228" r="4.5" fill="#8e8e93" class="dot2"/>
-      <circle cx="121" cy="228" r="4.5" fill="#8e8e93" class="dot3"/>
-    </g>
-
-    <!-- ===== MESSAGE 3 - About Me ===== -->
-    <g class="msg3">
-      <circle cx="42" cy="288" r="20" fill="url(#avatar3)" filter="url(#avatarShadow)"/>
-      <text x="42" y="294" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro', sans-serif" font-size="14" fill="white">📍</text>
-      
-      <rect x="72" y="268" width="270" height="42" rx="22" ry="22" fill="url(#bubbleGrad)" filter="url(#bubbleShadow)"/>
-      <path d="M62 292 L72 280 L72 304 Z" fill="#f5f5f7"/>
-      
-      <text x="95" y="296" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro', sans-serif" font-size="16" fill="#1c1c1e">
-        <tspan font-weight="600">Location</tspan>
-        <tspan font-weight="400" fill="#8e8e93">  ·  </tspan>
-        <tspan font-weight="500">Cape Town, SA</tspan>
-      </text>
-    </g>
-
-    <!-- Read receipt 3 -->
-    <g class="read3">
-      <text x="337" y="318" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro', sans-serif" font-size="11" fill="#8e8e93">Read</text>
-      <circle cx="367" cy="316" r="6" fill="#34C759"/>
-      <path d="M364 316 L366.5 318.5 L371 314" stroke="white" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-    </g>
-
+  
+  <!-- Sky Background -->
+  <rect width="600" height="200" fill="#f7f7f7"/>
+  
+  <!-- Clouds -->
+  <g class="cloud">
+    <ellipse cx="50" cy="30" rx="30" ry="15" fill="#e8e8e8"/>
+    <ellipse cx="70" cy="25" rx="25" ry="12" fill="#e8e8e8"/>
+    <ellipse cx="30" cy="25" rx="20" ry="10" fill="#e8e8e8"/>
   </g>
+  <g class="cloud" style="animation-delay: 2s;">
+    <ellipse cx="200" cy="40" rx="25" ry="12" fill="#e8e8e8"/>
+    <ellipse cx="220" cy="35" rx="20" ry="10" fill="#e8e8e8"/>
+  </g>
+  
+  <!-- Ground -->
+  <rect x="0" y="170" width="600" height="30" fill="#e0e0e0"/>
+  <g class="ground">
+    <rect x="0" y="170" width="100" height="2" fill="#d0d0d0"/>
+    <rect x="200" y="170" width="100" height="2" fill="#d0d0d0"/>
+    <rect x="400" y="170" width="100" height="2" fill="#d0d0d0"/>
+  </g>
+  
+  <!-- Dino -->
+  <g class="dino jumping">
+    <!-- Body -->
+    <rect x="50" y="130" width="30" height="30" rx="3" fill="#535353"/>
+    <!-- Head -->
+    <rect x="75" y="125" width="20" height="15" rx="3" fill="#535353"/>
+    <!-- Eye -->
+    <circle cx="85" cy="130" r="3" fill="white"/>
+    <circle cx="86" cy="130" r="1.5" fill="#333"/>
+    <!-- Legs -->
+    <rect x="55" y="155" width="8" height="15" rx="2" fill="#535353"/>
+    <rect x="67" y="155" width="8" height="15" rx="2" fill="#535353"/>
+    <!-- Tail -->
+    <polygon points="50,135 35,130 40,140" fill="#535353"/>
+    <!-- Arm -->
+    <rect x="70" y="140" width="4" height="10" rx="2" fill="#535353"/>
+  </g>
+  
+  <!-- Cactus 1 -->
+  <g class="cactus" style="animation-delay: 0.5s;">
+    <rect x="550" y="145" width="10" height="25" rx="3" fill="#4CAF50"/>
+    <rect x="547" y="150" width="8" height="15" rx="2" fill="#4CAF50"/>
+    <rect x="555" y="148" width="8" height="12" rx="2" fill="#4CAF50"/>
+  </g>
+  
+  <!-- Cactus 2 -->
+  <g class="cactus" style="animation-delay: 1.5s;">
+    <rect x="550" y="150" width="8" height="20" rx="3" fill="#4CAF50"/>
+  </g>
+  
+  <!-- Pterodactyl -->
+  <g class="ptera" style="animation-delay: 1s;">
+    <ellipse cx="550" cy="90" rx="15" ry="8" fill="#666"/>
+    <polygon points="560,85 575,80 565,90" fill="#666"/>
+    <circle cx="545" cy="88" r="2" fill="white"/>
+  </g>
+  
+  <!-- Score -->
+  <text x="520" y="30" font-family="monospace" font-size="16" fill="#535353">🏆 0000</text>
+  <text x="520" y="50" font-family="monospace" font-size="12" fill="#8e8e93">HI 0000</text>
+  
+  <!-- Game Over Text (subtle) -->
+  <text x="200" y="100" font-family="monospace" font-size="14" fill="#8e8e93" opacity="0.3">
+    ⬆️ Press Space to Jump
+  </text>
 </svg>
