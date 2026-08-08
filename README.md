@@ -16,32 +16,21 @@
 
 ---
 
-## 👋 Hey there, I'm David!
+## 👨‍💻 About Me
 
-<div align="center">
-  <table>
-    <tr>
-      <td>🌱 <strong>Currently learning:</strong></td>
-      <td>Advanced Java, React, C & C++, Python</td>
-    </tr>
-    <tr>
-      <td>💻 <strong>Building with:</strong></td>
-      <td>React, TypeScript, JavaScript, WordPress, Java, SQL</td>
-    </tr>
-    <tr>
-      <td>🎯 <strong>Goal:</strong></td>
-      <td>Full Stack Software Developer</td>
-    </tr>
-    <tr>
-      <td>🧠 <strong>Exploring:</strong></td>
-      <td>Emerging technologies, particularly Artificial Intelligence</td>
-    </tr>
-    <tr>
-      <td>📍 <strong>Based in:</strong></td>
-      <td>Cape Town, South Africa 🇿🇦</td>
-    </tr>
-  </table>
-</div>
+I am an aspiring software developer with a passion for building practical, user-focused solutions and continuously expanding my technical knowledge. I am currently a third year student pursuing a Diploma in ICT in Applications Development at CPUT, I bring a strong work ethic, adaptability, and problem-solving skills to every project I undertake.
+
+<br>
+
+I am driven by the opportunity to use technology to create innovative solutions and am committed to writing clean, efficient code while collaborating effectively with teams. My goal is to grow into a **Full Stack Software Developer** and contribute to building the technologies of the future.
+
+<br>
+
+- 🌱 **Currently learning:** Advanced Java, React, C & C++, Python
+- 💻 **Building with:** React, TypeScript, JavaScript, WordPress, Java, SQL
+- 🎯 **Goal:** Full Stack Software Developer
+- 🧠 **Exploring:** Emerging technologies, particularly Artificial Intelligence
+- 📍 **Based in:** Cape Town, South Africa 🇿🇦
 
 <br>
 
@@ -91,19 +80,19 @@
 <p align="center">
   <table align="center" cellpadding="0" cellspacing="0" style="border-collapse: collapse; display: inline-table;">
     <tr>
-      <td align="center" style="padding: 0 20px;">
+      <td align="center" style="padding: 0 18px;">
         <img src="https://skillicons.dev/icons?i=react" alt="React" width="55" height="55"/>
         <br><span style="font-size: 14px; color: #8e8e93;">React</span>
       </td>
-      <td align="center" style="padding: 0 20px;">
+      <td align="center" style="padding: 0 18px;">
         <img src="https://skillicons.dev/icons?i=wordpress" alt="WordPress" width="55" height="55"/>
         <br><span style="font-size: 14px; color: #8e8e93;">WordPress</span>
       </td>
-      <td align="center" style="padding: 0 20px;">
+      <td align="center" style="padding: 0 18px;">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="JavaFX" width="55" height="55"/>
         <br><span style="font-size: 14px; color: #8e8e93;">JavaFX</span>
       </td>
-      <td align="center" style="padding: 0 20px;">
+      <td align="center" style="padding: 0 18px;">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Responsive Design" width="55" height="55"/>
         <br><span style="font-size: 14px; color: #8e8e93;">Responsive</span>
       </td>
@@ -116,23 +105,23 @@
 <p align="center">
   <table align="center" cellpadding="0" cellspacing="0" style="border-collapse: collapse; display: inline-table;">
     <tr>
-      <td align="center" style="padding: 0 18px;">
+      <td align="center" style="padding: 0 15px;">
         <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" width="55" height="55"/>
         <br><span style="font-size: 14px; color: #8e8e93;">Node.js</span>
       </td>
-      <td align="center" style="padding: 0 18px;">
+      <td align="center" style="padding: 0 15px;">
         <img src="https://skillicons.dev/icons?i=express" alt="Express.js" width="55" height="55"/>
         <br><span style="font-size: 14px; color: #8e8e93;">Express.js</span>
       </td>
-      <td align="center" style="padding: 0 18px;">
+      <td align="center" style="padding: 0 15px;">
         <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" width="55" height="55"/>
         <br><span style="font-size: 14px; color: #8e8e93;">MySQL</span>
       </td>
-      <td align="center" style="padding: 0 18px;">
+      <td align="center" style="padding: 0 15px;">
         <img src="https://skillicons.dev/icons?i=sqlite" alt="SQLite" width="55" height="55"/>
         <br><span style="font-size: 14px; color: #8e8e93;">SQLite</span>
       </td>
-      <td align="center" style="padding: 0 18px;">
+      <td align="center" style="padding: 0 15px;">
         <img src="https://skillicons.dev/icons?i=supabase" alt="Supabase" width="55" height="55"/>
         <br><span style="font-size: 14px; color: #8e8e93;">Supabase</span>
       </td>
@@ -145,31 +134,31 @@
 <p align="center">
   <table align="center" cellpadding="0" cellspacing="0" style="border-collapse: collapse; display: inline-table;">
     <tr>
-      <td align="center" style="padding: 0 12px;">
+      <td align="center" style="padding: 0 10px;">
         <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" width="55" height="55"/>
         <br><span style="font-size: 14px; color: #8e8e93;">VS Code</span>
       </td>
-      <td align="center" style="padding: 0 12px;">
+      <td align="center" style="padding: 0 10px;">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ" width="55" height="55"/>
         <br><span style="font-size: 14px; color: #8e8e93;">IntelliJ</span>
       </td>
-      <td align="center" style="padding: 0 12px;">
+      <td align="center" style="padding: 0 10px;">
         <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="NetBeans" width="55" height="55"/>
         <br><span style="font-size: 14px; color: #8e8e93;">NetBeans</span>
       </td>
-      <td align="center" style="padding: 0 12px;">
+      <td align="center" style="padding: 0 10px;">
         <img src="https://skillicons.dev/icons?i=git" alt="Git" width="55" height="55"/>
         <br><span style="font-size: 14px; color: #8e8e93;">Git</span>
       </td>
-      <td align="center" style="padding: 0 12px;">
+      <td align="center" style="padding: 0 10px;">
         <img src="https://skillicons.dev/icons?i=github" alt="GitHub" width="55" height="55"/>
         <br><span style="font-size: 14px; color: #8e8e93;">GitHub</span>
       </td>
-      <td align="center" style="padding: 0 12px;">
+      <td align="center" style="padding: 0 10px;">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL Workbench" width="55" height="55"/>
         <br><span style="font-size: 14px; color: #8e8e93;">MySQL WB</span>
       </td>
-      <td align="center" style="padding: 0 12px;">
+      <td align="center" style="padding: 0 10px;">
         <img src="https://skillicons.dev/icons?i=maven" alt="Maven" width="55" height="55"/>
         <br><span style="font-size: 14px; color: #8e8e93;">Maven</span>
       </td>
@@ -245,32 +234,38 @@
 
 ## 🌐 Featured Projects
 
-### 🌿 Rietfontein Guest Farm Website
-- **Front-End Development & Content Strategy**
-- Modernized the website's look and feel, updated business information, and improved page layouts to align with the client's brand vision
-- Implemented responsive design using **WordPress**, **HTML**, **CSS**, and **JavaScript** for the front end, with **PHP** for backend functionality
-- 🔗 [rietfontein.co.za](https://rietfontein.co.za/)
-
-### 🤖 CareerPilot AI
-- **AI-Powered CV Assistant**
-- An intelligent AI-powered career assistant designed to help users create stronger, more professional CVs with ease
-- Leverages modern artificial intelligence to analyze, improve, and generate CV content tailored to today's job market
-- Provides personalized suggestions to help students and professionals make their CVs stand out
-- 🔗 [CareerPilot AI Repository](https://github.com/DavidDanielx72/Careerpilot_AI)
-
-### 🔐 Beep IoT Alarm System
-- **Full-Stack IoT Security Solution**
-- A fully integrated security system combining hardware and software into a single connected solution
-- Features a web-based dashboard, backend server, ESP32 IoT device with RFID sensor, and automated alarm scheduling
-- Enables remote control, real-time monitoring, and multiple interaction methods (dashboard, RFID cards, automatic schedules)
-- 🔗 [Beep IoT Repository](https://github.com/DavidDanielx72/iot-elective-project-2026-beep)
-
-### 🗣️ Ubuntu Navigator AI Chatbot
-- **Multilingual AI Assistant**
-- An AI-powered conversational assistant designed to help users search for answers and access information related to SASSA, Home Affairs, and City of Cape Town services
-- Supports all 11 official languages of South Africa, providing responses in the user's chosen language
-- Uses location services to help users find nearby Home Affairs buildings
-- 🔗 [Ubuntu Navigator Repository](https://github.com/DavidDanielx72/Ubuntu-Navigator-AI-Chatbot-)
+<div align="center">
+  <table>
+    <tr>
+      <td width="50%" valign="top">
+        <h3>🌿 Rietfontein Guest Farm</h3>
+        <p><strong>Front-End Development & Content Strategy</strong></p>
+        <p>Modernized the website's look and feel, updated business information, and improved page layouts to align with the client's brand vision.</p>
+        <p>🔗 <a href="https://rietfontein.co.za/">rietfontein.co.za</a></p>
+      </td>
+      <td width="50%" valign="top">
+        <h3>🤖 CareerPilot AI</h3>
+        <p><strong>AI-Powered CV Assistant</strong></p>
+        <p>An intelligent AI-powered career assistant designed to help users create stronger, more professional CVs with ease.</p>
+        <p>🔗 <a href="https://github.com/DavidDanielx72/Careerpilot_AI">View Repository</a></p>
+      </td>
+    </tr>
+    <tr>
+      <td width="50%" valign="top">
+        <h3>🔐 Beep IoT Alarm System</h3>
+        <p><strong>Full-Stack IoT Security Solution</strong></p>
+        <p>A fully integrated security system combining hardware and software into a single connected solution with remote control and real-time monitoring.</p>
+        <p>🔗 <a href="https://github.com/DavidDanielx72/iot-elective-project-2026-beep">View Repository</a></p>
+      </td>
+      <td width="50%" valign="top">
+        <h3>🗣️ Ubuntu Navigator AI</h3>
+        <p><strong>Multilingual AI Assistant</strong></p>
+        <p>An AI-powered conversational assistant supporting all 11 official languages of South Africa for SASSA, Home Affairs, and City of Cape Town services.</p>
+        <p>🔗 <a href="https://github.com/DavidDanielx72/Ubuntu-Navigator-AI-Chatbot-">View Repository</a></p>
+      </td>
+    </tr>
+  </table>
+</div>
 
 ---
 
