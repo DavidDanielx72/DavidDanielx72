@@ -8,8 +8,8 @@
 <br>
 
 <div align="center">
-  <!-- Premium Typing Animation -->
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=800&color=00D4FF&center=true&vCenter=true&width=700&lines=🚀+Aspiring+Full+Stack+Developer;💡+Building+the+future%2C+one+line+at+a+time;🌍+Based+in+Cape+Town%2C+South+Africa;🤖+AI+Enthusiast+%26+Problem+Solver;⚡+Turning+ideas+into+reality" alt="Premium Typing Animation" />
+  <!-- Premium Glitch/Typing Animation -->
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=30&duration=3500&pause=600&color=00D4FF&center=true&vCenter=true&width=800&height=70&lines=✦+Aspiring+Full+Stack+Developer;✦+Building+the+future%2C+one+line+at+a+time;✦+Based+in+Cape+Town%2C+South+Africa;✦+AI+Enthusiast+%26+Problem+Solver;✦+Turning+ideas+into+reality;✦+Open+to+exciting+opportunities" alt="Premium Typing Animation" />
 </div>
 
 <br>
@@ -52,165 +52,88 @@
 ### 💻 Programming Languages
 
 <p align="center">
-  <span style="display: inline-block; margin: 0 15px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=java" alt="Java" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">Java</span>
-  </span>
-  <span style="display: inline-block; margin: 0 15px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">JavaScript</span>
-  </span>
-  <span style="display: inline-block; margin: 0 15px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">TypeScript</span>
-  </span>
-  <span style="display: inline-block; margin: 0 15px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=html" alt="HTML" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">HTML</span>
-  </span>
-  <span style="display: inline-block; margin: 0 15px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=css" alt="CSS" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">CSS</span>
-  </span>
-  <span style="display: inline-block; margin: 0 15px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=python" alt="Python" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">Python</span>
-  </span>
-  <span style="display: inline-block; margin: 0 15px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=mysql" alt="SQL" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">SQL</span>
-  </span>
+  <img src="https://skillicons.dev/icons?i=java" alt="Java" width="55" height="55" style="margin: 0 12px;"/>
+  <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" width="55" height="55" style="margin: 0 12px;"/>
+  <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" width="55" height="55" style="margin: 0 12px;"/>
+  <img src="https://skillicons.dev/icons?i=html" alt="HTML" width="55" height="55" style="margin: 0 12px;"/>
+  <img src="https://skillicons.dev/icons?i=css" alt="CSS" width="55" height="55" style="margin: 0 12px;"/>
+  <img src="https://skillicons.dev/icons?i=python" alt="Python" width="55" height="55" style="margin: 0 12px;"/>
+  <img src="https://skillicons.dev/icons?i=mysql" alt="SQL" width="55" height="55" style="margin: 0 12px;"/>
+</p>
+<p align="center" style="margin-top: 5px; font-size: 14px; color: #8e8e93;">
+  Java · JavaScript · TypeScript · HTML · CSS · Python · SQL
 </p>
 
 ### 🎨 Frontend & UI
 
 <p align="center">
-  <span style="display: inline-block; margin: 0 15px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=react" alt="React" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">React</span>
-  </span>
-  <span style="display: inline-block; margin: 0 15px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=wordpress" alt="WordPress" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">WordPress</span>
-  </span>
-  <span style="display: inline-block; margin: 0 15px; text-align: center;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="JavaFX" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">JavaFX</span>
-  </span>
-  <span style="display: inline-block; margin: 0 15px; text-align: center;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Responsive Design" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">Responsive</span>
-  </span>
+  <img src="https://skillicons.dev/icons?i=react" alt="React" width="55" height="55" style="margin: 0 12px;"/>
+  <img src="https://skillicons.dev/icons?i=wordpress" alt="WordPress" width="55" height="55" style="margin: 0 12px;"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="JavaFX" width="55" height="55" style="margin: 0 12px;"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Responsive Design" width="55" height="55" style="margin: 0 12px;"/>
+</p>
+<p align="center" style="margin-top: 5px; font-size: 14px; color: #8e8e93;">
+  React · WordPress · JavaFX · Responsive Design
 </p>
 
 ### ⚙️ Backend & Databases
 
 <p align="center">
-  <span style="display: inline-block; margin: 0 15px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">Node.js</span>
-  </span>
-  <span style="display: inline-block; margin: 0 15px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=express" alt="Express.js" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">Express.js</span>
-  </span>
-  <span style="display: inline-block; margin: 0 15px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">MySQL</span>
-  </span>
-  <span style="display: inline-block; margin: 0 15px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=sqlite" alt="SQLite" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">SQLite</span>
-  </span>
-  <span style="display: inline-block; margin: 0 15px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=supabase" alt="Supabase" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">Supabase</span>
-  </span>
+  <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" width="55" height="55" style="margin: 0 12px;"/>
+  <img src="https://skillicons.dev/icons?i=express" alt="Express.js" width="55" height="55" style="margin: 0 12px;"/>
+  <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" width="55" height="55" style="margin: 0 12px;"/>
+  <img src="https://skillicons.dev/icons?i=sqlite" alt="SQLite" width="55" height="55" style="margin: 0 12px;"/>
+  <img src="https://skillicons.dev/icons?i=supabase" alt="Supabase" width="55" height="55" style="margin: 0 12px;"/>
+</p>
+<p align="center" style="margin-top: 5px; font-size: 14px; color: #8e8e93;">
+  Node.js · Express.js · MySQL · SQLite · Supabase
 </p>
 
 ### 🛠️ Development Tools
 
 <p align="center">
-  <span style="display: inline-block; margin: 0 12px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">VS Code</span>
-  </span>
-  <span style="display: inline-block; margin: 0 12px; text-align: center;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">IntelliJ</span>
-  </span>
-  <span style="display: inline-block; margin: 0 12px; text-align: center;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="NetBeans" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">NetBeans</span>
-  </span>
-  <span style="display: inline-block; margin: 0 12px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=git" alt="Git" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">Git</span>
-  </span>
-  <span style="display: inline-block; margin: 0 12px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=github" alt="GitHub" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">GitHub</span>
-  </span>
-  <span style="display: inline-block; margin: 0 12px; text-align: center;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL Workbench" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">MySQL WB</span>
-  </span>
-  <span style="display: inline-block; margin: 0 12px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=maven" alt="Maven" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">Maven</span>
-  </span>
+  <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" width="55" height="55" style="margin: 0 10px;"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ" width="55" height="55" style="margin: 0 10px;"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="NetBeans" width="55" height="55" style="margin: 0 10px;"/>
+  <img src="https://skillicons.dev/icons?i=git" alt="Git" width="55" height="55" style="margin: 0 10px;"/>
+  <img src="https://skillicons.dev/icons?i=github" alt="GitHub" width="55" height="55" style="margin: 0 10px;"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL Workbench" width="55" height="55" style="margin: 0 10px;"/>
+  <img src="https://skillicons.dev/icons?i=maven" alt="Maven" width="55" height="55" style="margin: 0 10px;"/>
+</p>
+<p align="center" style="margin-top: 5px; font-size: 14px; color: #8e8e93;">
+  VS Code · IntelliJ IDEA · NetBeans · Git · GitHub · MySQL Workbench · Maven
 </p>
 
 ### ☁️ Cloud & Deployment
 
 <p align="center">
-  <span style="display: inline-block; margin: 0 20px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=netlify" alt="Netlify" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">Netlify</span>
-  </span>
-  <span style="display: inline-block; margin: 0 20px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=vercel" alt="Vercel" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">Vercel</span>
-  </span>
-  <span style="display: inline-block; margin: 0 20px; text-align: center;">
-    <img src="https://skillicons.dev/icons?i=supabase" alt="Supabase" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">Supabase</span>
-  </span>
+  <img src="https://skillicons.dev/icons?i=netlify" alt="Netlify" width="55" height="55" style="margin: 0 15px;"/>
+  <img src="https://skillicons.dev/icons?i=vercel" alt="Vercel" width="55" height="55" style="margin: 0 15px;"/>
+  <img src="https://skillicons.dev/icons?i=supabase" alt="Supabase" width="55" height="55" style="margin: 0 15px;"/>
+</p>
+<p align="center" style="margin-top: 5px; font-size: 14px; color: #8e8e93;">
+  Netlify · Vercel · Supabase
 </p>
 
 ### 🤖 AI & Generative AI
 
 <p align="center">
-  <span style="display: inline-block; margin: 0 12px; text-align: center;">
-    <img src="https://img.shields.io/badge/AI_Chatbot-00D4FF?style=for-the-badge&logo=openai&logoColor=white" alt="AI Chatbot"/>
-  </span>
-  <span style="display: inline-block; margin: 0 12px; text-align: center;">
-    <img src="https://img.shields.io/badge/Generative_AI-FF6B8A?style=for-the-badge&logo=ai&logoColor=white" alt="Generative AI"/>
-  </span>
-  <span style="display: inline-block; margin: 0 12px; text-align: center;">
-    <img src="https://img.shields.io/badge/Prompt_Engineering-FFB800?style=for-the-badge&logo=ai&logoColor=white" alt="Prompt Engineering"/>
-  </span>
-  <span style="display: inline-block; margin: 0 12px; text-align: center;">
-    <img src="https://img.shields.io/badge/AI_API_Integration-34C759?style=for-the-badge&logo=api&logoColor=white" alt="AI API Integration"/>
-  </span>
+  <img src="https://img.shields.io/badge/AI_Chatbot-00D4FF?style=for-the-badge&logo=openai&logoColor=white" alt="AI Chatbot" style="margin: 0 8px;"/>
+  <img src="https://img.shields.io/badge/Generative_AI-FF6B8A?style=for-the-badge&logo=ai&logoColor=white" alt="Generative AI" style="margin: 0 8px;"/>
+  <img src="https://img.shields.io/badge/Prompt_Engineering-FFB800?style=for-the-badge&logo=ai&logoColor=white" alt="Prompt Engineering" style="margin: 0 8px;"/>
+  <img src="https://img.shields.io/badge/AI_API_Integration-34C759?style=for-the-badge&logo=api&logoColor=white" alt="AI API Integration" style="margin: 0 8px;"/>
 </p>
 
 ### 🔌 Hardware & IoT
 
 <p align="center">
-  <span style="display: inline-block; margin: 0 15px; text-align: center;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino" width="55" height="55"/>
-    <br><span style="font-size: 14px; color: #8e8e93;">Arduino</span>
-  </span>
-  <span style="display: inline-block; margin: 0 15px; text-align: center;">
-    <img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32"/>
-  </span>
-  <span style="display: inline-block; margin: 0 15px; text-align: center;">
-    <img src="https://img.shields.io/badge/RFID-007AFF?style=for-the-badge&logo=rfid&logoColor=white" alt="RFID"/>
-  </span>
-  <span style="display: inline-block; margin: 0 15px; text-align: center;">
-    <img src="https://img.shields.io/badge/Ultrasonic_Sensors-34C759?style=for-the-badge&logo=sensor&logoColor=white" alt="Ultrasonic Sensors"/>
-  </span>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino" width="55" height="55" style="margin: 0 12px;"/>
+  <img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32" style="margin: 0 8px;"/>
+  <img src="https://img.shields.io/badge/RFID-007AFF?style=for-the-badge&logo=rfid&logoColor=white" alt="RFID" style="margin: 0 8px;"/>
+  <img src="https://img.shields.io/badge/Ultrasonic_Sensors-34C759?style=for-the-badge&logo=sensor&logoColor=white" alt="Ultrasonic Sensors" style="margin: 0 8px;"/>
+</p>
+<p align="center" style="margin-top: 5px; font-size: 14px; color: #8e8e93;">
+  Arduino · ESP32 · RFID · Ultrasonic Sensors
 </p>
 
 ---
