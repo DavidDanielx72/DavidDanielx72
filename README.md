@@ -1,6 +1,4 @@
-<div align="center">
-  <img src="https://raw.githubusercontent.com/DavidDanielx72/DavidDanielx72/main/DinoVid.gif" alt="Chrome Dino Game" style="width: 600px; height: 450px; object-fit: cover;" />
-  <br>
+## David Sepkitt
 </div>
 
 <br>
