@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/DavidDanielx72/DavidDanielx72/output/github-contribution-grid-snake.svg" alt="Snake eating contributions" width="100%" style="max-width: 900px; height: auto;" />
   <br>
-  <i>🐍 Snake eating my contributions · Green squares = active days</i>
+  <i>🐍 Snake eating my contributions </i>
 </div>
 
 ## 👨‍💻 About Me
