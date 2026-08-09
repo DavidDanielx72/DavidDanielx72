@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/DavidDanielx72/DavidDanielx72/main/DinoVid.gif" alt="Chrome Dino Game" style="width: 350px; height: 200px; object-fit: cover;" />
+  <img src="https://raw.githubusercontent.com/DavidDanielx72/DavidDanielx72/main/DinoVid.gif" alt="Chrome Dino Game" style="width: 450px; height: 200px; object-fit: cover;" />
   <br>
 </div>
 
