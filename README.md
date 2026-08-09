@@ -1,6 +1,7 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/DavidDanielx72/DavidDanielx72/main/DinoVid.gif" alt="Chrome Dino Game" width="350" height="200" />
+  <img src="https://raw.githubusercontent.com/DavidDanielx72/DavidDanielx72/output/github-contribution-grid-snake.svg" alt="Pac-Man Contributions" width="100%" style="max-width: 900px; height: auto;" />
   <br>
+  <i>🐍 Pac-Man eating my contributions · Green squares = active days</i>
 </div>
 
 ## 👨‍💻 About Me
