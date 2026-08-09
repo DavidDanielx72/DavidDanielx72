@@ -1,5 +1,3 @@
-## David Sepkitt
-</div>
 
 <br>
 
