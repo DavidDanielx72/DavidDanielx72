@@ -1,4 +1,7 @@
-
+<div align="center">
+  <img src="https://raw.githubusercontent.com/DavidDanielx72/DavidDanielx72/main/DinoVid.gif" alt="Chrome Dino Game" width="300" height="150" />
+  <br>
+</div>
 <br>
 
 <div align="center">
