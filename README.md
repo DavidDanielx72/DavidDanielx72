@@ -2,7 +2,6 @@
   <img src="https://raw.githubusercontent.com/DavidDanielx72/DavidDanielx72/main/DinoVid.gif" alt="Chrome Dino Game" width="350" height="200" />
   <br>
 </div>
----
 
 ## 👨‍💻 About Me
 
