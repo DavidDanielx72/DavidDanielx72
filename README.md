@@ -288,7 +288,7 @@ I am driven by the opportunity to use technology to create innovative solutions 
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=DavidDanielx72&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views" />
   <img src="https://img.shields.io/badge/Age-20-blue" alt="Age" />
-  <img src="https://img.shields.io/badge/Location-Cape%20Town-green" alt="Location" />
+  <img src="https://img.shields.io/badge/Location-Cape%20Town%South20%Africa-green" alt="Location" />
   <img src="https://img.shields.io/badge/Status-Busy%20with%20Internship-brightgreen" alt="Status" />
 </div>
 
